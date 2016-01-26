@@ -1,0 +1,9 @@
+# Ignore everything including directories
+*
+# Don't ignore .gitignore and *.foo files
+!.gitignore
+!*.vhd
+!*.bdf
+!*.qpf
+!*.qsf
+!*.bsf
