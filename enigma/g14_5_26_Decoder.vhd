@@ -24,13 +24,13 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity g14_5_26_Decoder is 
+entity g14_5_26_decoder is 
 	port(INPUT : in std_logic_vector(4 downto 0);
 		  OUTPUT : out std_logic_vector(25 downto 0);
 		  ERR : out std_logic); 
-end g14_5_26_Decoder;
+end g14_5_26_decoder;
 
-architecture decoder of g14_5_26_Decoder is 
+architecture decoder of g14_5_26_decoder is 
 	signal temp : unsigned (4 downto 0);
 	signal x : integer range 0 to 31;
 	

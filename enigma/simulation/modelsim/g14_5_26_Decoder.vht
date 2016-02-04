@@ -36,7 +36,7 @@ ARCHITECTURE g14_5_26_Decoder_arch OF g14_5_26_Decoder_vhd_tst IS
 SIGNAL ERR : STD_LOGIC;
 SIGNAL INPUT : STD_LOGIC_VECTOR(4 DOWNTO 0);
 SIGNAL OUTPUT : STD_LOGIC_VECTOR(25 DOWNTO 0);
-COMPONENT g14_5_26_Decoder
+COMPONENT g14_5_26_decoder
 	PORT (
 	ERR : OUT STD_LOGIC;
 	INPUT : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
@@ -44,7 +44,7 @@ COMPONENT g14_5_26_Decoder
 	);
 END COMPONENT;
 BEGIN
-	i1 : g14_5_26_Decoder
+	i1 : g14_5_26_decoder
 	PORT MAP (
 -- list connections between master ports and signals
 	ERR => ERR,
@@ -68,4 +68,4 @@ BEGIN
 	end loop;
 WAIT;                                                        
 END PROCESS always;                                          
-END g14_5_26_Decoder_arch;
+END g14_5_26_decoder_arch;
