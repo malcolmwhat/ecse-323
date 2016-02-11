@@ -1,0 +1,42 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\13.0sp1\modelsim_ase\win32aloem
+Eg14_26_5_encoder
+Z0 w1455057067
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dP:\DSD\lab2\modelsim
+Z5 8P:/DSD/lab2/g14_lab2.vhd
+Z6 FP:/DSD/lab2/g14_lab2.vhd
+l0
+L16
+V@b6Hhh6z>CUV9a]S[z^V01
+!s100 ?5D`H>_dkA[VI;N3A8Aa10
+Z7 OV;C;10.1d;51
+32
+!i10b 1
+Z8 !s108 1455057454.749000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|P:/DSD/lab2/g14_lab2.vhd|
+Z10 !s107 P:/DSD/lab2/g14_lab2.vhd|
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+Aencoder
+R1
+R2
+R3
+DEx4 work 16 g14_26_5_encoder 0 22 @b6Hhh6z>CUV9a]S[z^V01
+l23
+L22
+Vf9hFCeiB00<lWRCOm[SKh2
+!s100 WKe4YY=Xzn0F;KK=zWG[33
+R7
+32
+!i10b 1
+R8
+R9
+R10
+R11
+R12
