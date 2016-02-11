@@ -5,3 +5,15 @@
 # Don't ignore .gitignore and *.foo files
 !.gitignore
 !.md
+!.vhd
+!.qpf
+*.summary
+*.smsg
+*.rpt
+*.sof
+*.pof
+*.pin
+*.jdi
+*.sdo
+*.rcfdb
+*.sft
