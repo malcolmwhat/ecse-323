@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g14_lab2
-Thu Feb 11 14:26:23 2016
+Thu Feb 11 15:30:07 2016
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Feb 11 14:26:23 2016      ;
+; Analysis & Synthesis Status        ; Successful - Thu Feb 11 15:30:07 2016      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; g14_lab2                                   ;
 ; Top-level Entity Name              ; g14_26_5_encoder                           ;
@@ -233,12 +233,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Thu Feb 11 14:26:21 2016
+    Info: Processing started: Thu Feb 11 15:30:04 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g14_26_5_encoder -c g14_lab2
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file g14_26_5_encoder.vhd
     Info (12022): Found design unit 1: g14_26_5_encoder-encoder
     Info (12023): Found entity 1: g14_26_5_encoder
+Info (12021): Found 2 design units, including 1 entities, in source file g14_barrel_shifter.vhd
+    Info (12022): Found design unit 1: g14_barrel_shifter-shifter
+    Info (12023): Found entity 1: g14_barrel_shifter
 Info (12127): Elaborating entity "g14_26_5_encoder" for the top level hierarchy
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -247,9 +250,9 @@ Info (21057): Implemented 65 device resources after synthesis - the final resour
     Info (21059): Implemented 6 output pins
     Info (21061): Implemented 33 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 531 megabytes
-    Info: Processing ended: Thu Feb 11 14:26:23 2016
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 512 megabytes
+    Info: Processing ended: Thu Feb 11 15:30:07 2016
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 
