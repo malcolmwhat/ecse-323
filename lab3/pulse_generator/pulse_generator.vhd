@@ -2,6 +2,7 @@ library ieee;
 library lpm;
 
 use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 use lpm.lpm_components.all;
 
 entity pulse_generator is 
@@ -14,6 +15,7 @@ end pulse_generator;
 -- data in binary is 
 architecture gen of pulse_generator is
 	signal intermediate : std_logic;
+	signal counter_out : std_logic_vector(24 downto 0);
 	signal load_to_counter : std_logic_vector (24 downto 0);
 	begin
 		load_to_counter <= "1011111010111100000111111"; -- 25 million minus 1
@@ -27,9 +29,18 @@ architecture gen of pulse_generator is
 				data => load_to_counter,
 				sload => intermediate,
 				clock => clock,
-				eq(0) => intermediate -- Need to apply data as well as sload
+				q => counter_out
 			);
 		
+		check_for_zero : process (clock)
+		begin
+			intermediate <= '0';
+			
+			if unsigned(counter_out) = 0 then
+				intermediate <= '1';
+			end if;
+			
+		end process;
 		
 		epulse <= intermediate;
 		
