@@ -7,17 +7,17 @@ use ieee.std_logic_1164.all;
 
 entity g14_barrel_shifter is
 	port (LETTER_IN : in std_logic_vector(25 downto 0);
-			SHIFT : in std_logic_vector(4 downto 0);
-			LETTER_OUT : out std_logic_vector(25 downto 0));
-end g14_barrel_shifter; 
+		  SHIFT : in std_logic_vector(4 downto 0);
+		  LETTER_OUT : out std_logic_vector(25 downto 0));
+end g14_barrel_shifter;
 
 
-architecture shifter of g14_barrel_shifter is 
+architecture shifter of g14_barrel_shifter is
 	begin
 		with SHIFT select
-		    LETTER_OUT <= 
-			 
-			
+		    LETTER_OUT <=
+
+
 			LETTER_IN(24 downto 0) & LETTER_IN(25 downto 25) WHEN "00001",
 			LETTER_IN(23 downto 0) & LETTER_IN(25 downto 24) WHEN "00010",
 			LETTER_IN(22 downto 0) & LETTER_IN(25 downto 23) WHEN "00011",
