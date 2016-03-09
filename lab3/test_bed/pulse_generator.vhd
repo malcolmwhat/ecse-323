@@ -24,7 +24,8 @@ architecture gen of pulse_generator is
 		down_counter : lpm_counter
 			generic map (
 				lpm_direction => "DOWN",
-				lpm_width => 25
+				lpm_width => 25,
+				lpm_modulus => 1001
 			)
 			port map (
 				data => load_to_counter,
