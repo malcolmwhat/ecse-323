@@ -7,7 +7,7 @@ use work.all;
 
 
 entity g14_lab3_test_bed is
-    port(clock : in std_logic;
+    port(clk : in std_logic;
          dipswitches : in std_logic_vector(4 downto 0); -- The physical switches on the altera board
          seven_segment_output : out std_logic_vector(6 downto 0) -- To the LED display on the board
     );
@@ -64,11 +64,11 @@ architecture test of g14_lab3_test_bed is
     begin
         -- Create a 2 Hz enable signal from the system clock
         pulse_gen : pulse_generator
-            port map(clock => clock, epulse => counter_enable);
+            port map(clock => clk, epulse => counter_enable);
 
         -- 0 to 25 counter
         counter_0_to_25 : g14_counter
-            port map(clk => clock, reset => '0', enable => counter_enable,
+            port map(clk => clk, reset => '0', enable => counter_enable,
                 count => current_count);
 
         -- 5 : 26 decoder from dipswitches
