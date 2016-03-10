@@ -8,6 +8,7 @@ use work.all;
 
 entity g14_lab3_test_bed is
     port(clk : in std_logic;
+		 reset : in std_logic;
          dipswitches : in std_logic_vector(4 downto 0); -- The physical switches on the altera board
          seven_segment_output : out std_logic_vector(6 downto 0) -- To the LED display on the board
     );
@@ -21,7 +22,9 @@ architecture test of g14_lab3_test_bed is
     signal shifted_letter : std_logic_vector(25 downto 0);
     signal shifted_letter_5_bit : std_logic_vector(4 downto 0);
     signal output_error : std_logic;
-
+	signal reset_neg : std_logic; -- Used because the push buttons are high when not being pressed. 
+	
+	
     -- Pulse generator component, to create the 2Hz pulse
     component pulse_generator
         port(clock : in std_logic;
@@ -62,13 +65,16 @@ architecture test of g14_lab3_test_bed is
     end component;
 
     begin
+	
+		reset_neg <= not reset;
+		
         -- Create a 2 Hz enable signal from the system clock
         pulse_gen : pulse_generator
             port map(clock => clk, epulse => counter_enable);
 
         -- 0 to 25 counter
         counter_0_to_25 : g14_counter
-            port map(clk => clk, reset => '0', enable => counter_enable,
+            port map(clk => clk, reset => reset_neg, enable => counter_enable,
                 count => current_count);
 
         -- 5 : 26 decoder from dipswitches

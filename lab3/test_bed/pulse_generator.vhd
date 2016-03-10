@@ -18,14 +18,13 @@ architecture gen of pulse_generator is
 	signal counter_out : std_logic_vector(24 downto 0);
 	signal load_to_counter : std_logic_vector (24 downto 0);
 	begin
-		load_to_counter <= "0000000000000001111101000"; -- Temporarily at 1000
-		--"1011111010111100000111111"; -- 25 million minus 1
+		load_to_counter <= "1011111010111100000111111"; -- 25 million minus 1
 
 		down_counter : lpm_counter
 			generic map (
 				lpm_direction => "DOWN",
 				lpm_width => 25,
-				lpm_modulus => 1001
+				lpm_modulus => 25000000
 			)
 			port map (
 				data => load_to_counter,
