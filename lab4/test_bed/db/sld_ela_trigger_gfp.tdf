@@ -1,5 +1,5 @@
 --sld_ela_trigger DATA_BITS=8 INVERSION_MASK=00000000 INVERSION_MASK_LENGTH=1 LEVEL_NAMES="sld_reserved_g14_lab3_test_bed_auto_signaltap_0_1_a748," POWER_UP_TRIGGER=0 TRIGGER_LEVEL=1 acq_clk data_in reset_all setup_bit_in setup_bit_out setup_ena tck trigger_level_match_out
---VERSION_BEGIN 15.0 cbx_mgl 2015:04:22:18:06:50:SJ cbx_sld_ela_trigger 2015:04:22:18:04:08:SJ  VERSION_END
+--VERSION_BEGIN 15.1 cbx_mgl 2015:10:21:18:12:49:SJ cbx_sld_ela_trigger 2015:10:21:18:09:23:SJ  VERSION_END
 
 
 -- Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
@@ -9,7 +9,7 @@
 --  (including device programming or simulation files), and any 
 --  associated documentation or information are expressly subject 
 --  to the terms and conditions of the Altera Program License 
---  Subscription Agreement, the Altera Quartus II License Agreement,
+--  Subscription Agreement, the Altera Quartus Prime License Agreement,
 --  the Altera MegaCore Function License Agreement, or other 
 --  applicable license agreement, including, without limitation, 
 --  that your use is for the sole purpose of programming logic 

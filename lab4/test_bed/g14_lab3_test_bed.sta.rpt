@@ -1,6 +1,6 @@
 TimeQuest Timing Analyzer report for g14_lab3_test_bed
-Tue Mar 15 17:35:34 2016
-Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+Mon Mar 21 17:04:07 2016
+Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
 ---------------------
@@ -18,71 +18,46 @@ Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
  10. Slow 1100mV 85C Model Recovery Summary
  11. Slow 1100mV 85C Model Removal Summary
  12. Slow 1100mV 85C Model Minimum Pulse Width Summary
- 13. Setup Times
- 14. Hold Times
- 15. Clock to Output Times
- 16. Minimum Clock to Output Times
- 17. Propagation Delay
- 18. Minimum Propagation Delay
- 19. Slow 1100mV 85C Model Metastability Summary
- 20. Slow 1100mV 0C Model Fmax Summary
- 21. Slow 1100mV 0C Model Setup Summary
- 22. Slow 1100mV 0C Model Hold Summary
- 23. Slow 1100mV 0C Model Recovery Summary
- 24. Slow 1100mV 0C Model Removal Summary
- 25. Slow 1100mV 0C Model Minimum Pulse Width Summary
- 26. Setup Times
- 27. Hold Times
- 28. Clock to Output Times
- 29. Minimum Clock to Output Times
- 30. Propagation Delay
- 31. Minimum Propagation Delay
- 32. Slow 1100mV 0C Model Metastability Summary
- 33. Fast 1100mV 85C Model Setup Summary
- 34. Fast 1100mV 85C Model Hold Summary
- 35. Fast 1100mV 85C Model Recovery Summary
- 36. Fast 1100mV 85C Model Removal Summary
- 37. Fast 1100mV 85C Model Minimum Pulse Width Summary
- 38. Setup Times
- 39. Hold Times
- 40. Clock to Output Times
- 41. Minimum Clock to Output Times
- 42. Propagation Delay
- 43. Minimum Propagation Delay
- 44. Fast 1100mV 85C Model Metastability Summary
- 45. Fast 1100mV 0C Model Setup Summary
- 46. Fast 1100mV 0C Model Hold Summary
- 47. Fast 1100mV 0C Model Recovery Summary
- 48. Fast 1100mV 0C Model Removal Summary
- 49. Fast 1100mV 0C Model Minimum Pulse Width Summary
- 50. Setup Times
- 51. Hold Times
- 52. Clock to Output Times
- 53. Minimum Clock to Output Times
- 54. Propagation Delay
- 55. Minimum Propagation Delay
- 56. Fast 1100mV 0C Model Metastability Summary
- 57. Multicorner Timing Analysis Summary
- 58. Setup Times
- 59. Hold Times
- 60. Clock to Output Times
- 61. Minimum Clock to Output Times
- 62. Propagation Delay
- 63. Minimum Propagation Delay
- 64. Board Trace Model Assignments
- 65. Input Transition Times
- 66. Signal Integrity Metrics (Slow 1100mv 0c Model)
- 67. Signal Integrity Metrics (Slow 1100mv 85c Model)
- 68. Signal Integrity Metrics (Fast 1100mv 0c Model)
- 69. Signal Integrity Metrics (Fast 1100mv 85c Model)
- 70. Setup Transfers
- 71. Hold Transfers
- 72. Recovery Transfers
- 73. Removal Transfers
- 74. Report TCCS
- 75. Report RSKM
- 76. Unconstrained Paths
- 77. TimeQuest Timing Analyzer Messages
+ 13. Slow 1100mV 85C Model Metastability Summary
+ 14. Slow 1100mV 0C Model Fmax Summary
+ 15. Slow 1100mV 0C Model Setup Summary
+ 16. Slow 1100mV 0C Model Hold Summary
+ 17. Slow 1100mV 0C Model Recovery Summary
+ 18. Slow 1100mV 0C Model Removal Summary
+ 19. Slow 1100mV 0C Model Minimum Pulse Width Summary
+ 20. Slow 1100mV 0C Model Metastability Summary
+ 21. Fast 1100mV 85C Model Setup Summary
+ 22. Fast 1100mV 85C Model Hold Summary
+ 23. Fast 1100mV 85C Model Recovery Summary
+ 24. Fast 1100mV 85C Model Removal Summary
+ 25. Fast 1100mV 85C Model Minimum Pulse Width Summary
+ 26. Fast 1100mV 85C Model Metastability Summary
+ 27. Fast 1100mV 0C Model Setup Summary
+ 28. Fast 1100mV 0C Model Hold Summary
+ 29. Fast 1100mV 0C Model Recovery Summary
+ 30. Fast 1100mV 0C Model Removal Summary
+ 31. Fast 1100mV 0C Model Minimum Pulse Width Summary
+ 32. Fast 1100mV 0C Model Metastability Summary
+ 33. Multicorner Timing Analysis Summary
+ 34. Board Trace Model Assignments
+ 35. Input Transition Times
+ 36. Signal Integrity Metrics (Slow 1100mv 0c Model)
+ 37. Signal Integrity Metrics (Slow 1100mv 85c Model)
+ 38. Signal Integrity Metrics (Fast 1100mv 0c Model)
+ 39. Signal Integrity Metrics (Fast 1100mv 85c Model)
+ 40. Setup Transfers
+ 41. Hold Transfers
+ 42. Recovery Transfers
+ 43. Removal Transfers
+ 44. Report TCCS
+ 45. Report RSKM
+ 46. Unconstrained Paths Summary
+ 47. Clock Status Summary
+ 48. Unconstrained Input Ports
+ 49. Unconstrained Output Ports
+ 50. Unconstrained Input Ports
+ 51. Unconstrained Output Ports
+ 52. TimeQuest Timing Analyzer Messages
 
 
 
@@ -96,7 +71,7 @@ functions, and any output files from any of the foregoing
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus II License Agreement,
+Subscription Agreement, the Altera Quartus Prime License Agreement,
 the Altera MegaCore Function License Agreement, or other 
 applicable license agreement, including, without limitation, 
 that your use is for the sole purpose of programming logic 
@@ -106,17 +81,18 @@ agreement for further details.
 
 
 
-+-------------------------------------------------------------------------+
-; TimeQuest Timing Analyzer Summary                                       ;
-+--------------------+----------------------------------------------------+
-; Quartus II Version ; Version 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
-; Revision Name      ; g14_lab3_test_bed                                  ;
-; Device Family      ; Cyclone V                                          ;
-; Device Name        ; 5CSEMA5F31C6                                       ;
-; Timing Models      ; Final                                              ;
-; Delay Model        ; Combined                                           ;
-; Rise/Fall Delays   ; Enabled                                            ;
-+--------------------+----------------------------------------------------+
++-----------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                           ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
+; Timing Analyzer       ; TimeQuest                                           ;
+; Revision Name         ; g14_lab3_test_bed                                   ;
+; Device Family         ; Cyclone V                                           ;
+; Device Name           ; 5CSEMA5F31C6                                        ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Combined                                            ;
+; Rise/Fall Delays      ; Enabled                                             ;
++-----------------------+-----------------------------------------------------+
 
 
 +------------------------------------------+
@@ -127,13 +103,12 @@ agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.17        ;
+; Average used               ; 1.25        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  16.7%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processor 2            ;  25.0%      ;
 +----------------------------+-------------+
 
 
@@ -142,7 +117,7 @@ agreement for further details.
 +-----------------+--------+--------------------------+
 ; SDC File Path   ; Status ; Read at                  ;
 +-----------------+--------+--------------------------+
-; g14_testbed.sdc ; OK     ; Tue Mar 15 17:35:23 2016 ;
+; g14_testbed.sdc ; OK     ; Mon Mar 21 17:03:59 2016 ;
 +-----------------+--------+--------------------------+
 
 
@@ -161,8 +136,8 @@ agreement for further details.
 +------------+-----------------+---------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name          ; Note ;
 +------------+-----------------+---------------------+------+
-; 79.12 MHz  ; 79.12 MHz       ; altera_reserved_tck ;      ;
-; 202.39 MHz ; 202.39 MHz      ; clk                 ;      ;
+; 89.42 MHz  ; 89.42 MHz       ; altera_reserved_tck ;      ;
+; 170.71 MHz ; 170.71 MHz      ; clk                 ;      ;
 +------------+-----------------+---------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -178,8 +153,8 @@ HTML report is unavailable in plain text report export.
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 10.347 ; 0.000         ;
-; clk                 ; 15.059 ; 0.000         ;
+; altera_reserved_tck ; 11.075 ; 0.000         ;
+; clk                 ; 14.142 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -188,8 +163,8 @@ HTML report is unavailable in plain text report export.
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; clk                 ; 0.270 ; 0.000         ;
-; altera_reserved_tck ; 0.414 ; 0.000         ;
+; clk                 ; 0.258 ; 0.000         ;
+; altera_reserved_tck ; 0.444 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -198,7 +173,7 @@ HTML report is unavailable in plain text report export.
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 15.162 ; 0.000         ;
+; altera_reserved_tck ; 14.552 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -207,7 +182,7 @@ HTML report is unavailable in plain text report export.
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; altera_reserved_tck ; 0.841 ; 0.000         ;
+; altera_reserved_tck ; 0.940 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -217,158 +192,20 @@ HTML report is unavailable in plain text report export.
 ; Clock               ; Slack  ; End Point TNS      ;
 +---------------------+--------+--------------------+
 ; clk                 ; 8.872  ; 0.000              ;
-; altera_reserved_tck ; 15.447 ; 0.000              ;
+; altera_reserved_tck ; 15.542 ; 0.000              ;
 +---------------------+--------+--------------------+
-
-
-+----------------------------------------------------------------------------------------------+
-; Setup Times                                                                                  ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-; altera_reserved_tdi ; altera_reserved_tck ; 3.104 ; 3.826 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 2.532 ; 2.571 ; Rise       ; altera_reserved_tck ;
-; reset               ; clk                 ; 0.396 ; 0.677 ; Rise       ; clk                 ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-
-
-+----------------------------------------------------------------------------------------------+
-; Hold Times                                                                                   ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-; altera_reserved_tdi ; altera_reserved_tck ; 0.762 ; 0.614 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 0.532 ; 0.405 ; Rise       ; altera_reserved_tck ;
-; reset               ; clk                 ; 1.025 ; 0.834 ; Rise       ; clk                 ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Clock to Output Times                                                                               ;
-+--------------------------+---------------------+--------+--------+------------+---------------------+
-; Data Port                ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
-+--------------------------+---------------------+--------+--------+------------+---------------------+
-; altera_reserved_tdo      ; altera_reserved_tck ; 5.232  ; 5.282  ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tdo      ; altera_reserved_tck ; 5.953  ; 6.046  ; Fall       ; altera_reserved_tck ;
-; seven_segment_output[*]  ; clk                 ; 17.463 ; 18.012 ; Rise       ; clk                 ;
-;  seven_segment_output[0] ; clk                 ; 16.694 ; 16.920 ; Rise       ; clk                 ;
-;  seven_segment_output[1] ; clk                 ; 17.198 ; 17.715 ; Rise       ; clk                 ;
-;  seven_segment_output[2] ; clk                 ; 17.054 ; 17.530 ; Rise       ; clk                 ;
-;  seven_segment_output[3] ; clk                 ; 16.442 ; 16.502 ; Rise       ; clk                 ;
-;  seven_segment_output[4] ; clk                 ; 16.595 ; 16.700 ; Rise       ; clk                 ;
-;  seven_segment_output[5] ; clk                 ; 17.463 ; 18.012 ; Rise       ; clk                 ;
-;  seven_segment_output[6] ; clk                 ; 16.984 ; 17.509 ; Rise       ; clk                 ;
-+--------------------------+---------------------+--------+--------+------------+---------------------+
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                                                       ;
-+--------------------------+---------------------+--------+--------+------------+---------------------+
-; Data Port                ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
-+--------------------------+---------------------+--------+--------+------------+---------------------+
-; altera_reserved_tdo      ; altera_reserved_tck ; 4.952  ; 4.990  ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tdo      ; altera_reserved_tck ; 4.784  ; 4.845  ; Fall       ; altera_reserved_tck ;
-; seven_segment_output[*]  ; clk                 ; 10.110 ; 10.223 ; Rise       ; clk                 ;
-;  seven_segment_output[0] ; clk                 ; 10.339 ; 10.576 ; Rise       ; clk                 ;
-;  seven_segment_output[1] ; clk                 ; 10.766 ; 11.228 ; Rise       ; clk                 ;
-;  seven_segment_output[2] ; clk                 ; 10.629 ; 11.039 ; Rise       ; clk                 ;
-;  seven_segment_output[3] ; clk                 ; 10.110 ; 10.223 ; Rise       ; clk                 ;
-;  seven_segment_output[4] ; clk                 ; 10.340 ; 10.424 ; Rise       ; clk                 ;
-;  seven_segment_output[5] ; clk                 ; 10.993 ; 11.453 ; Rise       ; clk                 ;
-;  seven_segment_output[6] ; clk                 ; 10.509 ; 10.892 ; Rise       ; clk                 ;
-+--------------------------+---------------------+--------+--------+------------+---------------------+
-
-
-+------------------------------------------------------------------------------+
-; Propagation Delay                                                            ;
-+----------------+-------------------------+--------+--------+--------+--------+
-; Input Port     ; Output Port             ; RR     ; RF     ; FR     ; FF     ;
-+----------------+-------------------------+--------+--------+--------+--------+
-; dipswitches[0] ; seven_segment_output[0] ; 14.887 ; 15.113 ; 14.634 ; 14.860 ;
-; dipswitches[0] ; seven_segment_output[1] ; 15.391 ; 15.908 ; 15.138 ; 15.655 ;
-; dipswitches[0] ; seven_segment_output[2] ; 15.247 ; 15.723 ; 14.994 ; 15.470 ;
-; dipswitches[0] ; seven_segment_output[3] ; 14.635 ; 14.695 ; 14.382 ; 14.442 ;
-; dipswitches[0] ; seven_segment_output[4] ; 14.788 ; 14.893 ; 14.535 ; 14.640 ;
-; dipswitches[0] ; seven_segment_output[5] ; 15.656 ; 16.205 ; 15.403 ; 15.952 ;
-; dipswitches[0] ; seven_segment_output[6] ; 15.177 ; 15.702 ; 14.924 ; 15.449 ;
-; dipswitches[1] ; seven_segment_output[0] ; 14.537 ; 14.763 ; 15.182 ; 15.408 ;
-; dipswitches[1] ; seven_segment_output[1] ; 15.041 ; 15.558 ; 15.686 ; 16.203 ;
-; dipswitches[1] ; seven_segment_output[2] ; 14.897 ; 15.373 ; 15.542 ; 16.018 ;
-; dipswitches[1] ; seven_segment_output[3] ; 14.285 ; 14.345 ; 14.930 ; 14.990 ;
-; dipswitches[1] ; seven_segment_output[4] ; 14.438 ; 14.543 ; 15.083 ; 15.188 ;
-; dipswitches[1] ; seven_segment_output[5] ; 15.306 ; 15.855 ; 15.951 ; 16.500 ;
-; dipswitches[1] ; seven_segment_output[6] ; 14.827 ; 15.352 ; 15.472 ; 15.997 ;
-; dipswitches[2] ; seven_segment_output[0] ; 15.233 ; 15.459 ; 15.673 ; 15.899 ;
-; dipswitches[2] ; seven_segment_output[1] ; 15.737 ; 16.254 ; 16.177 ; 16.694 ;
-; dipswitches[2] ; seven_segment_output[2] ; 15.593 ; 16.069 ; 16.033 ; 16.509 ;
-; dipswitches[2] ; seven_segment_output[3] ; 14.981 ; 15.041 ; 15.421 ; 15.481 ;
-; dipswitches[2] ; seven_segment_output[4] ; 15.134 ; 15.239 ; 15.574 ; 15.679 ;
-; dipswitches[2] ; seven_segment_output[5] ; 16.002 ; 16.551 ; 16.442 ; 16.991 ;
-; dipswitches[2] ; seven_segment_output[6] ; 15.523 ; 16.048 ; 15.963 ; 16.488 ;
-; dipswitches[3] ; seven_segment_output[0] ; 15.222 ; 15.448 ; 15.594 ; 15.820 ;
-; dipswitches[3] ; seven_segment_output[1] ; 15.726 ; 16.243 ; 16.098 ; 16.615 ;
-; dipswitches[3] ; seven_segment_output[2] ; 15.582 ; 16.058 ; 15.954 ; 16.430 ;
-; dipswitches[3] ; seven_segment_output[3] ; 14.970 ; 15.030 ; 15.342 ; 15.402 ;
-; dipswitches[3] ; seven_segment_output[4] ; 15.123 ; 15.228 ; 15.495 ; 15.600 ;
-; dipswitches[3] ; seven_segment_output[5] ; 15.991 ; 16.540 ; 16.363 ; 16.912 ;
-; dipswitches[3] ; seven_segment_output[6] ; 15.512 ; 16.037 ; 15.884 ; 16.409 ;
-; dipswitches[4] ; seven_segment_output[0] ; 15.154 ; 15.380 ; 15.486 ; 15.712 ;
-; dipswitches[4] ; seven_segment_output[1] ; 15.658 ; 16.175 ; 15.990 ; 16.507 ;
-; dipswitches[4] ; seven_segment_output[2] ; 15.514 ; 15.990 ; 15.846 ; 16.322 ;
-; dipswitches[4] ; seven_segment_output[3] ; 14.902 ; 14.962 ; 15.234 ; 15.294 ;
-; dipswitches[4] ; seven_segment_output[4] ; 15.055 ; 15.160 ; 15.387 ; 15.492 ;
-; dipswitches[4] ; seven_segment_output[5] ; 15.923 ; 16.472 ; 16.255 ; 16.804 ;
-; dipswitches[4] ; seven_segment_output[6] ; 15.444 ; 15.969 ; 15.776 ; 16.301 ;
-+----------------+-------------------------+--------+--------+--------+--------+
-
-
-+------------------------------------------------------------------------------+
-; Minimum Propagation Delay                                                    ;
-+----------------+-------------------------+--------+--------+--------+--------+
-; Input Port     ; Output Port             ; RR     ; RF     ; FR     ; FF     ;
-+----------------+-------------------------+--------+--------+--------+--------+
-; dipswitches[0] ; seven_segment_output[0] ; 9.952  ; 10.110 ; 10.131 ; 10.289 ;
-; dipswitches[0] ; seven_segment_output[1] ; 10.379 ; 10.751 ; 10.558 ; 10.930 ;
-; dipswitches[0] ; seven_segment_output[2] ; 10.250 ; 10.581 ; 10.429 ; 10.760 ;
-; dipswitches[0] ; seven_segment_output[3] ; 9.777  ; 9.746  ; 9.923  ; 9.925  ;
-; dipswitches[0] ; seven_segment_output[4] ; 9.730  ; 9.895  ; 9.852  ; 10.074 ;
-; dipswitches[0] ; seven_segment_output[5] ; 10.606 ; 10.987 ; 10.785 ; 11.166 ;
-; dipswitches[0] ; seven_segment_output[6] ; 10.122 ; 10.415 ; 10.301 ; 10.594 ;
-; dipswitches[1] ; seven_segment_output[0] ; 9.931  ; 10.112 ; 10.141 ; 10.341 ;
-; dipswitches[1] ; seven_segment_output[1] ; 10.358 ; 10.753 ; 10.568 ; 10.982 ;
-; dipswitches[1] ; seven_segment_output[2] ; 10.223 ; 10.577 ; 10.431 ; 10.806 ;
-; dipswitches[1] ; seven_segment_output[3] ; 9.701  ; 9.748  ; 9.912  ; 9.977  ;
-; dipswitches[1] ; seven_segment_output[4] ; 9.858  ; 9.955  ; 10.087 ; 10.184 ;
-; dipswitches[1] ; seven_segment_output[5] ; 10.585 ; 10.989 ; 10.795 ; 11.218 ;
-; dipswitches[1] ; seven_segment_output[6] ; 10.102 ; 10.418 ; 10.311 ; 10.647 ;
-; dipswitches[2] ; seven_segment_output[0] ; 10.077 ; 10.235 ; 10.264 ; 10.501 ;
-; dipswitches[2] ; seven_segment_output[1] ; 10.543 ; 10.876 ; 10.691 ; 11.211 ;
-; dipswitches[2] ; seven_segment_output[2] ; 10.365 ; 10.696 ; 10.554 ; 10.964 ;
-; dipswitches[2] ; seven_segment_output[3] ; 9.886  ; 9.871  ; 10.035 ; 10.206 ;
-; dipswitches[2] ; seven_segment_output[4] ; 10.029 ; 10.113 ; 10.182 ; 10.379 ;
-; dipswitches[2] ; seven_segment_output[5] ; 10.731 ; 11.112 ; 10.918 ; 11.378 ;
-; dipswitches[2] ; seven_segment_output[6] ; 10.287 ; 10.540 ; 10.434 ; 10.876 ;
-; dipswitches[3] ; seven_segment_output[0] ; 10.014 ; 10.195 ; 10.424 ; 10.600 ;
-; dipswitches[3] ; seven_segment_output[1] ; 10.441 ; 10.836 ; 10.851 ; 11.241 ;
-; dipswitches[3] ; seven_segment_output[2] ; 10.306 ; 10.660 ; 10.713 ; 11.062 ;
-; dipswitches[3] ; seven_segment_output[3] ; 9.784  ; 9.831  ; 10.194 ; 10.236 ;
-; dipswitches[3] ; seven_segment_output[4] ; 9.743  ; 10.038 ; 10.346 ; 10.157 ;
-; dipswitches[3] ; seven_segment_output[5] ; 10.668 ; 11.072 ; 11.077 ; 11.476 ;
-; dipswitches[3] ; seven_segment_output[6] ; 10.185 ; 10.501 ; 10.594 ; 10.905 ;
-; dipswitches[4] ; seven_segment_output[0] ; 10.014 ; 10.172 ; 10.416 ; 10.597 ;
-; dipswitches[4] ; seven_segment_output[1] ; 10.441 ; 10.813 ; 10.843 ; 11.238 ;
-; dipswitches[4] ; seven_segment_output[2] ; 10.312 ; 10.643 ; 10.708 ; 11.062 ;
-; dipswitches[4] ; seven_segment_output[3] ; 9.879  ; 9.808  ; 10.186 ; 10.233 ;
-; dipswitches[4] ; seven_segment_output[4] ; 9.873  ; 9.957  ; 10.343 ; 10.440 ;
-; dipswitches[4] ; seven_segment_output[5] ; 10.668 ; 11.049 ; 11.070 ; 11.474 ;
-; dipswitches[4] ; seven_segment_output[6] ; 10.184 ; 10.477 ; 10.587 ; 10.903 ;
-+----------------+-------------------------+--------+--------+--------+--------+
 
 
 -----------------------------------------------
 ; Slow 1100mV 85C Model Metastability Summary ;
 -----------------------------------------------
-No synchronizer chains to report.
+The design MTBF is not calculated because there are no specified synchronizers in the design.
+Number of Synchronizer Chains Found: 15
+Shortest Synchronizer Chain: 2 Registers
+Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+Worst Case Available Settling Time: 43.725 ns
+
+
 
 
 +-----------------------------------------------------------+
@@ -376,8 +213,8 @@ No synchronizer chains to report.
 +------------+-----------------+---------------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name          ; Note ;
 +------------+-----------------+---------------------+------+
-; 81.75 MHz  ; 81.75 MHz       ; altera_reserved_tck ;      ;
-; 205.09 MHz ; 205.09 MHz      ; clk                 ;      ;
+; 92.36 MHz  ; 92.36 MHz       ; altera_reserved_tck ;      ;
+; 173.73 MHz ; 173.73 MHz      ; clk                 ;      ;
 +------------+-----------------+---------------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -387,8 +224,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 10.550 ; 0.000         ;
-; clk                 ; 15.124 ; 0.000         ;
+; altera_reserved_tck ; 11.253 ; 0.000         ;
+; clk                 ; 14.244 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -397,8 +234,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; clk                 ; 0.251 ; 0.000         ;
-; altera_reserved_tck ; 0.374 ; 0.000         ;
+; clk                 ; 0.243 ; 0.000         ;
+; altera_reserved_tck ; 0.436 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -407,7 +244,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 15.219 ; 0.000         ;
+; altera_reserved_tck ; 14.643 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -416,7 +253,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; altera_reserved_tck ; 0.790 ; 0.000         ;
+; altera_reserved_tck ; 0.867 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -426,158 +263,20 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; Clock               ; Slack  ; End Point TNS     ;
 +---------------------+--------+-------------------+
 ; clk                 ; 8.826  ; 0.000             ;
-; altera_reserved_tck ; 15.473 ; 0.000             ;
+; altera_reserved_tck ; 15.554 ; 0.000             ;
 +---------------------+--------+-------------------+
-
-
-+----------------------------------------------------------------------------------------------+
-; Setup Times                                                                                  ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-; altera_reserved_tdi ; altera_reserved_tck ; 3.079 ; 3.838 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 2.602 ; 2.636 ; Rise       ; altera_reserved_tck ;
-; reset               ; clk                 ; 0.224 ; 0.504 ; Rise       ; clk                 ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-
-
-+----------------------------------------------------------------------------------------------+
-; Hold Times                                                                                   ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-; altera_reserved_tdi ; altera_reserved_tck ; 0.791 ; 0.668 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 0.551 ; 0.450 ; Rise       ; altera_reserved_tck ;
-; reset               ; clk                 ; 1.154 ; 0.968 ; Rise       ; clk                 ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Clock to Output Times                                                                               ;
-+--------------------------+---------------------+--------+--------+------------+---------------------+
-; Data Port                ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
-+--------------------------+---------------------+--------+--------+------------+---------------------+
-; altera_reserved_tdo      ; altera_reserved_tck ; 5.163  ; 5.236  ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tdo      ; altera_reserved_tck ; 5.808  ; 5.792  ; Fall       ; altera_reserved_tck ;
-; seven_segment_output[*]  ; clk                 ; 17.072 ; 17.695 ; Rise       ; clk                 ;
-;  seven_segment_output[0] ; clk                 ; 16.355 ; 16.671 ; Rise       ; clk                 ;
-;  seven_segment_output[1] ; clk                 ; 16.861 ; 17.418 ; Rise       ; clk                 ;
-;  seven_segment_output[2] ; clk                 ; 16.691 ; 17.238 ; Rise       ; clk                 ;
-;  seven_segment_output[3] ; clk                 ; 16.101 ; 16.270 ; Rise       ; clk                 ;
-;  seven_segment_output[4] ; clk                 ; 16.220 ; 16.442 ; Rise       ; clk                 ;
-;  seven_segment_output[5] ; clk                 ; 17.072 ; 17.695 ; Rise       ; clk                 ;
-;  seven_segment_output[6] ; clk                 ; 16.634 ; 17.214 ; Rise       ; clk                 ;
-+--------------------------+---------------------+--------+--------+------------+---------------------+
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                                                       ;
-+--------------------------+---------------------+--------+--------+------------+---------------------+
-; Data Port                ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
-+--------------------------+---------------------+--------+--------+------------+---------------------+
-; altera_reserved_tdo      ; altera_reserved_tck ; 4.901  ; 4.963  ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tdo      ; altera_reserved_tck ; 4.694  ; 4.779  ; Fall       ; altera_reserved_tck ;
-; seven_segment_output[*]  ; clk                 ; 9.761  ; 9.954  ; Rise       ; clk                 ;
-;  seven_segment_output[0] ; clk                 ; 9.992  ; 10.299 ; Rise       ; clk                 ;
-;  seven_segment_output[1] ; clk                 ; 10.418 ; 10.900 ; Rise       ; clk                 ;
-;  seven_segment_output[2] ; clk                 ; 10.262 ; 10.740 ; Rise       ; clk                 ;
-;  seven_segment_output[3] ; clk                 ; 9.761  ; 9.954  ; Rise       ; clk                 ;
-;  seven_segment_output[4] ; clk                 ; 9.970  ; 10.169 ; Rise       ; clk                 ;
-;  seven_segment_output[5] ; clk                 ; 10.601 ; 11.113 ; Rise       ; clk                 ;
-;  seven_segment_output[6] ; clk                 ; 10.155 ; 10.588 ; Rise       ; clk                 ;
-+--------------------------+---------------------+--------+--------+------------+---------------------+
-
-
-+------------------------------------------------------------------------------+
-; Propagation Delay                                                            ;
-+----------------+-------------------------+--------+--------+--------+--------+
-; Input Port     ; Output Port             ; RR     ; RF     ; FR     ; FF     ;
-+----------------+-------------------------+--------+--------+--------+--------+
-; dipswitches[0] ; seven_segment_output[0] ; 14.450 ; 14.766 ; 14.256 ; 14.572 ;
-; dipswitches[0] ; seven_segment_output[1] ; 14.956 ; 15.513 ; 14.762 ; 15.319 ;
-; dipswitches[0] ; seven_segment_output[2] ; 14.786 ; 15.333 ; 14.592 ; 15.139 ;
-; dipswitches[0] ; seven_segment_output[3] ; 14.196 ; 14.365 ; 14.002 ; 14.171 ;
-; dipswitches[0] ; seven_segment_output[4] ; 14.315 ; 14.537 ; 14.121 ; 14.344 ;
-; dipswitches[0] ; seven_segment_output[5] ; 15.167 ; 15.790 ; 14.973 ; 15.596 ;
-; dipswitches[0] ; seven_segment_output[6] ; 14.729 ; 15.309 ; 14.535 ; 15.115 ;
-; dipswitches[1] ; seven_segment_output[0] ; 14.104 ; 14.420 ; 14.729 ; 15.045 ;
-; dipswitches[1] ; seven_segment_output[1] ; 14.610 ; 15.167 ; 15.235 ; 15.792 ;
-; dipswitches[1] ; seven_segment_output[2] ; 14.440 ; 14.987 ; 15.065 ; 15.612 ;
-; dipswitches[1] ; seven_segment_output[3] ; 13.850 ; 14.019 ; 14.475 ; 14.644 ;
-; dipswitches[1] ; seven_segment_output[4] ; 13.969 ; 14.191 ; 14.594 ; 14.816 ;
-; dipswitches[1] ; seven_segment_output[5] ; 14.821 ; 15.444 ; 15.446 ; 16.069 ;
-; dipswitches[1] ; seven_segment_output[6] ; 14.383 ; 14.963 ; 15.008 ; 15.588 ;
-; dipswitches[2] ; seven_segment_output[0] ; 14.792 ; 15.108 ; 15.237 ; 15.553 ;
-; dipswitches[2] ; seven_segment_output[1] ; 15.298 ; 15.855 ; 15.743 ; 16.300 ;
-; dipswitches[2] ; seven_segment_output[2] ; 15.128 ; 15.675 ; 15.573 ; 16.120 ;
-; dipswitches[2] ; seven_segment_output[3] ; 14.538 ; 14.707 ; 14.983 ; 15.152 ;
-; dipswitches[2] ; seven_segment_output[4] ; 14.657 ; 14.879 ; 15.102 ; 15.324 ;
-; dipswitches[2] ; seven_segment_output[5] ; 15.509 ; 16.132 ; 15.954 ; 16.577 ;
-; dipswitches[2] ; seven_segment_output[6] ; 15.071 ; 15.651 ; 15.516 ; 16.096 ;
-; dipswitches[3] ; seven_segment_output[0] ; 14.781 ; 15.097 ; 15.133 ; 15.449 ;
-; dipswitches[3] ; seven_segment_output[1] ; 15.287 ; 15.844 ; 15.639 ; 16.196 ;
-; dipswitches[3] ; seven_segment_output[2] ; 15.117 ; 15.664 ; 15.469 ; 16.016 ;
-; dipswitches[3] ; seven_segment_output[3] ; 14.527 ; 14.696 ; 14.879 ; 15.048 ;
-; dipswitches[3] ; seven_segment_output[4] ; 14.646 ; 14.868 ; 14.998 ; 15.220 ;
-; dipswitches[3] ; seven_segment_output[5] ; 15.498 ; 16.121 ; 15.850 ; 16.473 ;
-; dipswitches[3] ; seven_segment_output[6] ; 15.060 ; 15.640 ; 15.412 ; 15.992 ;
-; dipswitches[4] ; seven_segment_output[0] ; 14.761 ; 15.077 ; 15.072 ; 15.388 ;
-; dipswitches[4] ; seven_segment_output[1] ; 15.267 ; 15.824 ; 15.578 ; 16.135 ;
-; dipswitches[4] ; seven_segment_output[2] ; 15.097 ; 15.644 ; 15.408 ; 15.955 ;
-; dipswitches[4] ; seven_segment_output[3] ; 14.507 ; 14.676 ; 14.818 ; 14.987 ;
-; dipswitches[4] ; seven_segment_output[4] ; 14.626 ; 14.848 ; 14.937 ; 15.159 ;
-; dipswitches[4] ; seven_segment_output[5] ; 15.478 ; 16.101 ; 15.789 ; 16.412 ;
-; dipswitches[4] ; seven_segment_output[6] ; 15.040 ; 15.620 ; 15.351 ; 15.931 ;
-+----------------+-------------------------+--------+--------+--------+--------+
-
-
-+------------------------------------------------------------------------------+
-; Minimum Propagation Delay                                                    ;
-+----------------+-------------------------+--------+--------+--------+--------+
-; Input Port     ; Output Port             ; RR     ; RF     ; FR     ; FF     ;
-+----------------+-------------------------+--------+--------+--------+--------+
-; dipswitches[0] ; seven_segment_output[0] ; 9.431  ; 9.684  ; 9.618  ; 9.871  ;
-; dipswitches[0] ; seven_segment_output[1] ; 9.860  ; 10.285 ; 10.047 ; 10.472 ;
-; dipswitches[0] ; seven_segment_output[2] ; 9.708  ; 10.125 ; 9.895  ; 10.312 ;
-; dipswitches[0] ; seven_segment_output[3] ; 9.250  ; 9.339  ; 9.401  ; 9.526  ;
-; dipswitches[0] ; seven_segment_output[4] ; 9.175  ; 9.462  ; 9.311  ; 9.649  ;
-; dipswitches[0] ; seven_segment_output[5] ; 10.041 ; 10.498 ; 10.228 ; 10.685 ;
-; dipswitches[0] ; seven_segment_output[6] ; 9.596  ; 9.973  ; 9.783  ; 10.160 ;
-; dipswitches[1] ; seven_segment_output[0] ; 9.521  ; 9.798  ; 9.684  ; 10.018 ;
-; dipswitches[1] ; seven_segment_output[1] ; 9.950  ; 10.399 ; 10.110 ; 10.619 ;
-; dipswitches[1] ; seven_segment_output[2] ; 9.795  ; 10.236 ; 9.954  ; 10.456 ;
-; dipswitches[1] ; seven_segment_output[3] ; 9.292  ; 9.453  ; 9.453  ; 9.673  ;
-; dipswitches[1] ; seven_segment_output[4] ; 9.369  ; 9.575  ; 9.596  ; 9.795  ;
-; dipswitches[1] ; seven_segment_output[5] ; 10.131 ; 10.612 ; 10.293 ; 10.832 ;
-; dipswitches[1] ; seven_segment_output[6] ; 9.686  ; 10.087 ; 9.847  ; 10.307 ;
-; dipswitches[2] ; seven_segment_output[0] ; 9.571  ; 9.813  ; 9.751  ; 10.104 ;
-; dipswitches[2] ; seven_segment_output[1] ; 10.000 ; 10.414 ; 10.177 ; 10.721 ;
-; dipswitches[2] ; seven_segment_output[2] ; 9.841  ; 10.247 ; 10.021 ; 10.538 ;
-; dipswitches[2] ; seven_segment_output[3] ; 9.341  ; 9.467  ; 9.520  ; 9.774  ;
-; dipswitches[2] ; seven_segment_output[4] ; 9.545  ; 9.745  ; 9.652  ; 9.978  ;
-; dipswitches[2] ; seven_segment_output[5] ; 10.181 ; 10.626 ; 10.360 ; 10.917 ;
-; dipswitches[2] ; seven_segment_output[6] ; 9.736  ; 10.102 ; 9.914  ; 10.409 ;
-; dipswitches[3] ; seven_segment_output[0] ; 9.601  ; 9.878  ; 9.940  ; 10.244 ;
-; dipswitches[3] ; seven_segment_output[1] ; 10.030 ; 10.479 ; 10.370 ; 10.846 ;
-; dipswitches[3] ; seven_segment_output[2] ; 9.875  ; 10.316 ; 10.228 ; 10.679 ;
-; dipswitches[3] ; seven_segment_output[3] ; 9.372  ; 9.533  ; 9.743  ; 9.898  ;
-; dipswitches[3] ; seven_segment_output[4] ; 9.189  ; 9.652  ; 9.842  ; 9.744  ;
-; dipswitches[3] ; seven_segment_output[5] ; 10.211 ; 10.692 ; 10.550 ; 11.057 ;
-; dipswitches[3] ; seven_segment_output[6] ; 9.766  ; 10.167 ; 10.105 ; 10.533 ;
-; dipswitches[4] ; seven_segment_output[0] ; 9.551  ; 9.804  ; 9.985  ; 10.262 ;
-; dipswitches[4] ; seven_segment_output[1] ; 9.980  ; 10.405 ; 10.414 ; 10.863 ;
-; dipswitches[4] ; seven_segment_output[2] ; 9.828  ; 10.245 ; 10.259 ; 10.700 ;
-; dipswitches[4] ; seven_segment_output[3] ; 9.414  ; 9.459  ; 9.756  ; 9.917  ;
-; dipswitches[4] ; seven_segment_output[4] ; 9.383  ; 9.582  ; 9.812  ; 9.999  ;
-; dipswitches[4] ; seven_segment_output[5] ; 10.161 ; 10.618 ; 10.595 ; 11.076 ;
-; dipswitches[4] ; seven_segment_output[6] ; 9.716  ; 10.093 ; 10.150 ; 10.551 ;
-+----------------+-------------------------+--------+--------+--------+--------+
 
 
 ----------------------------------------------
 ; Slow 1100mV 0C Model Metastability Summary ;
 ----------------------------------------------
-No synchronizer chains to report.
+The design MTBF is not calculated because there are no specified synchronizers in the design.
+Number of Synchronizer Chains Found: 15
+Shortest Synchronizer Chain: 2 Registers
+Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+Worst Case Available Settling Time: 43.848 ns
+
+
 
 
 +----------------------------------------------+
@@ -585,8 +284,8 @@ No synchronizer chains to report.
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 13.075 ; 0.000         ;
-; clk                 ; 17.068 ; 0.000         ;
+; altera_reserved_tck ; 13.457 ; 0.000         ;
+; clk                 ; 16.490 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -595,8 +294,8 @@ No synchronizer chains to report.
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; clk                 ; 0.159 ; 0.000         ;
-; altera_reserved_tck ; 0.194 ; 0.000         ;
+; clk                 ; 0.154 ; 0.000         ;
+; altera_reserved_tck ; 0.196 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -605,7 +304,7 @@ No synchronizer chains to report.
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 16.010 ; 0.000         ;
+; altera_reserved_tck ; 15.602 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -614,7 +313,7 @@ No synchronizer chains to report.
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; altera_reserved_tck ; 0.405 ; 0.000         ;
+; altera_reserved_tck ; 0.458 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -623,159 +322,21 @@ No synchronizer chains to report.
 +---------------------+--------+--------------------+
 ; Clock               ; Slack  ; End Point TNS      ;
 +---------------------+--------+--------------------+
-; clk                 ; 8.815  ; 0.000              ;
-; altera_reserved_tck ; 15.187 ; 0.000              ;
+; clk                 ; 8.814  ; 0.000              ;
+; altera_reserved_tck ; 15.270 ; 0.000              ;
 +---------------------+--------+--------------------+
-
-
-+----------------------------------------------------------------------------------------------+
-; Setup Times                                                                                  ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-; altera_reserved_tdi ; altera_reserved_tck ; 1.836 ; 2.817 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 1.504 ; 1.871 ; Rise       ; altera_reserved_tck ;
-; reset               ; clk                 ; 0.255 ; 0.799 ; Rise       ; clk                 ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-
-
-+-----------------------------------------------------------------------------------------------+
-; Hold Times                                                                                    ;
-+---------------------+---------------------+-------+--------+------------+---------------------+
-; Data Port           ; Clock Port          ; Rise  ; Fall   ; Clock Edge ; Clock Reference     ;
-+---------------------+---------------------+-------+--------+------------+---------------------+
-; altera_reserved_tdi ; altera_reserved_tck ; 0.408 ; 0.025  ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 0.294 ; -0.078 ; Rise       ; altera_reserved_tck ;
-; reset               ; clk                 ; 0.533 ; 0.066  ; Rise       ; clk                 ;
-+---------------------+---------------------+-------+--------+------------+---------------------+
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Clock to Output Times                                                                               ;
-+--------------------------+---------------------+--------+--------+------------+---------------------+
-; Data Port                ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
-+--------------------------+---------------------+--------+--------+------------+---------------------+
-; altera_reserved_tdo      ; altera_reserved_tck ; 3.140  ; 3.197  ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tdo      ; altera_reserved_tck ; 3.835  ; 3.903  ; Fall       ; altera_reserved_tck ;
-; seven_segment_output[*]  ; clk                 ; 10.370 ; 11.008 ; Rise       ; clk                 ;
-;  seven_segment_output[0] ; clk                 ; 9.856  ; 10.245 ; Rise       ; clk                 ;
-;  seven_segment_output[1] ; clk                 ; 10.269 ; 10.877 ; Rise       ; clk                 ;
-;  seven_segment_output[2] ; clk                 ; 10.140 ; 10.730 ; Rise       ; clk                 ;
-;  seven_segment_output[3] ; clk                 ; 9.686  ; 9.936  ; Rise       ; clk                 ;
-;  seven_segment_output[4] ; clk                 ; 9.751  ; 10.035 ; Rise       ; clk                 ;
-;  seven_segment_output[5] ; clk                 ; 10.370 ; 11.008 ; Rise       ; clk                 ;
-;  seven_segment_output[6] ; clk                 ; 10.145 ; 10.766 ; Rise       ; clk                 ;
-+--------------------------+---------------------+--------+--------+------------+---------------------+
-
-
-+---------------------------------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                                                     ;
-+--------------------------+---------------------+-------+-------+------------+---------------------+
-; Data Port                ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
-+--------------------------+---------------------+-------+-------+------------+---------------------+
-; altera_reserved_tdo      ; altera_reserved_tck ; 3.031 ; 3.082 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tdo      ; altera_reserved_tck ; 3.241 ; 3.304 ; Fall       ; altera_reserved_tck ;
-; seven_segment_output[*]  ; clk                 ; 6.073 ; 6.315 ; Rise       ; clk                 ;
-;  seven_segment_output[0] ; clk                 ; 6.227 ; 6.565 ; Rise       ; clk                 ;
-;  seven_segment_output[1] ; clk                 ; 6.585 ; 7.105 ; Rise       ; clk                 ;
-;  seven_segment_output[2] ; clk                 ; 6.467 ; 6.946 ; Rise       ; clk                 ;
-;  seven_segment_output[3] ; clk                 ; 6.073 ; 6.315 ; Rise       ; clk                 ;
-;  seven_segment_output[4] ; clk                 ; 6.166 ; 6.410 ; Rise       ; clk                 ;
-;  seven_segment_output[5] ; clk                 ; 6.668 ; 7.178 ; Rise       ; clk                 ;
-;  seven_segment_output[6] ; clk                 ; 6.432 ; 6.891 ; Rise       ; clk                 ;
-+--------------------------+---------------------+-------+-------+------------+---------------------+
-
-
-+-----------------------------------------------------------------------------+
-; Propagation Delay                                                           ;
-+----------------+-------------------------+-------+--------+--------+--------+
-; Input Port     ; Output Port             ; RR    ; RF     ; FR     ; FF     ;
-+----------------+-------------------------+-------+--------+--------+--------+
-; dipswitches[0] ; seven_segment_output[0] ; 8.828 ; 9.217  ; 8.949  ; 9.338  ;
-; dipswitches[0] ; seven_segment_output[1] ; 9.241 ; 9.849  ; 9.362  ; 9.970  ;
-; dipswitches[0] ; seven_segment_output[2] ; 9.112 ; 9.702  ; 9.233  ; 9.823  ;
-; dipswitches[0] ; seven_segment_output[3] ; 8.658 ; 8.908  ; 8.779  ; 9.029  ;
-; dipswitches[0] ; seven_segment_output[4] ; 8.723 ; 9.007  ; 8.844  ; 9.128  ;
-; dipswitches[0] ; seven_segment_output[5] ; 9.342 ; 9.980  ; 9.463  ; 10.101 ;
-; dipswitches[0] ; seven_segment_output[6] ; 9.117 ; 9.738  ; 9.238  ; 9.859  ;
-; dipswitches[1] ; seven_segment_output[0] ; 8.614 ; 9.003  ; 9.340  ; 9.729  ;
-; dipswitches[1] ; seven_segment_output[1] ; 9.027 ; 9.635  ; 9.753  ; 10.361 ;
-; dipswitches[1] ; seven_segment_output[2] ; 8.898 ; 9.488  ; 9.624  ; 10.214 ;
-; dipswitches[1] ; seven_segment_output[3] ; 8.444 ; 8.694  ; 9.170  ; 9.420  ;
-; dipswitches[1] ; seven_segment_output[4] ; 8.509 ; 8.793  ; 9.235  ; 9.519  ;
-; dipswitches[1] ; seven_segment_output[5] ; 9.128 ; 9.766  ; 9.854  ; 10.492 ;
-; dipswitches[1] ; seven_segment_output[6] ; 8.903 ; 9.524  ; 9.629  ; 10.250 ;
-; dipswitches[2] ; seven_segment_output[0] ; 9.000 ; 9.389  ; 9.650  ; 10.039 ;
-; dipswitches[2] ; seven_segment_output[1] ; 9.413 ; 10.021 ; 10.063 ; 10.671 ;
-; dipswitches[2] ; seven_segment_output[2] ; 9.284 ; 9.874  ; 9.934  ; 10.524 ;
-; dipswitches[2] ; seven_segment_output[3] ; 8.830 ; 9.080  ; 9.480  ; 9.730  ;
-; dipswitches[2] ; seven_segment_output[4] ; 8.895 ; 9.179  ; 9.545  ; 9.829  ;
-; dipswitches[2] ; seven_segment_output[5] ; 9.514 ; 10.152 ; 10.164 ; 10.802 ;
-; dipswitches[2] ; seven_segment_output[6] ; 9.289 ; 9.910  ; 9.939  ; 10.560 ;
-; dipswitches[3] ; seven_segment_output[0] ; 9.011 ; 9.400  ; 9.642  ; 10.031 ;
-; dipswitches[3] ; seven_segment_output[1] ; 9.424 ; 10.032 ; 10.055 ; 10.663 ;
-; dipswitches[3] ; seven_segment_output[2] ; 9.295 ; 9.885  ; 9.926  ; 10.516 ;
-; dipswitches[3] ; seven_segment_output[3] ; 8.841 ; 9.091  ; 9.472  ; 9.722  ;
-; dipswitches[3] ; seven_segment_output[4] ; 8.906 ; 9.190  ; 9.537  ; 9.821  ;
-; dipswitches[3] ; seven_segment_output[5] ; 9.525 ; 10.163 ; 10.156 ; 10.794 ;
-; dipswitches[3] ; seven_segment_output[6] ; 9.300 ; 9.921  ; 9.931  ; 10.552 ;
-; dipswitches[4] ; seven_segment_output[0] ; 9.000 ; 9.389  ; 9.585  ; 9.974  ;
-; dipswitches[4] ; seven_segment_output[1] ; 9.413 ; 10.021 ; 9.998  ; 10.606 ;
-; dipswitches[4] ; seven_segment_output[2] ; 9.284 ; 9.874  ; 9.869  ; 10.459 ;
-; dipswitches[4] ; seven_segment_output[3] ; 8.830 ; 9.080  ; 9.415  ; 9.665  ;
-; dipswitches[4] ; seven_segment_output[4] ; 8.895 ; 9.179  ; 9.480  ; 9.764  ;
-; dipswitches[4] ; seven_segment_output[5] ; 9.514 ; 10.152 ; 10.099 ; 10.737 ;
-; dipswitches[4] ; seven_segment_output[6] ; 9.289 ; 9.910  ; 9.874  ; 10.495 ;
-+----------------+-------------------------+-------+--------+--------+--------+
-
-
-+--------------------------------------------------------------------------+
-; Minimum Propagation Delay                                                ;
-+----------------+-------------------------+-------+-------+-------+-------+
-; Input Port     ; Output Port             ; RR    ; RF    ; FR    ; FF    ;
-+----------------+-------------------------+-------+-------+-------+-------+
-; dipswitches[0] ; seven_segment_output[0] ; 5.964 ; 6.284 ; 6.406 ; 6.726 ;
-; dipswitches[0] ; seven_segment_output[1] ; 6.321 ; 6.802 ; 6.763 ; 7.244 ;
-; dipswitches[0] ; seven_segment_output[2] ; 6.209 ; 6.670 ; 6.651 ; 7.112 ;
-; dipswitches[0] ; seven_segment_output[3] ; 5.857 ; 6.012 ; 6.302 ; 6.454 ;
-; dipswitches[0] ; seven_segment_output[4] ; 5.831 ; 6.111 ; 6.240 ; 6.553 ;
-; dipswitches[0] ; seven_segment_output[5] ; 6.404 ; 6.896 ; 6.846 ; 7.338 ;
-; dipswitches[0] ; seven_segment_output[6] ; 6.167 ; 6.588 ; 6.609 ; 7.030 ;
-; dipswitches[1] ; seven_segment_output[0] ; 5.919 ; 6.252 ; 6.413 ; 6.746 ;
-; dipswitches[1] ; seven_segment_output[1] ; 6.275 ; 6.769 ; 6.769 ; 7.263 ;
-; dipswitches[1] ; seven_segment_output[2] ; 6.159 ; 6.633 ; 6.653 ; 7.127 ;
-; dipswitches[1] ; seven_segment_output[3] ; 5.763 ; 5.980 ; 6.257 ; 6.474 ;
-; dipswitches[1] ; seven_segment_output[4] ; 5.842 ; 6.098 ; 6.336 ; 6.592 ;
-; dipswitches[1] ; seven_segment_output[5] ; 6.359 ; 6.864 ; 6.853 ; 7.358 ;
-; dipswitches[1] ; seven_segment_output[6] ; 6.122 ; 6.556 ; 6.616 ; 7.050 ;
-; dipswitches[2] ; seven_segment_output[0] ; 6.086 ; 6.406 ; 6.613 ; 6.933 ;
-; dipswitches[2] ; seven_segment_output[1] ; 6.443 ; 6.924 ; 6.970 ; 7.451 ;
-; dipswitches[2] ; seven_segment_output[2] ; 6.331 ; 6.792 ; 6.858 ; 7.319 ;
-; dipswitches[2] ; seven_segment_output[3] ; 5.982 ; 6.134 ; 6.493 ; 6.661 ;
-; dipswitches[2] ; seven_segment_output[4] ; 5.989 ; 6.233 ; 6.446 ; 6.760 ;
-; dipswitches[2] ; seven_segment_output[5] ; 6.526 ; 7.018 ; 7.053 ; 7.545 ;
-; dipswitches[2] ; seven_segment_output[6] ; 6.289 ; 6.710 ; 6.816 ; 7.237 ;
-; dipswitches[3] ; seven_segment_output[0] ; 6.007 ; 6.340 ; 6.723 ; 7.053 ;
-; dipswitches[3] ; seven_segment_output[1] ; 6.363 ; 6.857 ; 7.079 ; 7.570 ;
-; dipswitches[3] ; seven_segment_output[2] ; 6.247 ; 6.721 ; 6.959 ; 7.430 ;
-; dipswitches[3] ; seven_segment_output[3] ; 5.851 ; 6.068 ; 6.567 ; 6.781 ;
-; dipswitches[3] ; seven_segment_output[4] ; 5.868 ; 6.186 ; 6.627 ; 6.756 ;
-; dipswitches[3] ; seven_segment_output[5] ; 6.447 ; 6.952 ; 7.163 ; 7.665 ;
-; dipswitches[3] ; seven_segment_output[6] ; 6.210 ; 6.644 ; 6.926 ; 7.357 ;
-; dipswitches[4] ; seven_segment_output[0] ; 6.047 ; 6.367 ; 6.663 ; 6.996 ;
-; dipswitches[4] ; seven_segment_output[1] ; 6.404 ; 6.885 ; 7.019 ; 7.513 ;
-; dipswitches[4] ; seven_segment_output[2] ; 6.292 ; 6.753 ; 6.903 ; 7.377 ;
-; dipswitches[4] ; seven_segment_output[3] ; 5.943 ; 6.095 ; 6.507 ; 6.724 ;
-; dipswitches[4] ; seven_segment_output[4] ; 5.950 ; 6.194 ; 6.586 ; 6.842 ;
-; dipswitches[4] ; seven_segment_output[5] ; 6.487 ; 6.979 ; 7.103 ; 7.608 ;
-; dipswitches[4] ; seven_segment_output[6] ; 6.250 ; 6.671 ; 6.866 ; 7.300 ;
-+----------------+-------------------------+-------+-------+-------+-------+
 
 
 -----------------------------------------------
 ; Fast 1100mV 85C Model Metastability Summary ;
 -----------------------------------------------
-No synchronizer chains to report.
+The design MTBF is not calculated because there are no specified synchronizers in the design.
+Number of Synchronizer Chains Found: 15
+Shortest Synchronizer Chain: 2 Registers
+Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+Worst Case Available Settling Time: 46.329 ns
+
+
 
 
 +----------------------------------------------+
@@ -783,8 +344,8 @@ No synchronizer chains to report.
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 13.473 ; 0.000         ;
-; clk                 ; 17.322 ; 0.000         ;
+; altera_reserved_tck ; 13.818 ; 0.000         ;
+; clk                 ; 16.820 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -793,8 +354,8 @@ No synchronizer chains to report.
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; clk                 ; 0.143 ; 0.000         ;
-; altera_reserved_tck ; 0.159 ; 0.000         ;
+; clk                 ; 0.140 ; 0.000         ;
+; altera_reserved_tck ; 0.168 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -803,7 +364,7 @@ No synchronizer chains to report.
 +---------------------+--------+---------------+
 ; Clock               ; Slack  ; End Point TNS ;
 +---------------------+--------+---------------+
-; altera_reserved_tck ; 16.097 ; 0.000         ;
+; altera_reserved_tck ; 15.738 ; 0.000         ;
 +---------------------+--------+---------------+
 
 
@@ -812,7 +373,7 @@ No synchronizer chains to report.
 +---------------------+-------+---------------+
 ; Clock               ; Slack ; End Point TNS ;
 +---------------------+-------+---------------+
-; altera_reserved_tck ; 0.357 ; 0.000         ;
+; altera_reserved_tck ; 0.397 ; 0.000         ;
 +---------------------+-------+---------------+
 
 
@@ -822,158 +383,20 @@ No synchronizer chains to report.
 ; Clock               ; Slack  ; End Point TNS     ;
 +---------------------+--------+-------------------+
 ; clk                 ; 8.807  ; 0.000             ;
-; altera_reserved_tck ; 15.208 ; 0.000             ;
+; altera_reserved_tck ; 15.271 ; 0.000             ;
 +---------------------+--------+-------------------+
-
-
-+----------------------------------------------------------------------------------------------+
-; Setup Times                                                                                  ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-; altera_reserved_tdi ; altera_reserved_tck ; 1.708 ; 2.605 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 1.409 ; 1.787 ; Rise       ; altera_reserved_tck ;
-; reset               ; clk                 ; 0.203 ; 0.728 ; Rise       ; clk                 ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-
-
-+-----------------------------------------------------------------------------------------------+
-; Hold Times                                                                                    ;
-+---------------------+---------------------+-------+--------+------------+---------------------+
-; Data Port           ; Clock Port          ; Rise  ; Fall   ; Clock Edge ; Clock Reference     ;
-+---------------------+---------------------+-------+--------+------------+---------------------+
-; altera_reserved_tdi ; altera_reserved_tck ; 0.415 ; 0.020  ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 0.298 ; -0.085 ; Rise       ; altera_reserved_tck ;
-; reset               ; clk                 ; 0.548 ; 0.084  ; Rise       ; clk                 ;
-+---------------------+---------------------+-------+--------+------------+---------------------+
-
-
-+----------------------------------------------------------------------------------------------------+
-; Clock to Output Times                                                                              ;
-+--------------------------+---------------------+-------+--------+------------+---------------------+
-; Data Port                ; Clock Port          ; Rise  ; Fall   ; Clock Edge ; Clock Reference     ;
-+--------------------------+---------------------+-------+--------+------------+---------------------+
-; altera_reserved_tdo      ; altera_reserved_tck ; 3.012 ; 3.039  ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tdo      ; altera_reserved_tck ; 3.679 ; 3.668  ; Fall       ; altera_reserved_tck ;
-; seven_segment_output[*]  ; clk                 ; 9.541 ; 10.072 ; Rise       ; clk                 ;
-;  seven_segment_output[0] ; clk                 ; 9.095 ; 9.428  ; Rise       ; clk                 ;
-;  seven_segment_output[1] ; clk                 ; 9.477 ; 9.967  ; Rise       ; clk                 ;
-;  seven_segment_output[2] ; clk                 ; 9.343 ; 9.825  ; Rise       ; clk                 ;
-;  seven_segment_output[3] ; clk                 ; 8.942 ; 9.166  ; Rise       ; clk                 ;
-;  seven_segment_output[4] ; clk                 ; 8.965 ; 9.232  ; Rise       ; clk                 ;
-;  seven_segment_output[5] ; clk                 ; 9.541 ; 10.072 ; Rise       ; clk                 ;
-;  seven_segment_output[6] ; clk                 ; 9.357 ; 9.852  ; Rise       ; clk                 ;
-+--------------------------+---------------------+-------+--------+------------+---------------------+
-
-
-+---------------------------------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                                                     ;
-+--------------------------+---------------------+-------+-------+------------+---------------------+
-; Data Port                ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
-+--------------------------+---------------------+-------+-------+------------+---------------------+
-; altera_reserved_tdo      ; altera_reserved_tck ; 2.902 ; 2.922 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tdo      ; altera_reserved_tck ; 3.120 ; 3.153 ; Fall       ; altera_reserved_tck ;
-; seven_segment_output[*]  ; clk                 ; 5.645 ; 5.858 ; Rise       ; clk                 ;
-;  seven_segment_output[0] ; clk                 ; 5.787 ; 6.086 ; Rise       ; clk                 ;
-;  seven_segment_output[1] ; clk                 ; 6.116 ; 6.528 ; Rise       ; clk                 ;
-;  seven_segment_output[2] ; clk                 ; 5.991 ; 6.394 ; Rise       ; clk                 ;
-;  seven_segment_output[3] ; clk                 ; 5.645 ; 5.858 ; Rise       ; clk                 ;
-;  seven_segment_output[4] ; clk                 ; 5.703 ; 5.933 ; Rise       ; clk                 ;
-;  seven_segment_output[5] ; clk                 ; 6.168 ; 6.597 ; Rise       ; clk                 ;
-;  seven_segment_output[6] ; clk                 ; 5.970 ; 6.338 ; Rise       ; clk                 ;
-+--------------------------+---------------------+-------+-------+------------+---------------------+
-
-
-+--------------------------------------------------------------------------+
-; Propagation Delay                                                        ;
-+----------------+-------------------------+-------+-------+-------+-------+
-; Input Port     ; Output Port             ; RR    ; RF    ; FR    ; FF    ;
-+----------------+-------------------------+-------+-------+-------+-------+
-; dipswitches[0] ; seven_segment_output[0] ; 8.115 ; 8.448 ; 8.276 ; 8.609 ;
-; dipswitches[0] ; seven_segment_output[1] ; 8.497 ; 8.987 ; 8.658 ; 9.148 ;
-; dipswitches[0] ; seven_segment_output[2] ; 8.363 ; 8.845 ; 8.524 ; 9.006 ;
-; dipswitches[0] ; seven_segment_output[3] ; 7.962 ; 8.186 ; 8.123 ; 8.347 ;
-; dipswitches[0] ; seven_segment_output[4] ; 7.985 ; 8.252 ; 8.146 ; 8.413 ;
-; dipswitches[0] ; seven_segment_output[5] ; 8.561 ; 9.092 ; 8.722 ; 9.253 ;
-; dipswitches[0] ; seven_segment_output[6] ; 8.377 ; 8.872 ; 8.538 ; 9.033 ;
-; dipswitches[1] ; seven_segment_output[0] ; 7.924 ; 8.257 ; 8.624 ; 8.957 ;
-; dipswitches[1] ; seven_segment_output[1] ; 8.306 ; 8.796 ; 9.006 ; 9.496 ;
-; dipswitches[1] ; seven_segment_output[2] ; 8.172 ; 8.654 ; 8.872 ; 9.354 ;
-; dipswitches[1] ; seven_segment_output[3] ; 7.771 ; 7.995 ; 8.471 ; 8.695 ;
-; dipswitches[1] ; seven_segment_output[4] ; 7.794 ; 8.061 ; 8.494 ; 8.761 ;
-; dipswitches[1] ; seven_segment_output[5] ; 8.370 ; 8.901 ; 9.070 ; 9.601 ;
-; dipswitches[1] ; seven_segment_output[6] ; 8.186 ; 8.681 ; 8.886 ; 9.381 ;
-; dipswitches[2] ; seven_segment_output[0] ; 8.303 ; 8.636 ; 8.920 ; 9.253 ;
-; dipswitches[2] ; seven_segment_output[1] ; 8.685 ; 9.175 ; 9.302 ; 9.792 ;
-; dipswitches[2] ; seven_segment_output[2] ; 8.551 ; 9.033 ; 9.168 ; 9.650 ;
-; dipswitches[2] ; seven_segment_output[3] ; 8.150 ; 8.374 ; 8.767 ; 8.991 ;
-; dipswitches[2] ; seven_segment_output[4] ; 8.173 ; 8.440 ; 8.790 ; 9.057 ;
-; dipswitches[2] ; seven_segment_output[5] ; 8.749 ; 9.280 ; 9.366 ; 9.897 ;
-; dipswitches[2] ; seven_segment_output[6] ; 8.565 ; 9.060 ; 9.182 ; 9.677 ;
-; dipswitches[3] ; seven_segment_output[0] ; 8.303 ; 8.636 ; 8.890 ; 9.223 ;
-; dipswitches[3] ; seven_segment_output[1] ; 8.685 ; 9.175 ; 9.272 ; 9.762 ;
-; dipswitches[3] ; seven_segment_output[2] ; 8.551 ; 9.033 ; 9.138 ; 9.620 ;
-; dipswitches[3] ; seven_segment_output[3] ; 8.150 ; 8.374 ; 8.737 ; 8.961 ;
-; dipswitches[3] ; seven_segment_output[4] ; 8.173 ; 8.440 ; 8.760 ; 9.027 ;
-; dipswitches[3] ; seven_segment_output[5] ; 8.749 ; 9.280 ; 9.336 ; 9.867 ;
-; dipswitches[3] ; seven_segment_output[6] ; 8.565 ; 9.060 ; 9.152 ; 9.647 ;
-; dipswitches[4] ; seven_segment_output[0] ; 8.276 ; 8.609 ; 8.822 ; 9.155 ;
-; dipswitches[4] ; seven_segment_output[1] ; 8.658 ; 9.148 ; 9.204 ; 9.694 ;
-; dipswitches[4] ; seven_segment_output[2] ; 8.524 ; 9.006 ; 9.070 ; 9.552 ;
-; dipswitches[4] ; seven_segment_output[3] ; 8.123 ; 8.347 ; 8.669 ; 8.893 ;
-; dipswitches[4] ; seven_segment_output[4] ; 8.146 ; 8.413 ; 8.692 ; 8.959 ;
-; dipswitches[4] ; seven_segment_output[5] ; 8.722 ; 9.253 ; 9.268 ; 9.799 ;
-; dipswitches[4] ; seven_segment_output[6] ; 8.538 ; 9.033 ; 9.084 ; 9.579 ;
-+----------------+-------------------------+-------+-------+-------+-------+
-
-
-+--------------------------------------------------------------------------+
-; Minimum Propagation Delay                                                ;
-+----------------+-------------------------+-------+-------+-------+-------+
-; Input Port     ; Output Port             ; RR    ; RF    ; FR    ; FF    ;
-+----------------+-------------------------+-------+-------+-------+-------+
-; dipswitches[0] ; seven_segment_output[0] ; 5.484 ; 5.759 ; 5.937 ; 6.212 ;
-; dipswitches[0] ; seven_segment_output[1] ; 5.814 ; 6.198 ; 6.267 ; 6.651 ;
-; dipswitches[0] ; seven_segment_output[2] ; 5.694 ; 6.073 ; 6.147 ; 6.526 ;
-; dipswitches[0] ; seven_segment_output[3] ; 5.391 ; 5.528 ; 5.844 ; 5.981 ;
-; dipswitches[0] ; seven_segment_output[4] ; 5.341 ; 5.589 ; 5.763 ; 6.042 ;
-; dipswitches[0] ; seven_segment_output[5] ; 5.866 ; 6.271 ; 6.319 ; 6.724 ;
-; dipswitches[0] ; seven_segment_output[6] ; 5.668 ; 6.008 ; 6.121 ; 6.461 ;
-; dipswitches[1] ; seven_segment_output[0] ; 5.486 ; 5.773 ; 5.972 ; 6.259 ;
-; dipswitches[1] ; seven_segment_output[1] ; 5.816 ; 6.212 ; 6.302 ; 6.698 ;
-; dipswitches[1] ; seven_segment_output[2] ; 5.693 ; 6.084 ; 6.179 ; 6.570 ;
-; dipswitches[1] ; seven_segment_output[3] ; 5.344 ; 5.542 ; 5.830 ; 6.028 ;
-; dipswitches[1] ; seven_segment_output[4] ; 5.380 ; 5.620 ; 5.866 ; 6.106 ;
-; dipswitches[1] ; seven_segment_output[5] ; 5.867 ; 6.284 ; 6.353 ; 6.770 ;
-; dipswitches[1] ; seven_segment_output[6] ; 5.670 ; 6.022 ; 6.156 ; 6.508 ;
-; dipswitches[2] ; seven_segment_output[0] ; 5.645 ; 5.920 ; 6.161 ; 6.436 ;
-; dipswitches[2] ; seven_segment_output[1] ; 5.975 ; 6.359 ; 6.491 ; 6.875 ;
-; dipswitches[2] ; seven_segment_output[2] ; 5.855 ; 6.232 ; 6.370 ; 6.750 ;
-; dipswitches[2] ; seven_segment_output[3] ; 5.526 ; 5.689 ; 6.024 ; 6.205 ;
-; dipswitches[2] ; seven_segment_output[4] ; 5.520 ; 5.750 ; 5.979 ; 6.266 ;
-; dipswitches[2] ; seven_segment_output[5] ; 6.027 ; 6.432 ; 6.543 ; 6.948 ;
-; dipswitches[2] ; seven_segment_output[6] ; 5.829 ; 6.169 ; 6.345 ; 6.685 ;
-; dipswitches[3] ; seven_segment_output[0] ; 5.580 ; 5.867 ; 6.234 ; 6.518 ;
-; dipswitches[3] ; seven_segment_output[1] ; 5.910 ; 6.306 ; 6.564 ; 6.957 ;
-; dipswitches[3] ; seven_segment_output[2] ; 5.787 ; 6.178 ; 6.439 ; 6.827 ;
-; dipswitches[3] ; seven_segment_output[3] ; 5.438 ; 5.636 ; 6.092 ; 6.287 ;
-; dipswitches[3] ; seven_segment_output[4] ; 5.394 ; 5.714 ; 6.125 ; 6.225 ;
-; dipswitches[3] ; seven_segment_output[5] ; 5.961 ; 6.378 ; 6.616 ; 7.030 ;
-; dipswitches[3] ; seven_segment_output[6] ; 5.764 ; 6.116 ; 6.418 ; 6.767 ;
-; dipswitches[4] ; seven_segment_output[0] ; 5.586 ; 5.861 ; 6.189 ; 6.476 ;
-; dipswitches[4] ; seven_segment_output[1] ; 5.916 ; 6.300 ; 6.519 ; 6.915 ;
-; dipswitches[4] ; seven_segment_output[2] ; 5.796 ; 6.175 ; 6.396 ; 6.787 ;
-; dipswitches[4] ; seven_segment_output[3] ; 5.493 ; 5.630 ; 6.047 ; 6.245 ;
-; dipswitches[4] ; seven_segment_output[4] ; 5.461 ; 5.691 ; 6.083 ; 6.323 ;
-; dipswitches[4] ; seven_segment_output[5] ; 5.968 ; 6.373 ; 6.570 ; 6.987 ;
-; dipswitches[4] ; seven_segment_output[6] ; 5.770 ; 6.110 ; 6.373 ; 6.725 ;
-+----------------+-------------------------+-------+-------+-------+-------+
 
 
 ----------------------------------------------
 ; Fast 1100mV 0C Model Metastability Summary ;
 ----------------------------------------------
-No synchronizer chains to report.
+The design MTBF is not calculated because there are no specified synchronizers in the design.
+Number of Synchronizer Chains Found: 15
+Shortest Synchronizer Chain: 2 Registers
+Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+Worst Case Available Settling Time: 46.655 ns
+
+
 
 
 +----------------------------------------------------------------------------------+
@@ -981,157 +404,13 @@ No synchronizer chains to report.
 +----------------------+--------+-------+----------+---------+---------------------+
 ; Clock                ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +----------------------+--------+-------+----------+---------+---------------------+
-; Worst-case Slack     ; 10.347 ; 0.143 ; 15.162   ; 0.357   ; 8.807               ;
-;  altera_reserved_tck ; 10.347 ; 0.159 ; 15.162   ; 0.357   ; 15.187              ;
-;  clk                 ; 15.059 ; 0.143 ; N/A      ; N/A     ; 8.807               ;
+; Worst-case Slack     ; 11.075 ; 0.140 ; 14.552   ; 0.397   ; 8.807               ;
+;  altera_reserved_tck ; 11.075 ; 0.168 ; 14.552   ; 0.397   ; 15.270              ;
+;  clk                 ; 14.142 ; 0.140 ; N/A      ; N/A     ; 8.807               ;
 ; Design-wide TNS      ; 0.0    ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
 ;  altera_reserved_tck ; 0.000  ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
 ;  clk                 ; 0.000  ; 0.000 ; N/A      ; N/A     ; 0.000               ;
 +----------------------+--------+-------+----------+---------+---------------------+
-
-
-+----------------------------------------------------------------------------------------------+
-; Setup Times                                                                                  ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-; altera_reserved_tdi ; altera_reserved_tck ; 3.104 ; 3.838 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 2.602 ; 2.636 ; Rise       ; altera_reserved_tck ;
-; reset               ; clk                 ; 0.396 ; 0.799 ; Rise       ; clk                 ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-
-
-+----------------------------------------------------------------------------------------------+
-; Hold Times                                                                                   ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-; altera_reserved_tdi ; altera_reserved_tck ; 0.791 ; 0.668 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tms ; altera_reserved_tck ; 0.551 ; 0.450 ; Rise       ; altera_reserved_tck ;
-; reset               ; clk                 ; 1.154 ; 0.968 ; Rise       ; clk                 ;
-+---------------------+---------------------+-------+-------+------------+---------------------+
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Clock to Output Times                                                                               ;
-+--------------------------+---------------------+--------+--------+------------+---------------------+
-; Data Port                ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
-+--------------------------+---------------------+--------+--------+------------+---------------------+
-; altera_reserved_tdo      ; altera_reserved_tck ; 5.232  ; 5.282  ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tdo      ; altera_reserved_tck ; 5.953  ; 6.046  ; Fall       ; altera_reserved_tck ;
-; seven_segment_output[*]  ; clk                 ; 17.463 ; 18.012 ; Rise       ; clk                 ;
-;  seven_segment_output[0] ; clk                 ; 16.694 ; 16.920 ; Rise       ; clk                 ;
-;  seven_segment_output[1] ; clk                 ; 17.198 ; 17.715 ; Rise       ; clk                 ;
-;  seven_segment_output[2] ; clk                 ; 17.054 ; 17.530 ; Rise       ; clk                 ;
-;  seven_segment_output[3] ; clk                 ; 16.442 ; 16.502 ; Rise       ; clk                 ;
-;  seven_segment_output[4] ; clk                 ; 16.595 ; 16.700 ; Rise       ; clk                 ;
-;  seven_segment_output[5] ; clk                 ; 17.463 ; 18.012 ; Rise       ; clk                 ;
-;  seven_segment_output[6] ; clk                 ; 16.984 ; 17.509 ; Rise       ; clk                 ;
-+--------------------------+---------------------+--------+--------+------------+---------------------+
-
-
-+---------------------------------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                                                     ;
-+--------------------------+---------------------+-------+-------+------------+---------------------+
-; Data Port                ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
-+--------------------------+---------------------+-------+-------+------------+---------------------+
-; altera_reserved_tdo      ; altera_reserved_tck ; 2.902 ; 2.922 ; Rise       ; altera_reserved_tck ;
-; altera_reserved_tdo      ; altera_reserved_tck ; 3.120 ; 3.153 ; Fall       ; altera_reserved_tck ;
-; seven_segment_output[*]  ; clk                 ; 5.645 ; 5.858 ; Rise       ; clk                 ;
-;  seven_segment_output[0] ; clk                 ; 5.787 ; 6.086 ; Rise       ; clk                 ;
-;  seven_segment_output[1] ; clk                 ; 6.116 ; 6.528 ; Rise       ; clk                 ;
-;  seven_segment_output[2] ; clk                 ; 5.991 ; 6.394 ; Rise       ; clk                 ;
-;  seven_segment_output[3] ; clk                 ; 5.645 ; 5.858 ; Rise       ; clk                 ;
-;  seven_segment_output[4] ; clk                 ; 5.703 ; 5.933 ; Rise       ; clk                 ;
-;  seven_segment_output[5] ; clk                 ; 6.168 ; 6.597 ; Rise       ; clk                 ;
-;  seven_segment_output[6] ; clk                 ; 5.970 ; 6.338 ; Rise       ; clk                 ;
-+--------------------------+---------------------+-------+-------+------------+---------------------+
-
-
-+------------------------------------------------------------------------------+
-; Propagation Delay                                                            ;
-+----------------+-------------------------+--------+--------+--------+--------+
-; Input Port     ; Output Port             ; RR     ; RF     ; FR     ; FF     ;
-+----------------+-------------------------+--------+--------+--------+--------+
-; dipswitches[0] ; seven_segment_output[0] ; 14.887 ; 15.113 ; 14.634 ; 14.860 ;
-; dipswitches[0] ; seven_segment_output[1] ; 15.391 ; 15.908 ; 15.138 ; 15.655 ;
-; dipswitches[0] ; seven_segment_output[2] ; 15.247 ; 15.723 ; 14.994 ; 15.470 ;
-; dipswitches[0] ; seven_segment_output[3] ; 14.635 ; 14.695 ; 14.382 ; 14.442 ;
-; dipswitches[0] ; seven_segment_output[4] ; 14.788 ; 14.893 ; 14.535 ; 14.640 ;
-; dipswitches[0] ; seven_segment_output[5] ; 15.656 ; 16.205 ; 15.403 ; 15.952 ;
-; dipswitches[0] ; seven_segment_output[6] ; 15.177 ; 15.702 ; 14.924 ; 15.449 ;
-; dipswitches[1] ; seven_segment_output[0] ; 14.537 ; 14.763 ; 15.182 ; 15.408 ;
-; dipswitches[1] ; seven_segment_output[1] ; 15.041 ; 15.558 ; 15.686 ; 16.203 ;
-; dipswitches[1] ; seven_segment_output[2] ; 14.897 ; 15.373 ; 15.542 ; 16.018 ;
-; dipswitches[1] ; seven_segment_output[3] ; 14.285 ; 14.345 ; 14.930 ; 14.990 ;
-; dipswitches[1] ; seven_segment_output[4] ; 14.438 ; 14.543 ; 15.083 ; 15.188 ;
-; dipswitches[1] ; seven_segment_output[5] ; 15.306 ; 15.855 ; 15.951 ; 16.500 ;
-; dipswitches[1] ; seven_segment_output[6] ; 14.827 ; 15.352 ; 15.472 ; 15.997 ;
-; dipswitches[2] ; seven_segment_output[0] ; 15.233 ; 15.459 ; 15.673 ; 15.899 ;
-; dipswitches[2] ; seven_segment_output[1] ; 15.737 ; 16.254 ; 16.177 ; 16.694 ;
-; dipswitches[2] ; seven_segment_output[2] ; 15.593 ; 16.069 ; 16.033 ; 16.509 ;
-; dipswitches[2] ; seven_segment_output[3] ; 14.981 ; 15.041 ; 15.421 ; 15.481 ;
-; dipswitches[2] ; seven_segment_output[4] ; 15.134 ; 15.239 ; 15.574 ; 15.679 ;
-; dipswitches[2] ; seven_segment_output[5] ; 16.002 ; 16.551 ; 16.442 ; 16.991 ;
-; dipswitches[2] ; seven_segment_output[6] ; 15.523 ; 16.048 ; 15.963 ; 16.488 ;
-; dipswitches[3] ; seven_segment_output[0] ; 15.222 ; 15.448 ; 15.594 ; 15.820 ;
-; dipswitches[3] ; seven_segment_output[1] ; 15.726 ; 16.243 ; 16.098 ; 16.615 ;
-; dipswitches[3] ; seven_segment_output[2] ; 15.582 ; 16.058 ; 15.954 ; 16.430 ;
-; dipswitches[3] ; seven_segment_output[3] ; 14.970 ; 15.030 ; 15.342 ; 15.402 ;
-; dipswitches[3] ; seven_segment_output[4] ; 15.123 ; 15.228 ; 15.495 ; 15.600 ;
-; dipswitches[3] ; seven_segment_output[5] ; 15.991 ; 16.540 ; 16.363 ; 16.912 ;
-; dipswitches[3] ; seven_segment_output[6] ; 15.512 ; 16.037 ; 15.884 ; 16.409 ;
-; dipswitches[4] ; seven_segment_output[0] ; 15.154 ; 15.380 ; 15.486 ; 15.712 ;
-; dipswitches[4] ; seven_segment_output[1] ; 15.658 ; 16.175 ; 15.990 ; 16.507 ;
-; dipswitches[4] ; seven_segment_output[2] ; 15.514 ; 15.990 ; 15.846 ; 16.322 ;
-; dipswitches[4] ; seven_segment_output[3] ; 14.902 ; 14.962 ; 15.234 ; 15.294 ;
-; dipswitches[4] ; seven_segment_output[4] ; 15.055 ; 15.160 ; 15.387 ; 15.492 ;
-; dipswitches[4] ; seven_segment_output[5] ; 15.923 ; 16.472 ; 16.255 ; 16.804 ;
-; dipswitches[4] ; seven_segment_output[6] ; 15.444 ; 15.969 ; 15.776 ; 16.301 ;
-+----------------+-------------------------+--------+--------+--------+--------+
-
-
-+--------------------------------------------------------------------------+
-; Minimum Propagation Delay                                                ;
-+----------------+-------------------------+-------+-------+-------+-------+
-; Input Port     ; Output Port             ; RR    ; RF    ; FR    ; FF    ;
-+----------------+-------------------------+-------+-------+-------+-------+
-; dipswitches[0] ; seven_segment_output[0] ; 5.484 ; 5.759 ; 5.937 ; 6.212 ;
-; dipswitches[0] ; seven_segment_output[1] ; 5.814 ; 6.198 ; 6.267 ; 6.651 ;
-; dipswitches[0] ; seven_segment_output[2] ; 5.694 ; 6.073 ; 6.147 ; 6.526 ;
-; dipswitches[0] ; seven_segment_output[3] ; 5.391 ; 5.528 ; 5.844 ; 5.981 ;
-; dipswitches[0] ; seven_segment_output[4] ; 5.341 ; 5.589 ; 5.763 ; 6.042 ;
-; dipswitches[0] ; seven_segment_output[5] ; 5.866 ; 6.271 ; 6.319 ; 6.724 ;
-; dipswitches[0] ; seven_segment_output[6] ; 5.668 ; 6.008 ; 6.121 ; 6.461 ;
-; dipswitches[1] ; seven_segment_output[0] ; 5.486 ; 5.773 ; 5.972 ; 6.259 ;
-; dipswitches[1] ; seven_segment_output[1] ; 5.816 ; 6.212 ; 6.302 ; 6.698 ;
-; dipswitches[1] ; seven_segment_output[2] ; 5.693 ; 6.084 ; 6.179 ; 6.570 ;
-; dipswitches[1] ; seven_segment_output[3] ; 5.344 ; 5.542 ; 5.830 ; 6.028 ;
-; dipswitches[1] ; seven_segment_output[4] ; 5.380 ; 5.620 ; 5.866 ; 6.106 ;
-; dipswitches[1] ; seven_segment_output[5] ; 5.867 ; 6.284 ; 6.353 ; 6.770 ;
-; dipswitches[1] ; seven_segment_output[6] ; 5.670 ; 6.022 ; 6.156 ; 6.508 ;
-; dipswitches[2] ; seven_segment_output[0] ; 5.645 ; 5.920 ; 6.161 ; 6.436 ;
-; dipswitches[2] ; seven_segment_output[1] ; 5.975 ; 6.359 ; 6.491 ; 6.875 ;
-; dipswitches[2] ; seven_segment_output[2] ; 5.855 ; 6.232 ; 6.370 ; 6.750 ;
-; dipswitches[2] ; seven_segment_output[3] ; 5.526 ; 5.689 ; 6.024 ; 6.205 ;
-; dipswitches[2] ; seven_segment_output[4] ; 5.520 ; 5.750 ; 5.979 ; 6.266 ;
-; dipswitches[2] ; seven_segment_output[5] ; 6.027 ; 6.432 ; 6.543 ; 6.948 ;
-; dipswitches[2] ; seven_segment_output[6] ; 5.829 ; 6.169 ; 6.345 ; 6.685 ;
-; dipswitches[3] ; seven_segment_output[0] ; 5.580 ; 5.867 ; 6.234 ; 6.518 ;
-; dipswitches[3] ; seven_segment_output[1] ; 5.910 ; 6.306 ; 6.564 ; 6.957 ;
-; dipswitches[3] ; seven_segment_output[2] ; 5.787 ; 6.178 ; 6.439 ; 6.827 ;
-; dipswitches[3] ; seven_segment_output[3] ; 5.438 ; 5.636 ; 6.092 ; 6.287 ;
-; dipswitches[3] ; seven_segment_output[4] ; 5.394 ; 5.714 ; 6.125 ; 6.225 ;
-; dipswitches[3] ; seven_segment_output[5] ; 5.961 ; 6.378 ; 6.616 ; 7.030 ;
-; dipswitches[3] ; seven_segment_output[6] ; 5.764 ; 6.116 ; 6.418 ; 6.767 ;
-; dipswitches[4] ; seven_segment_output[0] ; 5.586 ; 5.861 ; 6.189 ; 6.476 ;
-; dipswitches[4] ; seven_segment_output[1] ; 5.916 ; 6.300 ; 6.519 ; 6.915 ;
-; dipswitches[4] ; seven_segment_output[2] ; 5.796 ; 6.175 ; 6.396 ; 6.787 ;
-; dipswitches[4] ; seven_segment_output[3] ; 5.493 ; 5.630 ; 6.047 ; 6.245 ;
-; dipswitches[4] ; seven_segment_output[4] ; 5.461 ; 5.691 ; 6.083 ; 6.323 ;
-; dipswitches[4] ; seven_segment_output[5] ; 5.968 ; 6.373 ; 6.570 ; 6.987 ;
-; dipswitches[4] ; seven_segment_output[6] ; 5.770 ; 6.110 ; 6.373 ; 6.725 ;
-+----------------+-------------------------+-------+-------+-------+-------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1155,13 +434,13 @@ No synchronizer chains to report.
 +---------------------+--------------+-----------------+-----------------+
 ; Pin                 ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
 +---------------------+--------------+-----------------+-----------------+
-; dipswitches[0]      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; dipswitches[1]      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; dipswitches[2]      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; dipswitches[3]      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; dipswitches[4]      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; reset               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; dipswitches[2]      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; dipswitches[0]      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; dipswitches[1]      ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; clk                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; reset               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; altera_reserved_tms ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; altera_reserved_tck ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; altera_reserved_tdi ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -1237,10 +516,10 @@ No synchronizer chains to report.
 +---------------------+---------------------+------------+----------+----------+----------+
 ; From Clock          ; To Clock            ; RR Paths   ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------+---------------------+------------+----------+----------+----------+
-; altera_reserved_tck ; altera_reserved_tck ; 4911       ; 0        ; 45       ; 0        ;
+; altera_reserved_tck ; altera_reserved_tck ; 4591       ; 0        ; 45       ; 0        ;
 ; clk                 ; altera_reserved_tck ; false path ; 0        ; 0        ; 0        ;
 ; altera_reserved_tck ; clk                 ; false path ; 0        ; 0        ; 0        ;
-; clk                 ; clk                 ; 3355       ; 0        ; 0        ; 0        ;
+; clk                 ; clk                 ; 3409       ; 0        ; 0        ; 0        ;
 +---------------------+---------------------+------------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1250,10 +529,10 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +---------------------+---------------------+------------+----------+----------+----------+
 ; From Clock          ; To Clock            ; RR Paths   ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------+---------------------+------------+----------+----------+----------+
-; altera_reserved_tck ; altera_reserved_tck ; 4911       ; 0        ; 45       ; 0        ;
+; altera_reserved_tck ; altera_reserved_tck ; 4591       ; 0        ; 45       ; 0        ;
 ; clk                 ; altera_reserved_tck ; false path ; 0        ; 0        ; 0        ;
 ; altera_reserved_tck ; clk                 ; false path ; 0        ; 0        ; 0        ;
-; clk                 ; clk                 ; 3355       ; 0        ; 0        ; 0        ;
+; clk                 ; clk                 ; 3409       ; 0        ; 0        ; 0        ;
 +---------------------+---------------------+------------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1263,7 +542,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +---------------------+---------------------+------------+----------+----------+----------+
 ; From Clock          ; To Clock            ; RR Paths   ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------+---------------------+------------+----------+----------+----------+
-; altera_reserved_tck ; altera_reserved_tck ; 132        ; 0        ; 1        ; 0        ;
+; altera_reserved_tck ; altera_reserved_tck ; 120        ; 0        ; 1        ; 0        ;
 ; altera_reserved_tck ; clk                 ; false path ; 0        ; 0        ; 0        ;
 +---------------------+---------------------+------------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
@@ -1274,7 +553,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +---------------------+---------------------+------------+----------+----------+----------+
 ; From Clock          ; To Clock            ; RR Paths   ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------+---------------------+------------+----------+----------+----------+
-; altera_reserved_tck ; altera_reserved_tck ; 132        ; 0        ; 1        ; 0        ;
+; altera_reserved_tck ; altera_reserved_tck ; 120        ; 0        ; 1        ; 0        ;
 ; altera_reserved_tck ; clk                 ; false path ; 0        ; 0        ; 0        ;
 +---------------------+---------------------+------------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
@@ -1293,29 +572,103 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 
 
 +------------------------------------------------+
-; Unconstrained Paths                            ;
+; Unconstrained Paths Summary                    ;
 +---------------------------------+-------+------+
 ; Property                        ; Setup ; Hold ;
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 8     ; 8    ;
-; Unconstrained Input Port Paths  ; 97    ; 97   ;
+; Unconstrained Input Port Paths  ; 93    ; 93   ;
 ; Unconstrained Output Ports      ; 8     ; 8    ;
 ; Unconstrained Output Port Paths ; 75    ; 75   ;
 +---------------------------------+-------+------+
+
+
++----------------------------------------------------------------+
+; Clock Status Summary                                           ;
++---------------------+---------------------+------+-------------+
+; Target              ; Clock               ; Type ; Status      ;
++---------------------+---------------------+------+-------------+
+; altera_reserved_tck ; altera_reserved_tck ; Base ; Constrained ;
+; clk                 ; clk                 ; Base ; Constrained ;
++---------------------+---------------------+------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                                  ;
++---------------------+--------------------------------------------------------------------------------------+
+; Input Port          ; Comment                                                                              ;
++---------------------+--------------------------------------------------------------------------------------+
+; altera_reserved_tdi ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; altera_reserved_tms ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dipswitches[0]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dipswitches[1]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dipswitches[2]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dipswitches[3]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dipswitches[4]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reset               ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++---------------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                                      ;
++-------------------------+---------------------------------------------------------------------------------------+
+; Output Port             ; Comment                                                                               ;
++-------------------------+---------------------------------------------------------------------------------------+
+; altera_reserved_tdo     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seven_segment_output[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seven_segment_output[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seven_segment_output[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seven_segment_output[3] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seven_segment_output[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seven_segment_output[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seven_segment_output[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------------------+---------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                                  ;
++---------------------+--------------------------------------------------------------------------------------+
+; Input Port          ; Comment                                                                              ;
++---------------------+--------------------------------------------------------------------------------------+
+; altera_reserved_tdi ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; altera_reserved_tms ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dipswitches[0]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dipswitches[1]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dipswitches[2]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dipswitches[3]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dipswitches[4]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; reset               ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++---------------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                                      ;
++-------------------------+---------------------------------------------------------------------------------------+
+; Output Port             ; Comment                                                                               ;
++-------------------------+---------------------------------------------------------------------------------------+
+; altera_reserved_tdo     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seven_segment_output[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seven_segment_output[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seven_segment_output[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seven_segment_output[3] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seven_segment_output[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seven_segment_output[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; seven_segment_output[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------------------+---------------------------------------------------------------------------------------+
 
 
 +------------------------------------+
 ; TimeQuest Timing Analyzer Messages ;
 +------------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
-    Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Tue Mar 15 17:35:18 2016
+Info: Running Quartus Prime TimeQuest Timing Analyzer
+    Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+    Info: Processing started: Mon Mar 21 17:03:57 2016
 Info: Command: quartus_sta g14_lab3_test_bed -c g14_lab3_test_bed
-Info: qsta_default_script.tcl version: #11
-Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
+Info: qsta_default_script.tcl version: #1
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Info (332164): Evaluating HDL-embedded SDC commands
@@ -1328,114 +681,142 @@ Info (332143): No user constrained clock uncertainty found in the design. Callin
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
-Info (332146): Worst-case setup slack is 10.347
+Info (332146): Worst-case setup slack is 11.075
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    10.347               0.000 altera_reserved_tck 
-    Info (332119):    15.059               0.000 clk 
-Info (332146): Worst-case hold slack is 0.270
+    Info (332119):    11.075               0.000 altera_reserved_tck 
+    Info (332119):    14.142               0.000 clk 
+Info (332146): Worst-case hold slack is 0.258
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.270               0.000 clk 
-    Info (332119):     0.414               0.000 altera_reserved_tck 
-Info (332146): Worst-case recovery slack is 15.162
+    Info (332119):     0.258               0.000 clk 
+    Info (332119):     0.444               0.000 altera_reserved_tck 
+Info (332146): Worst-case recovery slack is 14.552
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    15.162               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.841
+    Info (332119):    14.552               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.940
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.841               0.000 altera_reserved_tck 
+    Info (332119):     0.940               0.000 altera_reserved_tck 
 Info (332146): Worst-case minimum pulse width slack is 8.872
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     8.872               0.000 clk 
-    Info (332119):    15.447               0.000 altera_reserved_tck 
+    Info (332119):    15.542               0.000 altera_reserved_tck 
+Info (332114): Report Metastability: Found 15 synchronizer chains.
+    Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
+    Info (332114): Number of Synchronizer Chains Found: 15
+    Info (332114): Shortest Synchronizer Chain: 2 Registers
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+    Info (332114): Worst Case Available Settling Time: 43.725 ns
+    Info (332114): 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
-Info (332146): Worst-case setup slack is 10.550
+Info (332146): Worst-case setup slack is 11.253
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    10.550               0.000 altera_reserved_tck 
-    Info (332119):    15.124               0.000 clk 
-Info (332146): Worst-case hold slack is 0.251
+    Info (332119):    11.253               0.000 altera_reserved_tck 
+    Info (332119):    14.244               0.000 clk 
+Info (332146): Worst-case hold slack is 0.243
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.251               0.000 clk 
-    Info (332119):     0.374               0.000 altera_reserved_tck 
-Info (332146): Worst-case recovery slack is 15.219
+    Info (332119):     0.243               0.000 clk 
+    Info (332119):     0.436               0.000 altera_reserved_tck 
+Info (332146): Worst-case recovery slack is 14.643
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    15.219               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.790
+    Info (332119):    14.643               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.867
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.790               0.000 altera_reserved_tck 
+    Info (332119):     0.867               0.000 altera_reserved_tck 
 Info (332146): Worst-case minimum pulse width slack is 8.826
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     8.826               0.000 clk 
-    Info (332119):    15.473               0.000 altera_reserved_tck 
+    Info (332119):    15.554               0.000 altera_reserved_tck 
+Info (332114): Report Metastability: Found 15 synchronizer chains.
+    Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
+    Info (332114): Number of Synchronizer Chains Found: 15
+    Info (332114): Shortest Synchronizer Chain: 2 Registers
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+    Info (332114): Worst Case Available Settling Time: 43.848 ns
+    Info (332114): 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
-Info (332146): Worst-case setup slack is 13.075
+Info (332146): Worst-case setup slack is 13.457
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    13.075               0.000 altera_reserved_tck 
-    Info (332119):    17.068               0.000 clk 
-Info (332146): Worst-case hold slack is 0.159
+    Info (332119):    13.457               0.000 altera_reserved_tck 
+    Info (332119):    16.490               0.000 clk 
+Info (332146): Worst-case hold slack is 0.154
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.159               0.000 clk 
-    Info (332119):     0.194               0.000 altera_reserved_tck 
-Info (332146): Worst-case recovery slack is 16.010
+    Info (332119):     0.154               0.000 clk 
+    Info (332119):     0.196               0.000 altera_reserved_tck 
+Info (332146): Worst-case recovery slack is 15.602
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    16.010               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.405
+    Info (332119):    15.602               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.458
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.405               0.000 altera_reserved_tck 
-Info (332146): Worst-case minimum pulse width slack is 8.815
+    Info (332119):     0.458               0.000 altera_reserved_tck 
+Info (332146): Worst-case minimum pulse width slack is 8.814
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     8.815               0.000 clk 
-    Info (332119):    15.187               0.000 altera_reserved_tck 
+    Info (332119):     8.814               0.000 clk 
+    Info (332119):    15.270               0.000 altera_reserved_tck 
+Info (332114): Report Metastability: Found 15 synchronizer chains.
+    Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
+    Info (332114): Number of Synchronizer Chains Found: 15
+    Info (332114): Shortest Synchronizer Chain: 2 Registers
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+    Info (332114): Worst Case Available Settling Time: 46.329 ns
+    Info (332114): 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
-Info (332146): Worst-case setup slack is 13.473
+Info (332146): Worst-case setup slack is 13.818
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    13.473               0.000 altera_reserved_tck 
-    Info (332119):    17.322               0.000 clk 
-Info (332146): Worst-case hold slack is 0.143
+    Info (332119):    13.818               0.000 altera_reserved_tck 
+    Info (332119):    16.820               0.000 clk 
+Info (332146): Worst-case hold slack is 0.140
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.143               0.000 clk 
-    Info (332119):     0.159               0.000 altera_reserved_tck 
-Info (332146): Worst-case recovery slack is 16.097
+    Info (332119):     0.140               0.000 clk 
+    Info (332119):     0.168               0.000 altera_reserved_tck 
+Info (332146): Worst-case recovery slack is 15.738
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    16.097               0.000 altera_reserved_tck 
-Info (332146): Worst-case removal slack is 0.357
+    Info (332119):    15.738               0.000 altera_reserved_tck 
+Info (332146): Worst-case removal slack is 0.397
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.357               0.000 altera_reserved_tck 
+    Info (332119):     0.397               0.000 altera_reserved_tck 
 Info (332146): Worst-case minimum pulse width slack is 8.807
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     8.807               0.000 clk 
-    Info (332119):    15.208               0.000 altera_reserved_tck 
+    Info (332119):    15.271               0.000 altera_reserved_tck 
+Info (332114): Report Metastability: Found 15 synchronizer chains.
+    Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
+    Info (332114): Number of Synchronizer Chains Found: 15
+    Info (332114): Shortest Synchronizer Chain: 2 Registers
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+    Info (332114): Worst Case Available Settling Time: 46.655 ns
+    Info (332114): 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 1118 megabytes
-    Info: Processing ended: Tue Mar 15 17:35:34 2016
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:16
+Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 1220 megabytes
+    Info: Processing ended: Mon Mar 21 17:04:07 2016
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:11
 
 
