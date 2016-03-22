@@ -34,7 +34,7 @@ architecture permuter of g14_permutation is
 						when "00111" => output_code <= "10000"; -- H -> Q
 						when "01000" => output_code <= "10101"; -- I -> V
 						when "01001" => output_code <= "11001"; -- J -> Z
-						when "01010" => output_code <= "01100"; -- K -> N
+						when "01010" => output_code <= "01101"; -- K -> N
 						when "01011" => output_code <= "10011"; -- L -> T
 						when "01100" => output_code <= "01110"; -- M -> O
 						when "01101" => output_code <= "10110"; -- N -> W
@@ -53,32 +53,32 @@ architecture permuter of g14_permutation is
 					end case;
 					-- Inverse mapping for Rotor 1
 					case input_code is
-						when "00100" => output_code <= "00000"; -- E -> A
-						when "01010" => output_code <= "00001"; -- K -> B
-						when "01100" => output_code <= "00010"; -- M -> C
-						when "00101" => output_code <= "00011"; -- F -> D
-						when "01011" => output_code <= "00100"; -- L -> E
-						when "00110" => output_code <= "00101"; -- G -> F
-						when "00011" => output_code <= "00110"; -- D -> G
-						when "10000" => output_code <= "00111"; -- Q -> H
-						when "10101" => output_code <= "01000"; -- V -> I
-						when "11001" => output_code <= "01001"; -- Z -> J
-						when "01100" => output_code <= "01010"; -- N -> K
-						when "10011" => output_code <= "01011"; -- T -> L
-						when "01110" => output_code <= "01100"; -- O -> M
-						when "10110" => output_code <= "01101"; -- W -> N
-						when "11000" => output_code <= "01110"; -- Y -> O
-						when "00111" => output_code <= "01111"; -- H -> P
-						when "10111" => output_code <= "10000"; -- X -> Q
-						when "10100" => output_code <= "10001"; -- U -> R
-						when "10010" => output_code <= "10010"; -- S -> S
-						when "01111" => output_code <= "10011"; -- P -> T
-						when "00000" => output_code <= "10100"; -- A -> U
-						when "01000" => output_code <= "10101"; -- I -> V
-						when "00001" => output_code <= "10110"; -- B -> W
-						when "10001" => output_code <= "10111"; -- R -> S
-						when "00010" => output_code <= "11000"; -- C -> Y
-						when others => output_code <= "11001"; -- J -> Z
+						when "00100" => inv_output_code <= "00000"; -- E -> A
+						when "01010" => inv_output_code <= "00001"; -- K -> B
+						when "01100" => inv_output_code <= "00010"; -- M -> C
+						when "00101" => inv_output_code <= "00011"; -- F -> D
+						when "01011" => inv_output_code <= "00100"; -- L -> E
+						when "00110" => inv_output_code <= "00101"; -- G -> F
+						when "00011" => inv_output_code <= "00110"; -- D -> G
+						when "10000" => inv_output_code <= "00111"; -- Q -> H
+						when "10101" => inv_output_code <= "01000"; -- V -> I
+						when "11001" => inv_output_code <= "01001"; -- Z -> J
+						when "01101" => inv_output_code <= "01010"; -- N -> K
+						when "10011" => inv_output_code <= "01011"; -- T -> L
+						when "01110" => inv_output_code <= "01100"; -- O -> M
+						when "10110" => inv_output_code <= "01101"; -- W -> N
+						when "11000" => inv_output_code <= "01110"; -- Y -> O
+						when "00111" => inv_output_code <= "01111"; -- H -> P
+						when "10111" => inv_output_code <= "10000"; -- X -> Q
+						when "10100" => inv_output_code <= "10001"; -- U -> R
+						when "10010" => inv_output_code <= "10010"; -- S -> S
+						when "01111" => inv_output_code <= "10011"; -- P -> T
+						when "00000" => inv_output_code <= "10100"; -- A -> U
+						when "01000" => inv_output_code <= "10101"; -- I -> V
+						when "00001" => inv_output_code <= "10110"; -- B -> W
+						when "10001" => inv_output_code <= "10111"; -- R -> S
+						when "00010" => inv_output_code <= "11000"; -- C -> Y
+						when others => inv_output_code <= "11001"; -- J -> Z
 					end case;
 
 				-- ***** ROTOR 2 *****
@@ -145,7 +145,7 @@ architecture permuter of g14_permutation is
 				when "10" =>
 					-- Input mapping for rotor 3
 					case input_code is 
-						when "00000" => output_code <= "00100"; ---> B
+						when "00000" => output_code <= "00001"; ---> B
 						when "00001" => output_code <= "00011"; ---> D
 						when "00010" => output_code <= "00101"; ---> F
 						when "00011" => output_code <= "00111"; ---> H
@@ -174,7 +174,7 @@ architecture permuter of g14_permutation is
 					end case;
 					-- Inverse mapping for Rotor 3
 					case input_code is
-						when "00100" => inv_output_code <= "00000";
+						when "00001" => inv_output_code <= "00000";
 						when "00011" => inv_output_code <= "00001";
 						when "00101" => inv_output_code <= "00010";
 						when "00111" => inv_output_code <= "00011";
@@ -209,7 +209,7 @@ architecture permuter of g14_permutation is
 						when "00010" => output_code <= "01110"; ---> O
 						when "00011" => output_code <= "10101"; ---> V
 						when "00100" => output_code <= "01111"; ---> P
-						when "00101" => output_code <= "11000"; ---> Z
+						when "00101" => output_code <= "11001"; ---> Z
 						when "00110" => output_code <= "01001"; ---> J
 						when "00111" => output_code <= "00000"; ---> A
 						when "01000" => output_code <= "11000"; ---> Y
@@ -233,32 +233,32 @@ architecture permuter of g14_permutation is
 					end case;
 					case input_code is 
 						-- Inverse mapping for Rotor 4
-						when "00100" =>inv_output_code <= "00100";
-						when "10010" =>inv_output_code <= "10010";
-						when "01110" =>inv_output_code <= "01110";
-						when "10101" =>inv_output_code <= "10101";
-						when "01111" =>inv_output_code <= "01111";
-						when "11000" =>inv_output_code <= "11000";
-						when "01001" =>inv_output_code <= "01001";
-						when "00000" =>inv_output_code <= "00000";
-						when "11000" =>inv_output_code <= "11000";
-						when "10000" =>inv_output_code <= "10000";
-						when "10100" =>inv_output_code <= "10100";
-						when "01000" =>inv_output_code <= "01000";
-						when "10001" =>inv_output_code <= "10001";
-						when "00111" =>inv_output_code <= "00111";
-						when "10111" =>inv_output_code <= "10111";
-						when "01011" =>inv_output_code <= "01011";
-						when "01101" =>inv_output_code <= "01101";
-						when "00101" =>inv_output_code <= "00101";
-						when "10011" =>inv_output_code <= "10011";
-						when "00110" =>inv_output_code <= "00110";
-						when "01010" =>inv_output_code <= "01010";
-						when "00011" =>inv_output_code <= "00011";
-						when "00010" =>inv_output_code <= "00010";
-						when "01100" =>inv_output_code <= "01100";
-						when "10110" =>inv_output_code <= "10110";
-						when "00001" =>inv_output_code <= "00001";
+						when "00100" => inv_output_code <= "00000"; ---> E
+						when "10010" => inv_output_code <= "00001"; ---> S
+						when "01110" => inv_output_code <= "00010"; ---> O
+						when "10101" => inv_output_code <= "00011"; ---> V
+						when "01111" => inv_output_code <= "00100"; ---> P
+						when "11001" => inv_output_code <= "00101"; ---> Z
+						when "01001" => inv_output_code <= "00110"; ---> J
+						when "00000" => inv_output_code <= "00111"; ---> A
+						when "11000" => inv_output_code <= "01000"; ---> Y
+						when "10000" => inv_output_code <= "01001"; ---> Q
+						when "10100" => inv_output_code <= "01010"; ---> U
+						when "01000" => inv_output_code <= "01011"; ---> I
+						when "10001" => inv_output_code <= "01100"; ---> R
+						when "00111" => inv_output_code <= "01101"; ---> H
+						when "10111" => inv_output_code <= "01110"; ---> X
+						when "01011" => inv_output_code <= "01111"; ---> L
+						when "01101" => inv_output_code <= "10000"; ---> N
+						when "00101" => inv_output_code <= "10001"; ---> F
+						when "10011" => inv_output_code <= "10010"; ---> T
+						when "00110" => inv_output_code <= "10011"; ---> G
+						when "01010" => inv_output_code <= "10100"; ---> K
+						when "00011" => inv_output_code <= "10101"; ---> D
+						when "00010" => inv_output_code <= "10110"; ---> C
+						when "01100" => inv_output_code <= "10111"; ---> M
+						when "10110" => inv_output_code <= "11000"; ---> W
+						when others => inv_output_code <= "11001"; ---> B
 					end case;
 			end case;
 	end process;
