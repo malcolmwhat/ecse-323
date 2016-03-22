@@ -48,15 +48,15 @@ set_global_assignment -name USE_SIGNALTAP_FILE g14_testbed.stp
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
-set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_location_assignment PIN_AF14 -to clk
-set_location_assignment PIN_AD11 -to dipswitches[4]
-set_location_assignment PIN_AF10 -to dipswitches[3]
+set_location_assignment PIN_AB12 -to dipswitches[4]
+set_location_assignment PIN_AC12 -to dipswitches[3]
 set_location_assignment PIN_AF9 -to dipswitches[2]
-set_location_assignment PIN_AC12 -to dipswitches[1]
-set_location_assignment PIN_AB12 -to dipswitches[0]
+set_location_assignment PIN_AF10 -to dipswitches[1]
+set_location_assignment PIN_AD11 -to dipswitches[0]
 set_location_assignment PIN_AE26 -to seven_segment_output[0]
 set_location_assignment PIN_AH28 -to seven_segment_output[6]
 set_location_assignment PIN_AG28 -to seven_segment_output[5]
@@ -64,7 +64,7 @@ set_location_assignment PIN_AF28 -to seven_segment_output[4]
 set_location_assignment PIN_AG27 -to seven_segment_output[3]
 set_location_assignment PIN_AE28 -to seven_segment_output[2]
 set_location_assignment PIN_AE27 -to seven_segment_output[1]
-set_location_assignment PIN_AE12 -to reset
+set_location_assignment PIN_AA14 -to reset
 set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_0
 set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_RAM_BLOCK_TYPE=AUTO" -section_id auto_signaltap_0

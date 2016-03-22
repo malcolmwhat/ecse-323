@@ -1,12 +1,12 @@
-Fitter Status : Successful - Mon Mar 21 17:03:34 2016
+Fitter Status : Successful - Tue Mar 22 00:16:47 2016
 Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 Revision Name : g14_lab3_test_bed
 Top-level Entity Name : g14_lab3_test_bed
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 376 / 32,070 ( 1 % )
-Total registers : 474
+Logic utilization (in ALMs) : 367 / 32,070 ( 1 % )
+Total registers : 478
 Total pins : 14 / 457 ( 3 % )
 Total virtual pins : 0
 Total block memory bits : 768 / 4,065,280 ( < 1 % )
