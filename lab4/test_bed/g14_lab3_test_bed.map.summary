@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue Mar 22 00:27:17 2016
+Analysis & Synthesis Status : Successful - Tue Mar 22 14:42:50 2016
 Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 Revision Name : g14_lab3_test_bed
 Top-level Entity Name : g14_lab3_test_bed
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 463
+Total registers : 481
 Total pins : 14
 Total virtual pins : 0
-Total block memory bits : 768
+Total block memory bits : 896
 Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
