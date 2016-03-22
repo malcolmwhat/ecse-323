@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for g14_lab3_test_bed
-Tue Mar 22 00:17:25 2016
+Tue Mar 22 00:28:54 2016
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -117,7 +117,7 @@ agreement for further details.
 +-----------------+--------+--------------------------+
 ; SDC File Path   ; Status ; Read at                  ;
 +-----------------+--------+--------------------------+
-; g14_testbed.sdc ; OK     ; Tue Mar 22 00:17:16 2016 ;
+; g14_testbed.sdc ; OK     ; Tue Mar 22 00:28:46 2016 ;
 +-----------------+--------+--------------------------+
 
 
@@ -665,7 +665,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
-    Info: Processing started: Tue Mar 22 00:17:14 2016
+    Info: Processing started: Tue Mar 22 00:28:44 2016
 Info: Command: quartus_sta g14_lab3_test_bed -c g14_lab3_test_bed
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -814,9 +814,9 @@ Info (332114): Report Metastability: Found 15 synchronizer chains.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 1221 megabytes
-    Info: Processing ended: Tue Mar 22 00:17:25 2016
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Peak virtual memory: 1222 megabytes
+    Info: Processing ended: Tue Mar 22 00:28:54 2016
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:11
 
 
