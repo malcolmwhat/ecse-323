@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g14_lab3_test_bed
-Tue Mar 22 14:42:50 2016
+Tue Mar 22 16:46:09 2016
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -54,7 +54,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Mar 22 14:42:50 2016       ;
+; Analysis & Synthesis Status     ; Successful - Tue Mar 22 16:46:09 2016       ;
 ; Quartus Prime Version           ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
 ; Revision Name                   ; g14_lab3_test_bed                           ;
 ; Top-level Entity Name           ; g14_lab3_test_bed                           ;
@@ -191,6 +191,7 @@ agreement for further details.
 ; g14_26_5_encoder.vhd                                               ; yes             ; User VHDL File                               ; C:/Users/user/Documents/GitHub/ecse-323/lab4/test_bed/g14_26_5_encoder.vhd                                               ;             ;
 ; g14_7_segment_decoder.vhd                                          ; yes             ; User VHDL File                               ; C:/Users/user/Documents/GitHub/ecse-323/lab4/test_bed/g14_7_segment_decoder.vhd                                          ;             ;
 ; g14_5_26_decoder.vhd                                               ; yes             ; User VHDL File                               ; C:/Users/user/Documents/GitHub/ecse-323/lab4/test_bed/g14_5_26_decoder.vhd                                               ;             ;
+; g14_permutation.vhd                                                ; yes             ; User VHDL File                               ; C:/Users/user/Documents/GitHub/ecse-323/lab4/test_bed/g14_permutation.vhd                                                ;             ;
 ; lpm_counter.tdf                                                    ; yes             ; Megafunction                                 ; c:/altera_lite/15.1/quartus/libraries/megafunctions/lpm_counter.tdf                                                      ;             ;
 ; lpm_constant.inc                                                   ; yes             ; Megafunction                                 ; c:/altera_lite/15.1/quartus/libraries/megafunctions/lpm_constant.inc                                                     ;             ;
 ; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; c:/altera_lite/15.1/quartus/libraries/megafunctions/lpm_decode.inc                                                       ;             ;
@@ -667,7 +668,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
-    Info: Processing started: Tue Mar 22 14:42:14 2016
+    Info: Processing started: Tue Mar 22 16:45:30 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g14_lab3_test_bed -c g14_lab3_test_bed
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file pulse_generator.vhd
@@ -691,6 +692,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file g14_7_s
 Info (12021): Found 2 design units, including 1 entities, in source file g14_5_26_decoder.vhd
     Info (12022): Found design unit 1: g14_5_26_decoder-decoder File: C:/Users/user/Documents/GitHub/ecse-323/lab4/test_bed/g14_5_26_decoder.vhd Line: 33
     Info (12023): Found entity 1: g14_5_26_decoder File: C:/Users/user/Documents/GitHub/ecse-323/lab4/test_bed/g14_5_26_decoder.vhd Line: 27
+Info (12021): Found 2 design units, including 1 entities, in source file g14_permutation.vhd
+    Info (12022): Found design unit 1: g14_permutation-permuter File: C:/Users/user/Documents/GitHub/ecse-323/lab4/test_bed/g14_permutation.vhd Line: 17
+    Info (12023): Found entity 1: g14_permutation File: C:/Users/user/Documents/GitHub/ecse-323/lab4/test_bed/g14_permutation.vhd Line: 9
 Info (12127): Elaborating entity "g14_lab3_test_bed" for the top level hierarchy
 Info (12128): Elaborating entity "pulse_generator" for hierarchy "pulse_generator:pulse_gen" File: C:/Users/user/Documents/GitHub/ecse-323/lab4/test_bed/g14_lab3_test_bed.vhd Line: 72
 Warning (10492): VHDL Process Statement warning at pulse_generator.vhd(40): signal "counter_out" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab4/test_bed/pulse_generator.vhd Line: 40
@@ -740,7 +744,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_99c File: C:/Users/user/Documents/GitHub/ecse-323/lab4/test_bed/db/cmpr_99c.tdf Line: 23
 Info (12033): Analysis and Synthesis generated SignalTap II or debug node instance "auto_signaltap_0"
 Info (11170): Start IP generation for the debug fabric within sld_hub.
-Info (11172): 2016.03.22.14:42:40 Progress: Loading sldedd1b1db/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2016.03.22.16:45:55 Progress: Loading sldedd1b1db/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -773,9 +777,9 @@ Info (21057): Implemented 818 device resources after synthesis - the final resou
     Info (21061): Implemented 792 logic cells
     Info (21064): Implemented 7 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 951 megabytes
-    Info: Processing ended: Tue Mar 22 14:42:50 2016
-    Info: Elapsed time: 00:00:36
-    Info: Total CPU time (on all processors): 00:01:10
+    Info: Peak virtual memory: 948 megabytes
+    Info: Processing ended: Tue Mar 22 16:46:10 2016
+    Info: Elapsed time: 00:00:40
+    Info: Total CPU time (on all processors): 00:01:15
 
 
