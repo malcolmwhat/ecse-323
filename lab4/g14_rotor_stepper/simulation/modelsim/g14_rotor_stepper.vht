@@ -27,6 +27,7 @@
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 ENTITY g14_rotor_stepper_vhd_tst IS
 END g14_rotor_stepper_vhd_tst;
@@ -42,6 +43,7 @@ SIGNAL keypress : STD_LOGIC;
 SIGNAL knock_m : STD_LOGIC;
 SIGNAL knock_r : STD_LOGIC;
 SIGNAL load : STD_LOGIC;
+signal knocks : STD_LOGIC_VECTOR(1 downto 0);
 COMPONENT g14_rotor_stepper
 	PORT (
 	clock : IN STD_LOGIC;
@@ -80,6 +82,53 @@ always : PROCESS
 -- (        )
 -- variable declarations
 BEGIN
+	clock <= '0';
+	init <= '1';
+	keypress <= '1';
+	wait for 5 ns;
+
+	clock <= '1';
+	wait for 5 ns;
+
+	clock <= '0';
+	init <='0';
+	wait for 5 ns;
+
+	clock <= '1';
+	wait for 5 ns;
+
+	-- Check that knocks work for
+	for i in 0 to 3 loop
+		knocks <= STD_LOGIC_VECTOR(to_unsigned(i, 2));
+		knock_r <= knocks(0);
+		knock_m <= knocks(1);
+		for j in 0 to 5 loop
+
+			keypress <= '0';
+			clock <= '0';
+			wait for 5 ns;
+
+			clock <= '1';
+			wait for 5 ns;
+
+			keypress <= '1';
+
+			-- Give some time to get back to S1
+			for k in 0 to 3 loop
+				clock <= '0';
+				wait for 5 ns;
+				clock <= '1';
+				wait for 5 ns;
+			end loop;
+		end loop;
+	end loop;
+
+	init <= '1';
+	clock <= '0';
+	wait for 5 ns;
+
+	clock <='1';
+	wait for 5 ns;
 
 WAIT;
 END PROCESS always;
