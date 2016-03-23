@@ -1,0 +1,23 @@
+|g14_rotor_stepper
+keypress => Selector7.IN4
+keypress => Selector9.IN5
+keypress => Selector13.IN3
+keypress => Selector16.IN5
+keypress => Selector7.IN2
+keypress => Selector9.IN3
+keypress => Selector13.IN1
+keypress => Selector16.IN2
+knock_m => next_state_handler.IN0
+knock_m => next_state_handler.IN0
+knock_m => next_state_handler.IN0
+knock_r => next_state_handler.IN1
+knock_r => next_state_handler.IN1
+knock_r => next_state_handler.IN1
+clock => current_state~1.DATAIN
+init => current_state~3.DATAIN
+en_l <= en_l$latch.DB_MAX_OUTPUT_PORT_TYPE
+en_m <= en_m$latch.DB_MAX_OUTPUT_PORT_TYPE
+en_r <= en_r$latch.DB_MAX_OUTPUT_PORT_TYPE
+load <= load$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,197 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'current_state.s1'
+Slack : -6.405
+TNS   : -37.213
+
+Type  : Slow 1100mV 85C Model Setup 'clock'
+Slack : -5.332
+TNS   : -10.031
+
+Type  : Slow 1100mV 85C Model Setup 'keypress'
+Slack : -4.802
+TNS   : -20.217
+
+Type  : Slow 1100mV 85C Model Setup 'current_state.s0'
+Slack : -4.798
+TNS   : -10.837
+
+Type  : Slow 1100mV 85C Model Hold 'clock'
+Slack : -3.007
+TNS   : -14.709
+
+Type  : Slow 1100mV 85C Model Hold 'keypress'
+Slack : 0.647
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'current_state.s0'
+Slack : 0.703
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'current_state.s1'
+Slack : 1.007
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.394
+TNS   : -4.200
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'keypress'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'current_state.s1'
+Slack : 0.352
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'current_state.s0'
+Slack : 0.392
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'current_state.s1'
+Slack : -6.364
+TNS   : -36.679
+
+Type  : Slow 1100mV 0C Model Setup 'clock'
+Slack : -4.924
+TNS   : -9.230
+
+Type  : Slow 1100mV 0C Model Setup 'keypress'
+Slack : -4.860
+TNS   : -20.314
+
+Type  : Slow 1100mV 0C Model Setup 'current_state.s0'
+Slack : -4.835
+TNS   : -10.952
+
+Type  : Slow 1100mV 0C Model Hold 'clock'
+Slack : -2.994
+TNS   : -14.642
+
+Type  : Slow 1100mV 0C Model Hold 'current_state.s0'
+Slack : 0.646
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'keypress'
+Slack : 0.700
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'current_state.s1'
+Slack : 1.026
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.394
+TNS   : -4.514
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'keypress'
+Slack : 0.207
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'current_state.s1'
+Slack : 0.300
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'current_state.s0'
+Slack : 0.410
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'current_state.s1'
+Slack : -3.773
+TNS   : -18.436
+
+Type  : Fast 1100mV 85C Model Setup 'clock'
+Slack : -3.525
+TNS   : -6.528
+
+Type  : Fast 1100mV 85C Model Setup 'keypress'
+Slack : -2.901
+TNS   : -9.683
+
+Type  : Fast 1100mV 85C Model Setup 'current_state.s0'
+Slack : -2.415
+TNS   : -5.311
+
+Type  : Fast 1100mV 85C Model Hold 'clock'
+Slack : -1.737
+TNS   : -8.514
+
+Type  : Fast 1100mV 85C Model Hold 'keypress'
+Slack : 0.363
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'current_state.s0'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'current_state.s1'
+Slack : 0.635
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.075
+TNS   : -0.598
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'keypress'
+Slack : -0.015
+TNS   : -0.015
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'current_state.s1'
+Slack : 0.394
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'current_state.s0'
+Slack : 0.463
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'current_state.s1'
+Slack : -3.193
+TNS   : -16.851
+
+Type  : Fast 1100mV 0C Model Setup 'clock'
+Slack : -2.926
+TNS   : -5.395
+
+Type  : Fast 1100mV 0C Model Setup 'keypress'
+Slack : -2.340
+TNS   : -8.390
+
+Type  : Fast 1100mV 0C Model Setup 'current_state.s0'
+Slack : -2.314
+TNS   : -5.034
+
+Type  : Fast 1100mV 0C Model Hold 'clock'
+Slack : -1.701
+TNS   : -8.344
+
+Type  : Fast 1100mV 0C Model Hold 'keypress'
+Slack : 0.313
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'current_state.s0'
+Slack : 0.342
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'current_state.s1'
+Slack : 0.577
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.076
+TNS   : -0.604
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'keypress'
+Slack : -0.021
+TNS   : -0.021
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'current_state.s1'
+Slack : 0.408
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'current_state.s0'
+Slack : 0.468
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -6,17 +6,92 @@ use ieee.std_logic_1164.all;
 
 entity g14_rotor_stepper is
 	port(keypress : in std_logic; --
-         knock_m : in std_logic;
-         knock_r : in std_logic;
-         clock : in std_logic;
-         init : in std_logic;
-         en_l : out std_logic;
-         en_m : out std_logic;
-         en_r : out std_logic;
-         load : out std_logic;
+        knock_m : in std_logic;
+        knock_r : in std_logic;
+        clock : in std_logic;
+        init : in std_logic;
+        en_l : out std_logic;
+        en_m : out std_logic;
+        en_r : out std_logic;
+        load : out std_logic);
 end g14_rotor_stepper;
 
 
 architecture rotor_step of g14_rotor_stepper is
+    type state_type is (s0, s1, s2, s3, s4, s5, s6, s7);
+    signal current_state, next_state: state_type;
 begin
+    state_change_driver : process (clock, init)
+    begin
+        if init = '1' then
+            current_state <= s0;
+        elsif rising_edge(clock) then
+            current_state <= next_state;
+        end if;
+    end process;
+
+    next_state_handler : process (keypress, current_state, knock_r, knock_m)
+    begin
+        case current_state is
+            when s0 =>
+                load <= '1';
+                next_state <= s1;
+
+            -- Reset all outputs, this is effectively the loop back state, catches key press
+            when s1 =>
+                load <= '0';
+                en_r <= '0';
+                en_m <= '0';
+                en_l <= '0';
+                -- When the key is pressed, keypress is '0'
+                if keypress = '0' then
+                    next_state <= s2;
+                end if;
+
+            -- Catches key release
+            when s2 =>
+                -- When key is released, kepress is '1'
+                if keypress = '1' then
+                    next_state <= s3;
+                end if;
+
+            -- Handles state transition based on the knock values
+            when s3 =>
+                if knock_m = '0' and knock_r = '0' then
+                    next_state <= s4;
+                elsif knock_m = '0' and knock_r = '1' then
+                    next_state <= s5;
+                elsif knock_m = '1' and knock_r = '1' then
+                    next_state <= s7;
+                else
+                    next_state <= s6;
+                end if;
+
+            -- Rotates the rightmost rotor
+            when s4 =>
+                en_r <= '1';
+                next_state <= s1;
+
+            -- Rotates the middle and rightmost rotor
+            when s5 =>
+                en_r <= '1';
+                en_m <= '1';
+                next_state <= s1;
+
+            -- Rotates all three rotors
+            when s6 =>
+                en_r <= '1';
+                en_m <= '1';
+                en_l <= '1';
+                next_state <= s1;
+
+            -- Edge case (should not happen), when en_m is sustained for an extra
+            -- clock cycle, note that we shift to s6 after enable have been asserted (as opposed to s1)
+            when s7 =>
+                en_m <= '1';
+                next_state <= s6;
+
+        end case;
+    end process;
+
 end rotor_step ;
