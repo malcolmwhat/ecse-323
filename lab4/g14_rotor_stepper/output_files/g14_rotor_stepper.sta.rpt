@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for g14_rotor_stepper
-Tue Mar 22 20:22:03 2016
+Tue Mar 22 21:08:02 2016
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -582,7 +582,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
-    Info: Processing started: Tue Mar 22 20:21:55 2016
+    Info: Processing started: Tue Mar 22 21:07:55 2016
 Info: Command: quartus_sta g14_rotor_stepper -c g14_rotor_stepper
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -721,9 +721,9 @@ Info (332146): Worst-case minimum pulse width slack is -0.076
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 1177 megabytes
-    Info: Processing ended: Tue Mar 22 20:22:03 2016
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Peak virtual memory: 1182 megabytes
+    Info: Processing ended: Tue Mar 22 21:08:02 2016
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:06
 
 

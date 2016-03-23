@@ -71,12 +71,12 @@ BEGIN
 	knock_r => knock_r,
 	load => load
 	);
-init : PROCESS
+PROCESS
 -- variable declarations
 BEGIN
         -- code that executes only once
 WAIT;
-END PROCESS init;
+END PROCESS;
 always : PROCESS
 -- optional sensitivity list
 -- (        )
@@ -84,6 +84,8 @@ always : PROCESS
 BEGIN
 	clock <= '0';
 	init <= '1';
+	knock_r <= '0';
+	knock_m <= '0';
 	keypress <= '1';
 	wait for 5 ns;
 
@@ -100,6 +102,11 @@ BEGIN
 	-- Check that knocks work for
 	for i in 0 to 3 loop
 		knocks <= STD_LOGIC_VECTOR(to_unsigned(i, 2));
+		clock <= '0';
+		wait for 5 ns;
+		clock <= '1';
+		wait for 5 ns;
+
 		knock_r <= knocks(0);
 		knock_m <= knocks(1);
 		for j in 0 to 5 loop

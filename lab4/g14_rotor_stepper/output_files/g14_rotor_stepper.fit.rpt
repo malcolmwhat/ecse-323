@@ -1,5 +1,5 @@
 Fitter report for g14_rotor_stepper
-Tue Mar 22 20:21:25 2016
+Tue Mar 22 21:07:29 2016
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Tue Mar 22 20:21:25 2016       ;
+; Fitter Status                   ; Successful - Tue Mar 22 21:07:29 2016       ;
 ; Quartus Prime Version           ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
 ; Revision Name                   ; g14_rotor_stepper                           ;
 ; Top-level Entity Name           ; g14_rotor_stepper                           ;
@@ -1736,10 +1736,10 @@ Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:04
 Info (144001): Generated suppressed messages file C:/Users/user/Documents/GitHub/ecse-323/lab4/g14_rotor_stepper/output_files/g14_rotor_stepper.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 2270 megabytes
-    Info: Processing ended: Tue Mar 22 20:21:26 2016
-    Info: Elapsed time: 00:00:53
-    Info: Total CPU time (on all processors): 00:01:14
+    Info: Peak virtual memory: 2286 megabytes
+    Info: Processing ended: Tue Mar 22 21:07:30 2016
+    Info: Elapsed time: 00:00:54
+    Info: Total CPU time (on all processors): 00:01:13
 
 
 +----------------------------+

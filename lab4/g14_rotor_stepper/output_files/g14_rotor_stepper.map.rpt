@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g14_rotor_stepper
-Tue Mar 22 20:20:28 2016
+Tue Mar 22 21:06:31 2016
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -46,7 +46,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Mar 22 20:20:28 2016       ;
+; Analysis & Synthesis Status     ; Successful - Tue Mar 22 21:06:30 2016       ;
 ; Quartus Prime Version           ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
 ; Revision Name                   ; g14_rotor_stepper                           ;
 ; Top-level Entity Name           ; g14_rotor_stepper                           ;
@@ -303,7 +303,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -313,7 +313,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
-    Info: Processing started: Tue Mar 22 20:20:09 2016
+    Info: Processing started: Tue Mar 22 21:06:14 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g14_rotor_stepper -c g14_rotor_stepper
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file g14_rotor_stepper.vhd
@@ -353,9 +353,9 @@ Info (21057): Implemented 40 device resources after synthesis - the final resour
     Info (21059): Implemented 4 output pins
     Info (21061): Implemented 31 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 904 megabytes
-    Info: Processing ended: Tue Mar 22 20:20:28 2016
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:42
+    Info: Peak virtual memory: 908 megabytes
+    Info: Processing ended: Tue Mar 22 21:06:31 2016
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:32
 
 

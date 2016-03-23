@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition"
 
--- DATE "03/22/2016 20:22:11"
+-- DATE "03/22/2016 21:08:09"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -43,10 +43,10 @@ ENTITY 	g14_rotor_stepper IS
 	knock_r : IN std_logic;
 	clock : IN std_logic;
 	init : IN std_logic;
-	en_l : OUT std_logic;
-	en_m : OUT std_logic;
-	en_r : OUT std_logic;
-	load : OUT std_logic
+	en_l : BUFFER std_logic;
+	en_m : BUFFER std_logic;
+	en_r : BUFFER std_logic;
+	load : BUFFER std_logic
 	);
 END g14_rotor_stepper;
 
