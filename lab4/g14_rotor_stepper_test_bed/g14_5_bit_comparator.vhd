@@ -14,7 +14,8 @@ end entity ; -- g14_5_bit_comparator
 architecture behaviour of g14_5_bit_comparator is
 begin
     process (comp1, comp2)
-        eq <= '0';
+    begin
+		  eq <= '0';
         if unsigned(comp1) = unsigned(comp2) then
             eq <= '1';
         end if;

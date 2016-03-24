@@ -9,9 +9,9 @@ entity g14_rotor_stepper_test_bed is
     port (
         clock : in std_logic;
         init : in std_logic;
-        seven_seg_1 : out std_logic_vector(6 downto 0);
-        seven_seg_2 : out std_logic_vector(6 downto 0);
-        seven_seg_3 : out std_logic_vector(6 downto 0)
+        seven_seg_l : out std_logic_vector(6 downto 0);
+        seven_seg_m : out std_logic_vector(6 downto 0);
+        seven_seg_r : out std_logic_vector(6 downto 0)
     ) ;
 end entity ; -- g14_rotor_stepper_test_bed
 
@@ -28,12 +28,12 @@ architecture behaviour of g14_rotor_stepper_test_bed is
 
     -- Counters
     signal load_counters : std_logic; -- Asserted if we should load the counters with the hardcoded values
-    signal data_in_counter_1 : std_logic_vector(4 downto 0); -- Data to load to respective counters
-    signal data_in_counter_2 : std_logic_vector(4 downto 0);
-    signal data_in_counter_3 : std_logic_vector(4 downto 0);
-    signal count_1 : std_logic_vector(4 downto 0); -- Current count value of a particular counter
-    signal count_2 : std_logic_vector(4 downto 0);
-    signal count_3 : std_logic_vector(4 downto 0);
+    signal data_in_counter_l : std_logic_vector(4 downto 0); -- Data to load to respective counters
+    signal data_in_counter_m : std_logic_vector(4 downto 0);
+    signal data_in_counter_r : std_logic_vector(4 downto 0);
+    signal count_l : std_logic_vector(4 downto 0); -- Current count value of a particular counter
+    signal count_m : std_logic_vector(4 downto 0);
+    signal count_r : std_logic_vector(4 downto 0);
 
     -- Components --
     component pulse_generator
@@ -86,9 +86,79 @@ begin
     -- Hard code certain values :
     notch_m <= "00000";
     notch_r <= "00000";
-    data_in_counter_1 <= "00000";
-    data_in_counter_2 <= "00000";
-    data_in_counter_3 <= "00000";
+    data_in_counter_l <= "00000";
+    data_in_counter_m <= "00000";
+    data_in_counter_r <= "00000";
 
+    -- Instantiate components
+    pulse_gen : pulse_generator port map (
+        clock => clock,
+        epulse => keypress
+    );
 
+    middle_comparator : g14_5_bit_comparator port map (
+        comp1 => notch_m,
+        comp2 => count_m,
+        eq => knock_m
+    );
+
+    right_comparator : g14_5_bit_comparator port map (
+        comp1 => notch_r,
+        comp2 => count_r,
+        eq => knock_r
+    );
+
+    rotor_stepper_fsm : g14_rotor_stepper port map (
+        keypress => keypress,
+        knock_m => knock_m,
+        knock_r => knock_r,
+        clock => clock,
+        init => init,
+        en_l => en_l,
+        en_m => en_m,
+        en_r => en_r,
+        load => load_counters
+    );
+
+    left_counter : g14_counter_with_load port map (
+        clk => clock,
+        load => load_counters,
+        load_value => data_in_counter_l,
+        reset => '0', -- Reseting the counters to zero has no meaningful use case in this scenario
+        enable => en_l,
+        count => count_l
+    );
+
+    middle_counter : g14_counter_with_load port map (
+        clk => clock,
+        load => load_counters,
+        load_value => data_in_counter_m,
+        reset => '0',
+        enable => en_m,
+        count => count_m
+    );
+
+    right_counter : g14_counter_with_load port map (
+        clk => clock,
+        load => load_counters,
+        load_value => data_in_counter_r,
+        reset => '0',
+        enable => en_r,
+        count => count_r
+    );
+
+    left_led_out : g14_7_segment_decoder port map (
+        code => count_l,
+        segments => seven_seg_l
+    );
+
+    middle_led_out : g14_7_segment_decoder port map (
+        code => count_m,
+        segments => seven_seg_m
+    );
+
+    right_led_out : g14_7_segment_decoder port map (
+        code => count_r,
+        segments => seven_seg_r
+    );
 end behaviour ;
