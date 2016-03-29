@@ -1,5 +1,5 @@
 EDA Netlist Writer report for g14_lab3_test_bed
-Mon Mar 21 23:09:46 2016
+Tue Mar 29 16:26:16 2016
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Mar 21 23:09:46 2016 ;
+; EDA Netlist Writer Status ; Successful - Tue Mar 29 16:26:16 2016 ;
 ; Revision Name             ; g14_lab3_test_bed                     ;
 ; Top-level Entity Name     ; g14_lab3_test_bed                     ;
 ; Family                    ; Cyclone V                             ;
@@ -82,14 +82,14 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
-    Info: Processing started: Mon Mar 21 23:09:45 2016
+    Info: Processing started: Tue Mar 29 16:26:14 2016
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off g14_lab3_test_bed -c g14_lab3_test_bed
 Warning (10905): Generated the EDA functional simulation files although EDA timing simulation option is chosen.
 Info (204019): Generated file g14_lab3_test_bed.vho in folder "C:/Users/user/Documents/GitHub/ecse-323/lab3/test_bed/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 801 megabytes
-    Info: Processing ended: Mon Mar 21 23:09:46 2016
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 804 megabytes
+    Info: Processing ended: Tue Mar 29 16:26:17 2016
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 

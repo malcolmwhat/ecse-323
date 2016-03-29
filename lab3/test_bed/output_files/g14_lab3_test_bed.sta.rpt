@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for g14_lab3_test_bed
-Mon Mar 21 23:09:40 2016
+Tue Mar 29 16:26:08 2016
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -101,12 +101,12 @@ agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
+; Average used               ; 1.11        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ; < 0.1%      ;
+;     Processor 2            ;  11.1%      ;
 +----------------------------+-------------+
 
 
@@ -115,7 +115,7 @@ agreement for further details.
 +-----------------+--------+--------------------------+
 ; SDC File Path   ; Status ; Read at                  ;
 +-----------------+--------+--------------------------+
-; g14_testbed.sdc ; OK     ; Mon Mar 21 23:09:33 2016 ;
+; g14_testbed.sdc ; OK     ; Tue Mar 29 16:26:00 2016 ;
 +-----------------+--------+--------------------------+
 
 
@@ -555,7 +555,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
-    Info: Processing started: Mon Mar 21 23:09:30 2016
+    Info: Processing started: Tue Mar 29 16:25:57 2016
 Info: Command: quartus_sta g14_lab3_test_bed -c g14_lab3_test_bed
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -635,9 +635,9 @@ Info (332146): Worst-case minimum pulse width slack is 9.412
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 1213 megabytes
-    Info: Processing ended: Mon Mar 21 23:09:40 2016
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Peak virtual memory: 1216 megabytes
+    Info: Processing ended: Tue Mar 29 16:26:08 2016
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:11
 
 

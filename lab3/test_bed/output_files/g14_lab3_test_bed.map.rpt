@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g14_lab3_test_bed
-Mon Mar 21 23:08:16 2016
+Tue Mar 29 16:24:18 2016
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -47,7 +47,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Mar 21 23:08:16 2016       ;
+; Analysis & Synthesis Status     ; Successful - Tue Mar 29 16:24:17 2016       ;
 ; Quartus Prime Version           ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
 ; Revision Name                   ; g14_lab3_test_bed                           ;
 ; Top-level Entity Name           ; g14_lab3_test_bed                           ;
@@ -346,7 +346,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -356,7 +356,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
-    Info: Processing started: Mon Mar 21 23:07:59 2016
+    Info: Processing started: Tue Mar 29 16:23:56 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g14_lab3_test_bed -c g14_lab3_test_bed
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Warning (12125): Using design file g14_lab3_test_bed.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
@@ -411,9 +411,9 @@ Info (21057): Implemented 207 device resources after synthesis - the final resou
     Info (21059): Implemented 7 output pins
     Info (21061): Implemented 193 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 919 megabytes
-    Info: Processing ended: Mon Mar 21 23:08:16 2016
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:33
+    Info: Peak virtual memory: 917 megabytes
+    Info: Processing ended: Tue Mar 29 16:24:18 2016
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:43
 
 
