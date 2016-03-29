@@ -11,7 +11,7 @@ entity g14_rotor_stepper_test_bed is
         init : in std_logic;
         seven_seg_l : out std_logic_vector(6 downto 0);
         seven_seg_m : out std_logic_vector(6 downto 0);
-        seven_seg_r : out std_logic_vector(6 downto 0)
+        seven_seg_r : out std_logic_vector(6 downto 0);
     ) ;
 end entity ; -- g14_rotor_stepper_test_bed
 
@@ -25,6 +25,7 @@ architecture behaviour of g14_rotor_stepper_test_bed is
     signal en_l : std_logic;
     signal en_m : std_logic;
     signal en_r : std_logic;
+    signal inv_init : std_logic;
 
     -- Counters
     signal load_counters : std_logic; -- Asserted if we should load the counters with the hardcoded values
@@ -84,11 +85,14 @@ architecture behaviour of g14_rotor_stepper_test_bed is
     end component;
 begin
     -- Hard code certain values :
-    notch_m <= "00000";
-    notch_r <= "00000";
-    data_in_counter_l <= "00000";
-    data_in_counter_m <= "00000";
-    data_in_counter_r <= "00000";
+    notch_m <= "00010"; -- C
+    notch_r <= "00100"; -- E
+
+    data_in_counter_l <= "01000"; -- I
+    data_in_counter_m <= "00110"; -- G
+    data_in_counter_r <= "00011"; -- D
+    inv_init <= not(init);
+
 
     -- Instantiate components
     pulse_gen : pulse_generator port map (
@@ -113,7 +117,7 @@ begin
         knock_m => knock_m,
         knock_r => knock_r,
         clock => clock,
-        init => init,
+        init => inv_init,
         en_l => en_l,
         en_m => en_m,
         en_r => en_r,

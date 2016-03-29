@@ -88,6 +88,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "en",
+					"strict" : false
+				},
+				{
 					"name" : "clock",
 					"strict" : false
 				},

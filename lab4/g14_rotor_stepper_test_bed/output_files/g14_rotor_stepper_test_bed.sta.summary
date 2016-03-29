@@ -2,180 +2,84 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1100mV 85C Model Setup 'g14_rotor_stepper:rotor_stepper_fsm|current_state.s1'
-Slack : -5.148
-TNS   : -35.933
-
-Type  : Slow 1100mV 85C Model Setup 'g14_rotor_stepper:rotor_stepper_fsm|current_state.s0'
-Slack : -5.119
-TNS   : -11.980
-
-Type  : Slow 1100mV 85C Model Setup 'clock'
-Slack : -3.458
-TNS   : -129.722
-
-Type  : Slow 1100mV 85C Model Hold 'clock'
-Slack : -2.967
-TNS   : -14.575
-
-Type  : Slow 1100mV 85C Model Hold 'g14_rotor_stepper:rotor_stepper_fsm|current_state.s1'
-Slack : 0.914
+Type  : Slow 1100mV 85C Model Setup 'altera_reserved_tck'
+Slack : 9.576
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Hold 'g14_rotor_stepper:rotor_stepper_fsm|current_state.s0'
-Slack : 1.050
+Type  : Slow 1100mV 85C Model Hold 'altera_reserved_tck'
+Slack : 0.154
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Recovery 'clock'
-Slack : -3.097
-TNS   : -44.269
-
-Type  : Slow 1100mV 85C Model Removal 'clock'
-Slack : 0.955
+Type  : Slow 1100mV 85C Model Recovery 'altera_reserved_tck'
+Slack : 14.401
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock'
-Slack : -0.394
-TNS   : -25.289
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'g14_rotor_stepper:rotor_stepper_fsm|current_state.s1'
-Slack : 0.320
+Type  : Slow 1100mV 85C Model Removal 'altera_reserved_tck'
+Slack : 0.849
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'g14_rotor_stepper:rotor_stepper_fsm|current_state.s0'
-Slack : 0.403
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 15.464
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Setup 'g14_rotor_stepper:rotor_stepper_fsm|current_state.s0'
-Slack : -5.203
-TNS   : -12.106
-
-Type  : Slow 1100mV 0C Model Setup 'g14_rotor_stepper:rotor_stepper_fsm|current_state.s1'
-Slack : -5.188
-TNS   : -35.849
-
-Type  : Slow 1100mV 0C Model Setup 'clock'
-Slack : -3.369
-TNS   : -121.343
-
-Type  : Slow 1100mV 0C Model Hold 'clock'
-Slack : -2.978
-TNS   : -14.625
-
-Type  : Slow 1100mV 0C Model Hold 'g14_rotor_stepper:rotor_stepper_fsm|current_state.s1'
-Slack : 0.786
+Type  : Slow 1100mV 0C Model Setup 'altera_reserved_tck'
+Slack : 9.768
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Hold 'g14_rotor_stepper:rotor_stepper_fsm|current_state.s0'
-Slack : 1.018
+Type  : Slow 1100mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.140
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Recovery 'clock'
-Slack : -2.720
-TNS   : -38.645
-
-Type  : Slow 1100mV 0C Model Removal 'clock'
-Slack : 0.576
+Type  : Slow 1100mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 14.470
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock'
-Slack : -0.394
-TNS   : -27.454
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'g14_rotor_stepper:rotor_stepper_fsm|current_state.s1'
-Slack : 0.350
+Type  : Slow 1100mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.804
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'g14_rotor_stepper:rotor_stepper_fsm|current_state.s0'
-Slack : 0.392
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 15.471
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Setup 'g14_rotor_stepper:rotor_stepper_fsm|current_state.s0'
-Slack : -2.593
-TNS   : -6.095
-
-Type  : Fast 1100mV 85C Model Setup 'g14_rotor_stepper:rotor_stepper_fsm|current_state.s1'
-Slack : -2.455
-TNS   : -16.764
-
-Type  : Fast 1100mV 85C Model Setup 'clock'
-Slack : -2.199
-TNS   : -69.327
-
-Type  : Fast 1100mV 85C Model Hold 'clock'
-Slack : -1.704
-TNS   : -8.396
-
-Type  : Fast 1100mV 85C Model Hold 'g14_rotor_stepper:rotor_stepper_fsm|current_state.s0'
-Slack : 0.634
+Type  : Fast 1100mV 85C Model Setup 'altera_reserved_tck'
+Slack : 12.522
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Hold 'g14_rotor_stepper:rotor_stepper_fsm|current_state.s1'
-Slack : 0.715
+Type  : Fast 1100mV 85C Model Hold 'altera_reserved_tck'
+Slack : 0.041
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Recovery 'clock'
-Slack : -2.277
-TNS   : -33.216
-
-Type  : Fast 1100mV 85C Model Removal 'clock'
-Slack : 0.746
+Type  : Fast 1100mV 85C Model Recovery 'altera_reserved_tck'
+Slack : 15.482
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock'
-Slack : -0.082
-TNS   : -3.710
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'g14_rotor_stepper:rotor_stepper_fsm|current_state.s1'
-Slack : 0.389
+Type  : Fast 1100mV 85C Model Removal 'altera_reserved_tck'
+Slack : 0.448
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'g14_rotor_stepper:rotor_stepper_fsm|current_state.s0'
-Slack : 0.459
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 15.212
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Setup 'g14_rotor_stepper:rotor_stepper_fsm|current_state.s0'
-Slack : -2.487
-TNS   : -5.714
-
-Type  : Fast 1100mV 0C Model Setup 'g14_rotor_stepper:rotor_stepper_fsm|current_state.s1'
-Slack : -2.277
-TNS   : -15.552
-
-Type  : Fast 1100mV 0C Model Setup 'clock'
-Slack : -1.690
-TNS   : -56.219
-
-Type  : Fast 1100mV 0C Model Hold 'clock'
-Slack : -1.670
-TNS   : -8.238
-
-Type  : Fast 1100mV 0C Model Hold 'g14_rotor_stepper:rotor_stepper_fsm|current_state.s1'
-Slack : 0.569
+Type  : Fast 1100mV 0C Model Setup 'altera_reserved_tck'
+Slack : 12.977
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Hold 'g14_rotor_stepper:rotor_stepper_fsm|current_state.s0'
-Slack : 0.570
+Type  : Fast 1100mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.027
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Recovery 'clock'
-Slack : -1.743
-TNS   : -25.421
-
-Type  : Fast 1100mV 0C Model Removal 'clock'
-Slack : 0.433
+Type  : Fast 1100mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 15.631
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock'
-Slack : -0.082
-TNS   : -3.824
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'g14_rotor_stepper:rotor_stepper_fsm|current_state.s1'
-Slack : 0.403
+Type  : Fast 1100mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.399
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'g14_rotor_stepper:rotor_stepper_fsm|current_state.s0'
-Slack : 0.455
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 15.217
 TNS   : 0.000
 
 ------------------------------------------------------------

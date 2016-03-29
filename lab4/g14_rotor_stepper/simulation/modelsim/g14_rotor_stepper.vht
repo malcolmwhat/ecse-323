@@ -121,7 +121,7 @@ BEGIN
 			keypress <= '1';
 
 			-- Give some time to get back to S1
-			for k in 0 to 3 loop
+			for k in 0 to 10 loop
 				clock <= '0';
 				wait for 5 ns;
 				clock <= '1';

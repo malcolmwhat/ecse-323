@@ -1,5 +1,5 @@
 Fitter report for g14_lab3_test_bed
-Tue Mar 22 17:14:13 2016
+Thu Mar 24 14:01:40 2016
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -64,7 +64,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Tue Mar 22 17:14:12 2016       ;
+; Fitter Status                   ; Successful - Thu Mar 24 14:01:40 2016       ;
 ; Quartus Prime Version           ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
 ; Revision Name                   ; g14_lab3_test_bed                           ;
 ; Top-level Entity Name           ; g14_lab3_test_bed                           ;
@@ -155,12 +155,12 @@ agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.03        ;
+; Average used               ; 1.05        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   3.4%      ;
+;     Processor 2            ;   4.6%      ;
 +----------------------------+-------------+
 
 
@@ -2181,7 +2181,7 @@ Info (332111): Found 2 clocks
     Info (332111):   20.000          clk
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:13
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:16
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:09
@@ -2194,7 +2194,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
-Info (11888): Total time spent on timing analysis during the Fitter is 1.98 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 2.10 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -2202,10 +2202,10 @@ Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:07
 Info (144001): Generated suppressed messages file C:/Users/user/Documents/GitHub/ecse-323/lab4/test_bed/g14_lab3_test_bed.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 2338 megabytes
-    Info: Processing ended: Tue Mar 22 17:14:13 2016
-    Info: Elapsed time: 00:01:00
-    Info: Total CPU time (on all processors): 00:01:42
+    Info: Peak virtual memory: 2334 megabytes
+    Info: Processing ended: Thu Mar 24 14:01:42 2016
+    Info: Elapsed time: 00:01:08
+    Info: Total CPU time (on all processors): 00:01:49
 
 
 +----------------------------+

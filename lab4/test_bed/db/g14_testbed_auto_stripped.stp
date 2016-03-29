@@ -80,9 +80,9 @@
           <level editor="basic_or" enabled="yes" name="condition1" type="advanced"><power_up enabled="yes">
               <power_up_expression><![CDATA[alt_reduction(alt_true, {((mbpm('X', 'g14_counter:counter_0_to_25|enable') && variable(1))), ((mbpm('X', 'g14_counter:counter_0_to_25|reset') && variable(1))), (alt_reduction(alt_false, {(mbpm('X', 'g14_counter:counter_0_to_25|count[0]') && variable(1)), (mbpm('X', 'g14_counter:counter_0_to_25|count[1]') && variable(1)), (mbpm('X', 'g14_counter:counter_0_to_25|count[2]') && variable(1)), (mbpm('X', 'g14_counter:counter_0_to_25|count[3]') && variable(1)), (mbpm('X', 'g14_counter:counter_0_to_25|count[4]') && variable(1))}))})]]>
               </power_up_expression>
-            </power_up><expression><![CDATA[alt_reduction(alt_or, {((mbpm('R', 'g14_counter:counter_0_to_25|enable') && variable(1))), ((mbpm('X', 'g14_counter:counter_0_to_25|reset') && variable(0))), (alt_reduction(alt_false, {(mbpm('X', 'g14_counter:counter_0_to_25|count[0]') && variable(0)), (mbpm('X', 'g14_counter:counter_0_to_25|count[1]') && variable(0)), (mbpm('X', 'g14_counter:counter_0_to_25|count[2]') && variable(0)), (mbpm('X', 'g14_counter:counter_0_to_25|count[3]') && variable(0)), (mbpm('X', 'g14_counter:counter_0_to_25|count[4]') && variable(0))}))})]]>
-            </expression>
-            <op_node/>
+            </power_up>
+            <expression><![CDATA[alt_reduction(alt_or, {((mbpm('R', 'g14_counter:counter_0_to_25|enable') && variable(1))), ((mbpm('X', 'g14_counter:counter_0_to_25|reset') && variable(0))), (alt_reduction(alt_false, {(mbpm('X', 'g14_counter:counter_0_to_25|count[0]') && variable(0)), (mbpm('X', 'g14_counter:counter_0_to_25|count[1]') && variable(0)), (mbpm('X', 'g14_counter:counter_0_to_25|count[2]') && variable(0)), (mbpm('X', 'g14_counter:counter_0_to_25|count[3]') && variable(0)), (mbpm('X', 'g14_counter:counter_0_to_25|count[4]') && variable(0))}))})]]>
+            </expression><op_node/>
           </level>
         </events>
         <storage_qualifier_events>

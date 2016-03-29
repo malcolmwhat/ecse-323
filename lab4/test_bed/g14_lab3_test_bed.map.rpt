@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g14_lab3_test_bed
-Tue Mar 22 17:13:09 2016
+Thu Mar 24 14:00:29 2016
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -54,7 +54,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Mar 22 17:13:09 2016       ;
+; Analysis & Synthesis Status     ; Successful - Thu Mar 24 14:00:29 2016       ;
 ; Quartus Prime Version           ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
 ; Revision Name                   ; g14_lab3_test_bed                           ;
 ; Top-level Entity Name           ; g14_lab3_test_bed                           ;
@@ -603,7 +603,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -668,7 +668,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
-    Info: Processing started: Tue Mar 22 17:12:40 2016
+    Info: Processing started: Thu Mar 24 13:59:36 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g14_lab3_test_bed -c g14_lab3_test_bed
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file pulse_generator.vhd
@@ -744,7 +744,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_99c File: C:/Users/user/Documents/GitHub/ecse-323/lab4/test_bed/db/cmpr_99c.tdf Line: 23
 Info (12033): Analysis and Synthesis generated SignalTap II or debug node instance "auto_signaltap_0"
 Info (11170): Start IP generation for the debug fabric within sld_hub.
-Info (11172): 2016.03.22.17:13:01 Progress: Loading sldedd1b1db/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2016.03.24.14:00:05 Progress: Loading sldedd1b1db/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -778,8 +778,8 @@ Info (21057): Implemented 818 device resources after synthesis - the final resou
     Info (21064): Implemented 7 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 952 megabytes
-    Info: Processing ended: Tue Mar 22 17:13:09 2016
-    Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:01:03
+    Info: Processing ended: Thu Mar 24 14:00:29 2016
+    Info: Elapsed time: 00:00:53
+    Info: Total CPU time (on all processors): 00:01:12
 
 
