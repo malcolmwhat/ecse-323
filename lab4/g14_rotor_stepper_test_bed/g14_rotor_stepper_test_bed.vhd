@@ -11,7 +11,7 @@ entity g14_rotor_stepper_test_bed is
         init : in std_logic;
         seven_seg_l : out std_logic_vector(6 downto 0);
         seven_seg_m : out std_logic_vector(6 downto 0);
-        seven_seg_r : out std_logic_vector(6 downto 0);
+        seven_seg_r : out std_logic_vector(6 downto 0)
     ) ;
 end entity ; -- g14_rotor_stepper_test_bed
 
@@ -49,7 +49,7 @@ architecture behaviour of g14_rotor_stepper_test_bed is
             keypress : in std_logic; --
             knock_m : in std_logic;
             knock_r : in std_logic;
-            clock : in std_logic;
+            clk : in std_logic;
             init : in std_logic;
             en_l : out std_logic;
             en_m : out std_logic;
@@ -85,7 +85,7 @@ architecture behaviour of g14_rotor_stepper_test_bed is
     end component;
 begin
     -- Hard code certain values :
-    notch_m <= "00010"; -- C
+    notch_m <= "01001"; -- J
     notch_r <= "00100"; -- E
 
     data_in_counter_l <= "01000"; -- I
@@ -116,7 +116,7 @@ begin
         keypress => keypress,
         knock_m => knock_m,
         knock_r => knock_r,
-        clock => clock,
+        clk => clock,
         init => inv_init,
         en_l => en_l,
         en_m => en_m,

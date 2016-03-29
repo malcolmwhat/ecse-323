@@ -1,6 +1,6 @@
 |g14_rotor_stepper_test_bed
 clock => pulse_generator:pulse_gen.clock
-clock => g14_rotor_stepper:rotor_stepper_fsm.clock
+clock => g14_rotor_stepper:rotor_stepper_fsm.clk
 clock => g14_counter_with_load:left_counter.clk
 clock => g14_counter_with_load:middle_counter.clk
 clock => g14_counter_with_load:right_counter.clk
@@ -26,7 +26,6 @@ seven_seg_r[3] <= g14_7_segment_decoder:right_led_out.segments[3]
 seven_seg_r[4] <= g14_7_segment_decoder:right_led_out.segments[4]
 seven_seg_r[5] <= g14_7_segment_decoder:right_led_out.segments[5]
 seven_seg_r[6] <= g14_7_segment_decoder:right_led_out.segments[6]
-en <= pulse_generator:pulse_gen.epulse
 
 
 |g14_rotor_stepper_test_bed|pulse_generator:pulse_gen
@@ -252,25 +251,40 @@ eq <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |g14_rotor_stepper_test_bed|g14_rotor_stepper:rotor_stepper_fsm
-keypress => Selector2.IN5
-keypress => Selector4.IN4
-keypress => Selector7.IN3
-keypress => Selector10.IN5
-keypress => Selector2.IN3
-keypress => Selector4.IN2
-keypress => Selector7.IN1
-keypress => Selector10.IN2
-knock_m => next_state_handler.IN0
-knock_m => next_state_handler.IN0
-knock_m => next_state_handler.IN0
-knock_r => next_state_handler.IN1
-knock_r => next_state_handler.IN1
-knock_r => next_state_handler.IN1
-clock => current_state~1.DATAIN
-init => current_state~3.DATAIN
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+knock_m => process_0.IN0
+knock_m => process_0.IN0
+knock_m => process_0.IN0
+knock_r => process_0.IN1
+knock_r => process_0.IN1
+knock_r => process_0.IN1
+clk => state~9.DATAIN
+init => state.OUTPUTSELECT
+init => state.OUTPUTSELECT
+init => state.OUTPUTSELECT
+init => state.OUTPUTSELECT
+init => state.OUTPUTSELECT
+init => state.OUTPUTSELECT
+init => state.OUTPUTSELECT
+init => state.OUTPUTSELECT
 en_l <= en_l.DB_MAX_OUTPUT_PORT_TYPE
-en_m <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-en_r <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+en_m <= en_m.DB_MAX_OUTPUT_PORT_TYPE
+en_r <= en_r.DB_MAX_OUTPUT_PORT_TYPE
 load <= load.DB_MAX_OUTPUT_PORT_TYPE
 
 

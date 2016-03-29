@@ -32,7 +32,7 @@ begin
 			elsif load = '1' then
 				temp_count <= to_integer(unsigned(load_value));
 
-			elsif clk = '1' and clk'event then
+			elsif clk = '0' and clk'event then
 				if enable = '1' then
 
 					if temp_count >= 25 then

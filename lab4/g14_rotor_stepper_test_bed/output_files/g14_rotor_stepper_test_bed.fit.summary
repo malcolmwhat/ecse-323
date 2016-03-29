@@ -1,13 +1,13 @@
-Fitter Status : Successful - Thu Mar 24 17:04:10 2016
+Fitter Status : Successful - Tue Mar 29 15:51:47 2016
 Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 Revision Name : g14_rotor_stepper_test_bed
 Top-level Entity Name : g14_rotor_stepper_test_bed
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 339 / 32,070 ( 1 % )
-Total registers : 709
-Total pins : 24 / 457 ( 5 % )
+Logic utilization (in ALMs) : 346 / 32,070 ( 1 % )
+Total registers : 729
+Total pins : 23 / 457 ( 5 % )
 Total virtual pins : 0
 Total block memory bits : 3,072 / 4,065,280 ( < 1 % )
 Total RAM Blocks : 1 / 397 ( < 1 % )
