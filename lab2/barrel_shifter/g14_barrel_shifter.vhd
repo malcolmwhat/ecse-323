@@ -9,15 +9,13 @@ entity g14_barrel_shifter is
 	port (LETTER_IN : in std_logic_vector(25 downto 0);
 			SHIFT : in std_logic_vector(4 downto 0);
 			LETTER_OUT : out std_logic_vector(25 downto 0));
-end g14_barrel_shifter; 
+end g14_barrel_shifter;
 
 
-architecture shifter of g14_barrel_shifter is 
+architecture shifter of g14_barrel_shifter is
 	begin
 		with SHIFT select
-		    LETTER_OUT <= 
-			 
-			
+		    LETTER_OUT <=
 			LETTER_IN(24 downto 0) & LETTER_IN(25 downto 25) WHEN "00001",
 			LETTER_IN(23 downto 0) & LETTER_IN(25 downto 24) WHEN "00010",
 			LETTER_IN(22 downto 0) & LETTER_IN(25 downto 23) WHEN "00011",
@@ -43,6 +41,5 @@ architecture shifter of g14_barrel_shifter is
 			LETTER_IN(2 downto 0) & LETTER_IN(25 downto 3) WHEN "10111",
 			LETTER_IN(1 downto 0) & LETTER_IN(25 downto 2) WHEN "11000",
 			LETTER_IN(0 downto 0) & LETTER_IN(25 downto 1) WHEN "11001",
-
 			LETTER_IN WHEN others;
 end shifter;
