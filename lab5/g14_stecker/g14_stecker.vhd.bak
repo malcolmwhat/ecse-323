@@ -1,0 +1,6 @@
+entity gNN_Stecker is
+	port ( 
+		input_code : in std_logic_vector(4 downto 0);
+		output_code : out std_logic_vector(4 downto 0)
+	);
+end gNN_Stecker;
