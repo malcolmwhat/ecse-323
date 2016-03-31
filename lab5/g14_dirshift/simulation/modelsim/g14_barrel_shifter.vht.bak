@@ -66,17 +66,15 @@ always : PROCESS
 -- (        )
 -- variable declarations
 BEGIN
-    LETTER_IN <= "11110000110010101111000010";
+    LETTER_IN <= "1111000011001010111100001";
     DIRECTION <= '0';
     for i in 0 to 25 loop
     	shift <= std_logic_vector(to_unsigned(i, 5));
-    	wait for 1 ns;
     end loop;
 
     DIRECTION <= '1';
     for i in 0 to 25 loop
     	shift <= std_logic_vector(to_unsigned(i, 5));
-    	wait for 1 ns;
     end loop;
 
         -- code executes for every event on sensitivity list
