@@ -1,0 +1,38 @@
+|g14_rotor_stepper_fsm
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+keypress => state.OUTPUTSELECT
+knock_m => process_0.IN0
+knock_m => process_0.IN0
+knock_m => process_0.IN0
+knock_r => process_0.IN1
+knock_r => process_0.IN1
+knock_r => process_0.IN1
+clk => state~9.DATAIN
+init => state.OUTPUTSELECT
+init => state.OUTPUTSELECT
+init => state.OUTPUTSELECT
+init => state.OUTPUTSELECT
+init => state.OUTPUTSELECT
+init => state.OUTPUTSELECT
+init => state.OUTPUTSELECT
+init => state.OUTPUTSELECT
+en_l <= en_l.DB_MAX_OUTPUT_PORT_TYPE
+en_m <= en_m.DB_MAX_OUTPUT_PORT_TYPE
+en_r <= en_r.DB_MAX_OUTPUT_PORT_TYPE
+load <= load.DB_MAX_OUTPUT_PORT_TYPE
+
+

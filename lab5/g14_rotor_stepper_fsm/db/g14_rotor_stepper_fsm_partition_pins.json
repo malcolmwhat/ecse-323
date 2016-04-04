@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "en_l",
+					"strict" : false
+				},
+				{
+					"name" : "en_m",
+					"strict" : false
+				},
+				{
+					"name" : "en_r",
+					"strict" : false
+				},
+				{
+					"name" : "load",
+					"strict" : false
+				},
+				{
+					"name" : "knock_r",
+					"strict" : false
+				},
+				{
+					"name" : "knock_m",
+					"strict" : false
+				},
+				{
+					"name" : "init",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "keypress",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
