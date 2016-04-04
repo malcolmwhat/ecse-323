@@ -1,0 +1,45 @@
+|g14_rotor
+clock => ~NO_FANOUT~
+input_code_forward[0] => ~NO_FANOUT~
+input_code_forward[1] => ~NO_FANOUT~
+input_code_forward[2] => ~NO_FANOUT~
+input_code_forward[3] => ~NO_FANOUT~
+input_code_forward[4] => ~NO_FANOUT~
+input_code_reverse[0] => ~NO_FANOUT~
+input_code_reverse[1] => ~NO_FANOUT~
+input_code_reverse[2] => ~NO_FANOUT~
+input_code_reverse[3] => ~NO_FANOUT~
+input_code_reverse[4] => ~NO_FANOUT~
+directions[0] => ~NO_FANOUT~
+directions[1] => ~NO_FANOUT~
+directions[2] => ~NO_FANOUT~
+directions[3] => ~NO_FANOUT~
+ring_setting[0] => ~NO_FANOUT~
+ring_setting[1] => ~NO_FANOUT~
+ring_setting[2] => ~NO_FANOUT~
+ring_setting[3] => ~NO_FANOUT~
+ring_setting[4] => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+data[3] => ~NO_FANOUT~
+data[4] => ~NO_FANOUT~
+load => ~NO_FANOUT~
+enable => ~NO_FANOUT~
+knock_count[0] <= knock_count[0].DB_MAX_OUTPUT_PORT_TYPE
+knock_count[1] <= knock_count[1].DB_MAX_OUTPUT_PORT_TYPE
+knock_count[2] <= knock_count[2].DB_MAX_OUTPUT_PORT_TYPE
+knock_count[3] <= knock_count[3].DB_MAX_OUTPUT_PORT_TYPE
+knock_count[4] <= knock_count[4].DB_MAX_OUTPUT_PORT_TYPE
+output_code_forward[0] <= output_code_forward[0].DB_MAX_OUTPUT_PORT_TYPE
+output_code_forward[1] <= output_code_forward[1].DB_MAX_OUTPUT_PORT_TYPE
+output_code_forward[2] <= output_code_forward[2].DB_MAX_OUTPUT_PORT_TYPE
+output_code_forward[3] <= output_code_forward[3].DB_MAX_OUTPUT_PORT_TYPE
+output_code_forward[4] <= output_code_forward[4].DB_MAX_OUTPUT_PORT_TYPE
+output_code_reverse[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+output_code_reverse[1] <= output_code_reverse[1].DB_MAX_OUTPUT_PORT_TYPE
+output_code_reverse[2] <= output_code_reverse[2].DB_MAX_OUTPUT_PORT_TYPE
+output_code_reverse[3] <= output_code_reverse[3].DB_MAX_OUTPUT_PORT_TYPE
+output_code_reverse[4] <= output_code_reverse[4].DB_MAX_OUTPUT_PORT_TYPE
+
+

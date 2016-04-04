@@ -11,19 +11,19 @@ port (input_code : in std_logic_vector(4 downto 0);
 		rotor_type :in std_logic_vector(1 downto 0);
 		output_code :out std_logic_vector(4 downto 0);
 		inv_output_code :out std_logic_vector(4 downto 0));
-end g14_permutation; 
+end g14_permutation;
 
 
-architecture permuter of g14_permutation is 
+architecture permuter of g14_permutation is
 	begin
-	
+
 	permute : process (input_code, rotor_type)
 		begin
 			case rotor_type is
 				-- ***** ROTOR 1 *****
-				when "00" => 
+				when "00" =>
 					-- Mapping for the first rotor
-					case input_code is 
+					case input_code is
 						when "00000" => output_code <= "00100"; -- A -> E
 						when "00001" => output_code <= "01010"; -- B -> K
 						when "00010" => output_code <= "01100"; -- C -> M
@@ -82,9 +82,9 @@ architecture permuter of g14_permutation is
 					end case;
 
 				-- ***** ROTOR 2 *****
-				when "01" =>   
+				when "01" =>
 					-- Mapping for Rotor 2 output code
-					case input_code is 
+					case input_code is
 						when "00000" => output_code <= "00000"; -- A -> A
 						when "00001" => output_code <= "01001"; -- B -> J
 						when "00010" => output_code <= "00011"; -- C -> D
@@ -144,7 +144,7 @@ architecture permuter of g14_permutation is
 				-- ***** ROTOR 3 *****
 				when "10" =>
 					-- Input mapping for rotor 3
-					case input_code is 
+					case input_code is
 						when "00000" => output_code <= "00001"; ---> B
 						when "00001" => output_code <= "00011"; ---> D
 						when "00010" => output_code <= "00101"; ---> F
@@ -202,8 +202,8 @@ architecture permuter of g14_permutation is
 						when others => inv_output_code <= "11001";
 					end case;
 				-- ***** Rotor 4 *****
-				when others => 
-					case input_code is 
+				when others =>
+					case input_code is
 						when "00000" => output_code <= "00100"; ---> E
 						when "00001" => output_code <= "10010"; ---> S
 						when "00010" => output_code <= "01110"; ---> O
@@ -231,7 +231,7 @@ architecture permuter of g14_permutation is
 						when "11000" => output_code <= "10110"; ---> W
 						when others => output_code <= "00001"; ---> B
 					end case;
-					case input_code is 
+					case input_code is
 						-- Inverse mapping for Rotor 4
 						when "00100" => inv_output_code <= "00000"; ---> E
 						when "10010" => inv_output_code <= "00001"; ---> S
