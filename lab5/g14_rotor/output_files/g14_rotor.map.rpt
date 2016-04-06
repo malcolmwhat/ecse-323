@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g14_rotor
-Mon Apr 04 17:21:21 2016
+Wed Apr 06 16:45:33 2016
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -14,9 +14,21 @@ Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Port Connectivity Checks: "g14_26_5_encoder:inverse_encoder_1"
+ 11. Port Connectivity Checks: "g14_5_26_decoder:inverse_decoder_1"
+ 12. Port Connectivity Checks: "g14_permutation:inverse_permuter"
+ 13. Port Connectivity Checks: "g14_26_5_encoder:inverse_encoder_0"
+ 14. Port Connectivity Checks: "g14_5_26_decoder:inverse_decoder_0"
+ 15. Port Connectivity Checks: "g14_26_5_encoder:forward_encoder_1"
+ 16. Port Connectivity Checks: "g14_5_26_decoder:forward_decoder_1"
+ 17. Port Connectivity Checks: "g14_permutation:forward_permuter"
+ 18. Port Connectivity Checks: "g14_26_5_encoder:forward_encoder_0"
+ 19. Port Connectivity Checks: "g14_5_26_decoder:forward_decoder_0"
+ 20. Port Connectivity Checks: "g14_counter_with_load:counter"
+ 21. Post-Synthesis Netlist Statistics for Top Partition
+ 22. Elapsed Time Per Partition
+ 23. Analysis & Synthesis Messages
 
 
 
@@ -43,14 +55,14 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Apr 04 17:21:21 2016       ;
+; Analysis & Synthesis Status     ; Successful - Wed Apr 06 16:45:33 2016       ;
 ; Quartus Prime Version           ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
 ; Revision Name                   ; g14_rotor                                   ;
 ; Top-level Entity Name           ; g14_rotor                                   ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 42                                          ;
+; Total registers                 ; 5                                           ;
+; Total pins                      ; 44                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -160,10 +172,11 @@ agreement for further details.
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ; < 0.1%      ;
 +----------------------------+-------------+
 
 
@@ -181,40 +194,59 @@ agreement for further details.
 +----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimate of Logic utilization (ALMs needed) ; 0     ;
-;                                             ;       ;
-; Combinational ALUT usage for logic          ; 0     ;
-;     -- 7 input functions                    ; 0     ;
-;     -- 6 input functions                    ; 0     ;
-;     -- 5 input functions                    ; 0     ;
-;     -- 4 input functions                    ; 0     ;
-;     -- <=3 input functions                  ; 0     ;
-;                                             ;       ;
-; Dedicated logic registers                   ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 42    ;
-;                                             ;       ;
-; Total DSP Blocks                            ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; clock ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 42    ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
++---------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                 ;
++---------------------------------------------+-----------------------------------------------+
+; Resource                                    ; Usage                                         ;
++---------------------------------------------+-----------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 1369                                          ;
+;                                             ;                                               ;
+; Combinational ALUT usage for logic          ; 1711                                          ;
+;     -- 7 input functions                    ; 15                                            ;
+;     -- 6 input functions                    ; 1012                                          ;
+;     -- 5 input functions                    ; 213                                           ;
+;     -- 4 input functions                    ; 172                                           ;
+;     -- <=3 input functions                  ; 299                                           ;
+;                                             ;                                               ;
+; Dedicated logic registers                   ; 5                                             ;
+;                                             ;                                               ;
+; I/O pins                                    ; 44                                            ;
+;                                             ;                                               ;
+; Total DSP Blocks                            ; 0                                             ;
+;                                             ;                                               ;
+; Maximum fan-out node                        ; g14_counter_with_load:counter|temp_count[0]~2 ;
+; Maximum fan-out                             ; 220                                           ;
+; Total fan-out                               ; 8872                                          ;
+; Average fan-out                             ; 4.92                                          ;
++---------------------------------------------+-----------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                       ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
-; |g14_rotor                 ; 0 (0)             ; 0 (0)        ; 0                 ; 0          ; 42   ; 0            ; |g14_rotor          ; work         ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                ;
++--------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+--------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                       ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                    ; Library Name ;
++--------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+--------------------------------------------------------+--------------+
+; |g14_rotor                                       ; 1711 (0)          ; 5 (0)        ; 0                 ; 0          ; 44   ; 0            ; |g14_rotor                                             ; work         ;
+;    |g14_26_5_encoder:forward_encoder_0|          ; 30 (30)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g14_rotor|g14_26_5_encoder:forward_encoder_0          ; work         ;
+;    |g14_26_5_encoder:forward_encoder_1|          ; 26 (26)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g14_rotor|g14_26_5_encoder:forward_encoder_1          ; work         ;
+;    |g14_26_5_encoder:inverse_encoder_0|          ; 31 (31)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g14_rotor|g14_26_5_encoder:inverse_encoder_0          ; work         ;
+;    |g14_26_5_encoder:inverse_encoder_1|          ; 26 (26)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g14_rotor|g14_26_5_encoder:inverse_encoder_1          ; work         ;
+;    |g14_5_26_decoder:forward_decoder_0|          ; 9 (9)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g14_rotor|g14_5_26_decoder:forward_decoder_0          ; work         ;
+;    |g14_5_26_decoder:forward_decoder_1|          ; 8 (8)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g14_rotor|g14_5_26_decoder:forward_decoder_1          ; work         ;
+;    |g14_5_26_decoder:inverse_decoder_0|          ; 9 (9)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g14_rotor|g14_5_26_decoder:inverse_decoder_0          ; work         ;
+;    |g14_5_26_decoder:inverse_decoder_1|          ; 8 (8)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g14_rotor|g14_5_26_decoder:inverse_decoder_1          ; work         ;
+;    |g14_barrel_shifter:forward_barrel_shifter_0| ; 191 (191)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g14_rotor|g14_barrel_shifter:forward_barrel_shifter_0 ; work         ;
+;    |g14_barrel_shifter:forward_barrel_shifter_1| ; 180 (180)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g14_rotor|g14_barrel_shifter:forward_barrel_shifter_1 ; work         ;
+;    |g14_barrel_shifter:forward_barrel_shifter_2| ; 188 (188)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g14_rotor|g14_barrel_shifter:forward_barrel_shifter_2 ; work         ;
+;    |g14_barrel_shifter:forward_barrel_shifter_3| ; 180 (180)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g14_rotor|g14_barrel_shifter:forward_barrel_shifter_3 ; work         ;
+;    |g14_barrel_shifter:inverse_barrel_shifter_0| ; 196 (196)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g14_rotor|g14_barrel_shifter:inverse_barrel_shifter_0 ; work         ;
+;    |g14_barrel_shifter:inverse_barrel_shifter_1| ; 180 (180)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g14_rotor|g14_barrel_shifter:inverse_barrel_shifter_1 ; work         ;
+;    |g14_barrel_shifter:inverse_barrel_shifter_2| ; 195 (195)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g14_rotor|g14_barrel_shifter:inverse_barrel_shifter_2 ; work         ;
+;    |g14_barrel_shifter:inverse_barrel_shifter_3| ; 180 (180)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g14_rotor|g14_barrel_shifter:inverse_barrel_shifter_3 ; work         ;
+;    |g14_counter_with_load:counter|               ; 16 (16)           ; 5 (5)        ; 0                 ; 0          ; 0    ; 0            ; |g14_rotor|g14_counter_with_load:counter               ; work         ;
+;    |g14_permutation:forward_permuter|            ; 31 (31)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g14_rotor|g14_permutation:forward_permuter            ; work         ;
+;    |g14_permutation:inverse_permuter|            ; 27 (27)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |g14_rotor|g14_permutation:inverse_permuter            ; work         ;
++--------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+--------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -223,14 +255,128 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 5     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 5     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 5     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------+
+; 4:1                ; 208 bits  ; 416 LEs       ; 416 LEs              ; 0 LEs                  ; No         ; |g14_rotor|g14_barrel_shifter:forward_barrel_shifter_3|Mux1  ;
+; 4:1                ; 208 bits  ; 416 LEs       ; 416 LEs              ; 0 LEs                  ; No         ; |g14_rotor|g14_barrel_shifter:forward_barrel_shifter_1|Mux9  ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |g14_rotor|g14_permutation:inverse_permuter|Mux46            ;
+; 12:1               ; 48 bits   ; 384 LEs       ; 288 LEs              ; 96 LEs                 ; No         ; |g14_rotor|g14_barrel_shifter:inverse_barrel_shifter_3|Mux2  ;
+; 12:1               ; 52 bits   ; 416 LEs       ; 312 LEs              ; 104 LEs                ; No         ; |g14_rotor|g14_barrel_shifter:inverse_barrel_shifter_0|Mux10 ;
+; 12:1               ; 52 bits   ; 416 LEs       ; 312 LEs              ; 104 LEs                ; No         ; |g14_rotor|g14_barrel_shifter:inverse_barrel_shifter_2|Mux14 ;
+; 12:1               ; 48 bits   ; 384 LEs       ; 288 LEs              ; 96 LEs                 ; No         ; |g14_rotor|g14_barrel_shifter:forward_barrel_shifter_1|Mux22 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "g14_26_5_encoder:inverse_encoder_1"                                                  ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; error ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "g14_5_26_decoder:inverse_decoder_1"                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; err  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "g14_permutation:inverse_permuter"                                                          ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; output_code ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "g14_26_5_encoder:inverse_encoder_0"                                                  ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; error ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "g14_5_26_decoder:inverse_decoder_0"                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; err  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "g14_26_5_encoder:forward_encoder_1"                                                  ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; error ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "g14_5_26_decoder:forward_decoder_1"                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; err  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "g14_permutation:forward_permuter"                                                              ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port            ; Type   ; Severity ; Details                                                                             ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; inv_output_code ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "g14_26_5_encoder:forward_encoder_0"                                                  ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; error ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "g14_5_26_decoder:forward_decoder_0"                                                 ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; err  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "g14_counter_with_load:counter" ;
++-------+-------+----------+--------------------------------+
+; Port  ; Type  ; Severity ; Details                        ;
++-------+-------+----------+--------------------------------+
+; reset ; Input ; Info     ; Stuck at GND                   ;
++-------+-------+----------+--------------------------------+
 
 
 +-----------------------------------------------------+
@@ -238,13 +384,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 1                           ;
-;     normal            ; 1                           ;
-;         0 data inputs ; 1                           ;
-; boundary_port         ; 42                          ;
+; arriav_ff             ; 5                           ;
+;     ENA CLR           ; 5                           ;
+; arriav_lcell_comb     ; 1711                        ;
+;     extend            ; 15                          ;
+;         7 data inputs ; 15                          ;
+;     normal            ; 1696                        ;
+;         2 data inputs ; 34                          ;
+;         3 data inputs ; 265                         ;
+;         4 data inputs ; 172                         ;
+;         5 data inputs ; 213                         ;
+;         6 data inputs ; 1012                        ;
+; boundary_port         ; 44                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
+; Max LUT depth         ; 26.00                       ;
+; Average LUT depth     ; 25.61                       ;
 +-----------------------+-----------------------------+
 
 
@@ -253,7 +407,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:14     ;
 +----------------+--------------+
 
 
@@ -263,11 +417,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
-    Info: Processing started: Mon Apr 04 17:21:07 2016
+    Info: Processing started: Wed Apr 06 16:44:43 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g14_rotor -c g14_rotor
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file g14_rotor.vhd
-    Info (12022): Found design unit 1: g14_rotor-arch File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 24
+    Info (12022): Found design unit 1: g14_rotor-arch File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 25
     Info (12023): Found entity 1: g14_rotor File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file g14_5_26_decoder.vhd
     Info (12022): Found design unit 1: g14_5_26_decoder-decoder File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_5_26_decoder.vhd Line: 33
@@ -285,62 +439,29 @@ Info (12021): Found 2 design units, including 1 entities, in source file g14_per
     Info (12022): Found design unit 1: g14_permutation-permuter File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_permutation.vhd Line: 17
     Info (12023): Found entity 1: g14_permutation File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_permutation.vhd Line: 9
 Info (12127): Elaborating entity "g14_rotor" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at g14_rotor.vhd(18): used implicit default value for signal "knock_count" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 18
-Warning (10541): VHDL Signal Declaration warning at g14_rotor.vhd(19): used implicit default value for signal "output_code_forward" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 19
-Warning (10541): VHDL Signal Declaration warning at g14_rotor.vhd(20): used implicit default value for signal "output_code_reverse" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 20
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "knock_count[0]" is stuck at GND File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 18
-    Warning (13410): Pin "knock_count[1]" is stuck at GND File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 18
-    Warning (13410): Pin "knock_count[2]" is stuck at GND File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 18
-    Warning (13410): Pin "knock_count[3]" is stuck at GND File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 18
-    Warning (13410): Pin "knock_count[4]" is stuck at GND File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 18
-    Warning (13410): Pin "output_code_forward[0]" is stuck at GND File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 19
-    Warning (13410): Pin "output_code_forward[1]" is stuck at GND File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 19
-    Warning (13410): Pin "output_code_forward[2]" is stuck at GND File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 19
-    Warning (13410): Pin "output_code_forward[3]" is stuck at GND File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 19
-    Warning (13410): Pin "output_code_forward[4]" is stuck at GND File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 19
-    Warning (13410): Pin "output_code_reverse[0]" is stuck at GND File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 20
-    Warning (13410): Pin "output_code_reverse[1]" is stuck at GND File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 20
-    Warning (13410): Pin "output_code_reverse[2]" is stuck at GND File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 20
-    Warning (13410): Pin "output_code_reverse[3]" is stuck at GND File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 20
-    Warning (13410): Pin "output_code_reverse[4]" is stuck at GND File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 20
+Info (12128): Elaborating entity "g14_counter_with_load" for hierarchy "g14_counter_with_load:counter" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 98
+Warning (10492): VHDL Process Statement warning at g14_counter_with_load.vhd(33): signal "load_value" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_counter_with_load.vhd Line: 33
+Info (12128): Elaborating entity "g14_5_26_decoder" for hierarchy "g14_5_26_decoder:forward_decoder_0" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 102
+Info (12128): Elaborating entity "g14_barrel_shifter" for hierarchy "g14_barrel_shifter:forward_barrel_shifter_0" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 105
+Info (12128): Elaborating entity "g14_26_5_encoder" for hierarchy "g14_26_5_encoder:forward_encoder_0" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 113
+Info (12128): Elaborating entity "g14_permutation" for hierarchy "g14_permutation:forward_permuter" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 116
+Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "g14_counter_with_load:counter|temp_count[0]" is converted into an equivalent circuit using register "g14_counter_with_load:counter|temp_count[0]~_emulated" and latch "g14_counter_with_load:counter|temp_count[0]~1" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_counter_with_load.vhd Line: 29
+    Warning (13310): Register "g14_counter_with_load:counter|temp_count[1]" is converted into an equivalent circuit using register "g14_counter_with_load:counter|temp_count[1]~_emulated" and latch "g14_counter_with_load:counter|temp_count[1]~5" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_counter_with_load.vhd Line: 29
+    Warning (13310): Register "g14_counter_with_load:counter|temp_count[2]" is converted into an equivalent circuit using register "g14_counter_with_load:counter|temp_count[2]~_emulated" and latch "g14_counter_with_load:counter|temp_count[2]~9" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_counter_with_load.vhd Line: 29
+    Warning (13310): Register "g14_counter_with_load:counter|temp_count[3]" is converted into an equivalent circuit using register "g14_counter_with_load:counter|temp_count[3]~_emulated" and latch "g14_counter_with_load:counter|temp_count[3]~13" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_counter_with_load.vhd Line: 29
+    Warning (13310): Register "g14_counter_with_load:counter|temp_count[4]" is converted into an equivalent circuit using register "g14_counter_with_load:counter|temp_count[4]~_emulated" and latch "g14_counter_with_load:counter|temp_count[4]~17" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_counter_with_load.vhd Line: 29
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 27 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clock" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 10
-    Warning (15610): No output dependent on input pin "input_code_forward[0]" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 11
-    Warning (15610): No output dependent on input pin "input_code_forward[1]" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 11
-    Warning (15610): No output dependent on input pin "input_code_forward[2]" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 11
-    Warning (15610): No output dependent on input pin "input_code_forward[3]" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 11
-    Warning (15610): No output dependent on input pin "input_code_forward[4]" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 11
-    Warning (15610): No output dependent on input pin "input_code_reverse[0]" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 12
-    Warning (15610): No output dependent on input pin "input_code_reverse[1]" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 12
-    Warning (15610): No output dependent on input pin "input_code_reverse[2]" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 12
-    Warning (15610): No output dependent on input pin "input_code_reverse[3]" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 12
-    Warning (15610): No output dependent on input pin "input_code_reverse[4]" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 12
-    Warning (15610): No output dependent on input pin "directions[0]" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 13
-    Warning (15610): No output dependent on input pin "directions[1]" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 13
-    Warning (15610): No output dependent on input pin "directions[2]" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 13
-    Warning (15610): No output dependent on input pin "directions[3]" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 13
-    Warning (15610): No output dependent on input pin "ring_setting[0]" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 14
-    Warning (15610): No output dependent on input pin "ring_setting[1]" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 14
-    Warning (15610): No output dependent on input pin "ring_setting[2]" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 14
-    Warning (15610): No output dependent on input pin "ring_setting[3]" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 14
-    Warning (15610): No output dependent on input pin "ring_setting[4]" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 14
-    Warning (15610): No output dependent on input pin "data[0]" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 15
-    Warning (15610): No output dependent on input pin "data[1]" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 15
-    Warning (15610): No output dependent on input pin "data[2]" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 15
-    Warning (15610): No output dependent on input pin "data[3]" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 15
-    Warning (15610): No output dependent on input pin "data[4]" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 15
-    Warning (15610): No output dependent on input pin "load" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 16
-    Warning (15610): No output dependent on input pin "enable" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_rotor/g14_rotor.vhd Line: 17
-Info (21057): Implemented 42 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 27 input pins
+Info (21057): Implemented 1755 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 29 input pins
     Info (21059): Implemented 15 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 47 warnings
-    Info: Peak virtual memory: 904 megabytes
-    Info: Processing ended: Mon Apr 04 17:21:21 2016
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:30
+    Info (21061): Implemented 1711 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 914 megabytes
+    Info: Processing ended: Wed Apr 06 16:45:33 2016
+    Info: Elapsed time: 00:00:50
+    Info: Total CPU time (on all processors): 00:00:58
 
 

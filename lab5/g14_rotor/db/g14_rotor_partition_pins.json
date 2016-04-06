@@ -2,7 +2,184 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "knock_count[0]",
+					"strict" : false
+				},
+				{
+					"name" : "knock_count[1]",
+					"strict" : false
+				},
+				{
+					"name" : "knock_count[2]",
+					"strict" : false
+				},
+				{
+					"name" : "knock_count[3]",
+					"strict" : false
+				},
+				{
+					"name" : "knock_count[4]",
+					"strict" : false
+				},
+				{
+					"name" : "output_code_forward[0]",
+					"strict" : false
+				},
+				{
+					"name" : "output_code_forward[1]",
+					"strict" : false
+				},
+				{
+					"name" : "output_code_forward[2]",
+					"strict" : false
+				},
+				{
+					"name" : "output_code_forward[3]",
+					"strict" : false
+				},
+				{
+					"name" : "output_code_forward[4]",
+					"strict" : false
+				},
+				{
+					"name" : "output_code_reverse[0]",
+					"strict" : false
+				},
+				{
+					"name" : "output_code_reverse[1]",
+					"strict" : false
+				},
+				{
+					"name" : "output_code_reverse[2]",
+					"strict" : false
+				},
+				{
+					"name" : "output_code_reverse[3]",
+					"strict" : false
+				},
+				{
+					"name" : "output_code_reverse[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ring_setting[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ring_setting[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ring_setting[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ring_setting[2]",
+					"strict" : false
+				},
+				{
+					"name" : "input_code_forward[0]",
+					"strict" : false
+				},
+				{
+					"name" : "input_code_forward[1]",
+					"strict" : false
+				},
+				{
+					"name" : "input_code_forward[2]",
+					"strict" : false
+				},
+				{
+					"name" : "directions[0]",
+					"strict" : false
+				},
+				{
+					"name" : "input_code_forward[3]",
+					"strict" : false
+				},
+				{
+					"name" : "input_code_forward[4]",
+					"strict" : false
+				},
+				{
+					"name" : "directions[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ring_setting[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rotor_type[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rotor_type[1]",
+					"strict" : false
+				},
+				{
+					"name" : "directions[2]",
+					"strict" : false
+				},
+				{
+					"name" : "directions[3]",
+					"strict" : false
+				},
+				{
+					"name" : "input_code_reverse[4]",
+					"strict" : false
+				},
+				{
+					"name" : "input_code_reverse[0]",
+					"strict" : false
+				},
+				{
+					"name" : "input_code_reverse[1]",
+					"strict" : false
+				},
+				{
+					"name" : "input_code_reverse[2]",
+					"strict" : false
+				},
+				{
+					"name" : "input_code_reverse[3]",
+					"strict" : false
+				},
+				{
+					"name" : "load",
+					"strict" : false
+				},
+				{
+					"name" : "data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "enable",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

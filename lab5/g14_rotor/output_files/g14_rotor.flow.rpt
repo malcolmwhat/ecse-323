@@ -1,5 +1,5 @@
 Flow report for g14_rotor
-Mon Apr 04 17:22:41 2016
+Wed Apr 06 16:49:24 2016
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -41,16 +41,16 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Mon Apr 04 17:22:41 2016       ;
+; Flow Status                     ; Successful - Wed Apr 06 16:49:24 2016       ;
 ; Quartus Prime Version           ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
 ; Revision Name                   ; g14_rotor                                   ;
 ; Top-level Entity Name           ; g14_rotor                                   ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 1 / 32,070 ( < 1 % )                        ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 42 / 457 ( 9 % )                            ;
+; Logic utilization (in ALMs)     ; 1,345 / 32,070 ( 4 % )                      ;
+; Total registers                 ; 5                                           ;
+; Total pins                      ; 44 / 457 ( 10 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
 ; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/04/2016 17:21:07 ;
+; Start date & time ; 04/06/2016 16:44:44 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; g14_rotor           ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 264018875245706.145980486710268 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 264018875245706.145997548408776 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)          ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
@@ -96,12 +96,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:14     ; 1.0                     ; 904 MB              ; 00:00:30                           ;
-; Fitter                    ; 00:00:40     ; 1.0                     ; 2228 MB             ; 00:00:59                           ;
-; Assembler                 ; 00:00:11     ; 1.0                     ; 889 MB              ; 00:00:11                           ;
-; TimeQuest Timing Analyzer ; 00:00:06     ; 1.0                     ; 1149 MB             ; 00:00:05                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 786 MB              ; 00:00:02                           ;
-; Total                     ; 00:01:13     ; --                      ; --                  ; 00:01:47                           ;
+; Analysis & Synthesis      ; 00:00:49     ; 1.0                     ; 914 MB              ; 00:00:57                           ;
+; Fitter                    ; 00:02:34     ; 1.0                     ; 2227 MB             ; 00:03:39                           ;
+; Assembler                 ; 00:00:22     ; 1.0                     ; 900 MB              ; 00:00:17                           ;
+; TimeQuest Timing Analyzer ; 00:00:17     ; 1.4                     ; 1197 MB             ; 00:00:19                           ;
+; EDA Netlist Writer        ; 00:00:04     ; 1.0                     ; 815 MB              ; 00:00:03                           ;
+; Total                     ; 00:04:06     ; --                      ; --                  ; 00:05:15                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

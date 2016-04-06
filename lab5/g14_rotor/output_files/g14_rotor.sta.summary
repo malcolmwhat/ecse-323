@@ -2,4 +2,100 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1100mV 85C Model Setup 'clock'
+Slack : -2.496
+TNS   : -12.018
+
+Type  : Slow 1100mV 85C Model Hold 'clock'
+Slack : 0.683
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'clock'
+Slack : -2.144
+TNS   : -10.720
+
+Type  : Slow 1100mV 85C Model Removal 'clock'
+Slack : 1.350
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.394
+TNS   : -3.170
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'load'
+Slack : 0.306
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'clock'
+Slack : -2.340
+TNS   : -11.436
+
+Type  : Slow 1100mV 0C Model Hold 'clock'
+Slack : 0.523
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'clock'
+Slack : -1.888
+TNS   : -9.440
+
+Type  : Slow 1100mV 0C Model Removal 'clock'
+Slack : 1.099
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.394
+TNS   : -3.320
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'load'
+Slack : 0.292
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clock'
+Slack : -1.499
+TNS   : -6.688
+
+Type  : Fast 1100mV 85C Model Hold 'clock'
+Slack : 0.384
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'clock'
+Slack : -1.323
+TNS   : -6.615
+
+Type  : Fast 1100mV 85C Model Removal 'clock'
+Slack : 0.854
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.048
+TNS   : -0.240
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'load'
+Slack : 0.059
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clock'
+Slack : -1.169
+TNS   : -5.180
+
+Type  : Fast 1100mV 0C Model Hold 'clock'
+Slack : 0.264
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'clock'
+Slack : -0.985
+TNS   : -4.925
+
+Type  : Fast 1100mV 0C Model Removal 'clock'
+Slack : 0.644
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.060
+TNS   : -0.300
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'load'
+Slack : 0.042
+TNS   : 0.000
+
 ------------------------------------------------------------
