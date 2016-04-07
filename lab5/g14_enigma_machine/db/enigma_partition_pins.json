@@ -1,0 +1,257 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "output_code[0]",
+					"strict" : false
+				},
+				{
+					"name" : "output_code[1]",
+					"strict" : false
+				},
+				{
+					"name" : "output_code[2]",
+					"strict" : false
+				},
+				{
+					"name" : "output_code[3]",
+					"strict" : false
+				},
+				{
+					"name" : "output_code[4]",
+					"strict" : false
+				},
+				{
+					"name" : "directions_r[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ring_setting_r[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ring_setting_r[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ring_setting_r[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ring_setting_r[2]",
+					"strict" : false
+				},
+				{
+					"name" : "directions_r[2]",
+					"strict" : false
+				},
+				{
+					"name" : "directions_r[1]",
+					"strict" : false
+				},
+				{
+					"name" : "directions_r[0]",
+					"strict" : false
+				},
+				{
+					"name" : "directions_m[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ring_setting_m[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ring_setting_m[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ring_setting_m[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ring_setting_m[2]",
+					"strict" : false
+				},
+				{
+					"name" : "directions_m[2]",
+					"strict" : false
+				},
+				{
+					"name" : "directions_m[1]",
+					"strict" : false
+				},
+				{
+					"name" : "directions_m[0]",
+					"strict" : false
+				},
+				{
+					"name" : "directions_l[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ring_setting_l[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ring_setting_l[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ring_setting_l[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ring_setting_l[2]",
+					"strict" : false
+				},
+				{
+					"name" : "directions_l[2]",
+					"strict" : false
+				},
+				{
+					"name" : "directions_l[1]",
+					"strict" : false
+				},
+				{
+					"name" : "directions_l[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rotor_type_l[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ring_setting_m[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rotor_type_m[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ring_setting_r[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rotor_type_r[1]",
+					"strict" : false
+				},
+				{
+					"name" : "input_code[2]",
+					"strict" : false
+				},
+				{
+					"name" : "input_code[1]",
+					"strict" : false
+				},
+				{
+					"name" : "input_code[0]",
+					"strict" : false
+				},
+				{
+					"name" : "input_code[4]",
+					"strict" : false
+				},
+				{
+					"name" : "input_code[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rotor_type_r[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rotor_type_m[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ring_setting_l[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rotor_type_l[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reflector_type",
+					"strict" : false
+				},
+				{
+					"name" : "rotor_ini_pos_r[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rotor_ini_pos_r[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rotor_ini_pos_r[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rotor_ini_pos_r[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rotor_ini_pos_m[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rotor_ini_pos_m[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rotor_ini_pos_m[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rotor_ini_pos_m[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rotor_ini_pos_l[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rotor_ini_pos_l[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rotor_ini_pos_l[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rotor_ini_pos_l[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rotor_ini_pos_l[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rotor_ini_pos_r[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rotor_ini_pos_m[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "keypress",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
