@@ -10,7 +10,7 @@ entity enigma is
     clock : in std_logic;
     keypress : in std_logic;
     reset : in std_logic; -- Resets to the day settings
-    otor_type_r : in std_logic_vector(1 downto 0);
+    rotor_type_r : in std_logic_vector(1 downto 0);
 	rotor_type_m : in std_logic_vector(1 downto 0);
 	rotor_type_l : in std_logic_vector(1 downto 0);
 	reflector_type : in std_logic;

@@ -90,7 +90,36 @@ BEGIN
 init : PROCESS
 -- variable declarations
 BEGIN
-        -- code that executes only once
+	reflector_type <= '0';
+	ring_setting_l <= "00000";
+	ring_setting_m <= "00000";
+	ring_setting_r <= "00000";
+	rotor_ini_pos_l <= "00000";
+	rotor_ini_pos_m <= "00000";
+	rotor_ini_pos_r <= "00000";
+	rotor_type_l <= "00";
+	rotor_type_m <= "00";
+	rotor_type_r <= "00";
+
+
+	input_code <= "00001";
+	keypress <= '1';
+	reset <= '1';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ; -- identifier
+    reset <= '0';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ; -- identifier
+    keypress <= '0';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+    keypress <= '1';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
 WAIT;
 END PROCESS init;
 always : PROCESS
@@ -98,6 +127,10 @@ always : PROCESS
 -- (        )
 -- variable declarations
 BEGIN
+
+
+
+
         -- code executes for every event on sensitivity list
 WAIT;
 END PROCESS always;
