@@ -7,15 +7,15 @@ use work.all;
 
 entity g14_rotor is
     port (
+        load : in std_logic; -- Tells us whether to load values
         clock : in std_logic;
+        enable : in std_logic; -- Enables the counter
+        data : in std_logic_vector(4 downto 0); -- The value to load to the counter
+		rotor_type : in std_logic_vector(1 downto 0);
+        ring_setting : in std_logic_vector(4 downto 0); -- Amount we will shift by
         input_code_forward : in std_logic_vector(4 downto 0); -- Towards reflector
         input_code_reverse : in std_logic_vector(4 downto 0); -- Back from reflector
-        directions : in std_logic_vector(3 downto 0); -- Specify the directions of the barrel shifter
-        ring_setting : in std_logic_vector(4 downto 0); -- Amount we will shift by
-        data : in std_logic_vector(4 downto 0); -- The value to load to the counter
-        load : in std_logic; -- Tells us whether to load values
-        enable : in std_logic; -- Enables the counter
-		  rotor_type : in std_logic_vector(1 downto 0);
+
         knock_count : out std_logic_vector(4 downto 0);
         output_code_forward : out std_logic_vector(4 downto 0);
         output_code_reverse : out std_logic_vector(4 downto 0)
@@ -43,14 +43,12 @@ architecture arch of g14_rotor is
 	signal inverse_shifted_thrice : std_logic_vector(25 downto 0);
 	signal inverse_shifted_frice : std_logic_vector(25 downto 0);
 
-	signal inv_dir : std_logic_vector(3 downto 0);
-
 	-- Component instantiation
 	component g14_5_26_decoder
 		port (
 			input : in std_logic_vector(4 downto 0);
-		   output : out std_logic_vector(25 downto 0);
-		   err : out std_logic
+		    output : out std_logic_vector(25 downto 0);
+		    err : out std_logic
 		);
 	end component;
 
@@ -92,8 +90,6 @@ architecture arch of g14_rotor is
 		);
 	end component;
 begin
-	inv_dir <= not(directions(3)) & not(directions(2)) & not(directions(1)) & not(directions(0));
-
 	-- Update count
 	knock_count <= current_count;
 
@@ -107,11 +103,11 @@ begin
 
 	forward_barrel_shifter_0 : g14_barrel_shifter
 		port map (letter_in => input_decoded_forward, shift => current_count,
-					 direction => directions(0), letter_out => forward_shifted_once);
+					 direction => '0', letter_out => forward_shifted_once);
 
 	forward_barrel_shifter_1 : g14_barrel_shifter
 		port map (letter_in => forward_shifted_once, shift => ring_setting,
-					 direction => directions(1), letter_out => forward_shifted_twice);
+					 direction => '1', letter_out => forward_shifted_twice);
 
 	forward_encoder_0 : g14_26_5_encoder
 		port map (letter => forward_shifted_twice, index => forward_to_permutation);
@@ -125,11 +121,11 @@ begin
 
 	forward_barrel_shifter_2 : g14_barrel_shifter
 		port map (letter_in => forward_permuted_decoded, shift => ring_setting,
-					 direction => directions(2), letter_out => forward_shifted_thrice);
+					 direction => '1', letter_out => forward_shifted_thrice);
 
 	forward_barrel_shifter_3 : g14_barrel_shifter
 		port map (letter_in => forward_shifted_thrice, shift => current_count,
-					 direction => directions(3), letter_out => forward_shifted_frice);
+					 direction => '0', letter_out => forward_shifted_frice);
 
 	forward_encoder_1 : g14_26_5_encoder
 		port map (letter => forward_shifted_frice, index => output_code_forward);
@@ -141,11 +137,11 @@ begin
 
 	inverse_barrel_shifter_0 : g14_barrel_shifter
 		port map (letter_in => input_decoded_inverse, shift => current_count,
-					 direction => inv_dir(0), letter_out => inverse_shifted_once);
+					 direction => '1', letter_out => inverse_shifted_once);
 
 	inverse_barrel_shifter_1 : g14_barrel_shifter
 		port map (letter_in => inverse_shifted_once, shift => ring_setting,
-					 direction => inv_dir(1), letter_out => inverse_shifted_twice);
+					 direction => '0', letter_out => inverse_shifted_twice);
 
 	inverse_encoder_0 : g14_26_5_encoder
 		port map (letter => inverse_shifted_twice, index => inverse_to_permutation);
@@ -159,11 +155,11 @@ begin
 
 	inverse_barrel_shifter_2 : g14_barrel_shifter
 		port map (letter_in => inverse_permuted_decoded, shift => ring_setting,
-					 direction => inv_dir(2), letter_out => inverse_shifted_thrice);
+					 direction => '0', letter_out => inverse_shifted_thrice);
 
 	inverse_barrel_shifter_3 : g14_barrel_shifter
 		port map (letter_in => inverse_shifted_thrice, shift => current_count,
-					 direction => inv_dir(3), letter_out => inverse_shifted_frice);
+					 direction => '1', letter_out => inverse_shifted_frice);
 
 	inverse_encoder_1 : g14_26_5_encoder
 		port map (letter => inverse_shifted_frice, index => output_code_reverse);

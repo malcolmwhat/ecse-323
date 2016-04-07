@@ -1,5 +1,5 @@
 Analysis & Synthesis report for enigma
-Wed Apr 06 21:32:20 2016
+Thu Apr 07 01:41:01 2016
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -10,29 +10,31 @@ Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |enigma|g14_rotor_stepper_fsm:rotor_stepper|state
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Port Connectivity Checks: "g14_rotor:left_rotor"
- 12. Port Connectivity Checks: "g14_rotor:right_rotor|g14_26_5_encoder:inverse_encoder_1"
- 13. Port Connectivity Checks: "g14_rotor:right_rotor|g14_5_26_decoder:inverse_decoder_1"
- 14. Port Connectivity Checks: "g14_rotor:right_rotor|g14_permutation:inverse_permuter"
- 15. Port Connectivity Checks: "g14_rotor:right_rotor|g14_26_5_encoder:inverse_encoder_0"
- 16. Port Connectivity Checks: "g14_rotor:right_rotor|g14_5_26_decoder:inverse_decoder_0"
- 17. Port Connectivity Checks: "g14_rotor:right_rotor|g14_26_5_encoder:forward_encoder_1"
- 18. Port Connectivity Checks: "g14_rotor:right_rotor|g14_5_26_decoder:forward_decoder_1"
- 19. Port Connectivity Checks: "g14_rotor:right_rotor|g14_permutation:forward_permuter"
- 20. Port Connectivity Checks: "g14_rotor:right_rotor|g14_26_5_encoder:forward_encoder_0"
- 21. Port Connectivity Checks: "g14_rotor:right_rotor|g14_5_26_decoder:forward_decoder_0"
- 22. Port Connectivity Checks: "g14_rotor:right_rotor|g14_counter_with_load:counter"
- 23. Port Connectivity Checks: "g14_5_bit_comparator:knock_m_comparator"
- 24. Port Connectivity Checks: "g14_5_bit_comparator:knock_r_comparator"
- 25. Post-Synthesis Netlist Statistics for Top Partition
- 26. Elapsed Time Per Partition
- 27. Analysis & Synthesis Messages
+  5. Port Connectivity Checks: "g14_rotor:left_rotor"
+  6. Port Connectivity Checks: "g14_rotor:middle_rotor"
+  7. Port Connectivity Checks: "g14_rotor:right_rotor|g14_26_5_encoder:inverse_encoder_1"
+  8. Port Connectivity Checks: "g14_rotor:right_rotor|g14_barrel_shifter:inverse_barrel_shifter_3"
+  9. Port Connectivity Checks: "g14_rotor:right_rotor|g14_barrel_shifter:inverse_barrel_shifter_2"
+ 10. Port Connectivity Checks: "g14_rotor:right_rotor|g14_5_26_decoder:inverse_decoder_1"
+ 11. Port Connectivity Checks: "g14_rotor:right_rotor|g14_permutation:inverse_permuter"
+ 12. Port Connectivity Checks: "g14_rotor:right_rotor|g14_26_5_encoder:inverse_encoder_0"
+ 13. Port Connectivity Checks: "g14_rotor:right_rotor|g14_barrel_shifter:inverse_barrel_shifter_1"
+ 14. Port Connectivity Checks: "g14_rotor:right_rotor|g14_barrel_shifter:inverse_barrel_shifter_0"
+ 15. Port Connectivity Checks: "g14_rotor:right_rotor|g14_5_26_decoder:inverse_decoder_0"
+ 16. Port Connectivity Checks: "g14_rotor:right_rotor|g14_26_5_encoder:forward_encoder_1"
+ 17. Port Connectivity Checks: "g14_rotor:right_rotor|g14_barrel_shifter:forward_barrel_shifter_3"
+ 18. Port Connectivity Checks: "g14_rotor:right_rotor|g14_barrel_shifter:forward_barrel_shifter_2"
+ 19. Port Connectivity Checks: "g14_rotor:right_rotor|g14_5_26_decoder:forward_decoder_1"
+ 20. Port Connectivity Checks: "g14_rotor:right_rotor|g14_permutation:forward_permuter"
+ 21. Port Connectivity Checks: "g14_rotor:right_rotor|g14_26_5_encoder:forward_encoder_0"
+ 22. Port Connectivity Checks: "g14_rotor:right_rotor|g14_barrel_shifter:forward_barrel_shifter_1"
+ 23. Port Connectivity Checks: "g14_rotor:right_rotor|g14_barrel_shifter:forward_barrel_shifter_0"
+ 24. Port Connectivity Checks: "g14_rotor:right_rotor|g14_5_26_decoder:forward_decoder_0"
+ 25. Port Connectivity Checks: "g14_rotor:right_rotor|g14_counter_with_load:counter"
+ 26. Port Connectivity Checks: "g14_rotor:right_rotor"
+ 27. Port Connectivity Checks: "g14_5_bit_comparator:knock_m_comparator"
+ 28. Port Connectivity Checks: "g14_5_bit_comparator:knock_r_comparator"
+ 29. Analysis & Synthesis Messages
 
 
 
@@ -56,27 +58,22 @@ agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Apr 06 21:32:19 2016       ;
-; Quartus Prime Version           ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
-; Revision Name                   ; enigma                                      ;
-; Top-level Entity Name           ; enigma                                      ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 23                                          ;
-; Total pins                      ; 62                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Thu Apr 07 01:41:01 2016           ;
+; Quartus Prime Version       ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
+; Revision Name               ; enigma                                      ;
+; Top-level Entity Name       ; enigma                                      ;
+; Family                      ; Cyclone V                                   ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
+; Total registers             ; N/A until Partition Merge                   ;
+; Total pins                  ; N/A until Partition Merge                   ;
+; Total virtual pins          ; N/A until Partition Merge                   ;
+; Total block memory bits     ; N/A until Partition Merge                   ;
+; Total PLLs                  ; N/A until Partition Merge                   ;
+; Total DLLs                  ; N/A until Partition Merge                   ;
++-----------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -176,204 +173,30 @@ agreement for further details.
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ; < 0.1%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                     ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                              ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------+---------+
-; enigma.vhd                       ; yes             ; User VHDL File  ; C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/enigma.vhd                ;         ;
-; g14_5_bit_comparator.vhd         ; yes             ; User VHDL File  ; C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_5_bit_comparator.vhd  ;         ;
-; g14_reflector.vhd                ; yes             ; User VHDL File  ; C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_reflector.vhd         ;         ;
-; g14_rotor.vhd                    ; yes             ; User VHDL File  ; C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_rotor.vhd             ;         ;
-; g14_rotor_stepper_fsm.vhd        ; yes             ; User VHDL File  ; C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_rotor_stepper_fsm.vhd ;         ;
-; g14_stecker.vhd                  ; yes             ; User VHDL File  ; C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd           ;         ;
-; g14_permutation.vhd              ; yes             ; User VHDL File  ; C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_permutation.vhd       ;         ;
-; g14_5_26_decoder.vhd             ; yes             ; User VHDL File  ; C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_5_26_decoder.vhd      ;         ;
-; g14_26_5_encoder.vhd             ; yes             ; User VHDL File  ; C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_26_5_encoder.vhd      ;         ;
-; g14_barrel_shifter.vhd           ; yes             ; User VHDL File  ; C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_barrel_shifter.vhd    ;         ;
-; g14_counter_with_load.vhd        ; yes             ; User VHDL File  ; C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_counter_with_load.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "g14_rotor:left_rotor"                                                                               ;
++-------------+---------+------------------+-------------------------------------------------------------------------------------+
+; Port        ; Type    ; Severity         ; Details                                                                             ;
++-------------+---------+------------------+-------------------------------------------------------------------------------------+
+; directions  ; Unknown ; Critical Warning ; Named port was not declared by the instantiated entity                              ;
+; knock_count ; Output  ; Info             ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+---------+------------------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                                       ;
-+---------------------------------------------+---------------------------------------------------------------------+
-; Resource                                    ; Usage                                                               ;
-+---------------------------------------------+---------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 4225                                                                ;
-;                                             ;                                                                     ;
-; Combinational ALUT usage for logic          ; 5194                                                                ;
-;     -- 7 input functions                    ; 114                                                                 ;
-;     -- 6 input functions                    ; 3142                                                                ;
-;     -- 5 input functions                    ; 647                                                                 ;
-;     -- 4 input functions                    ; 346                                                                 ;
-;     -- <=3 input functions                  ; 945                                                                 ;
-;                                             ;                                                                     ;
-; Dedicated logic registers                   ; 23                                                                  ;
-;                                             ;                                                                     ;
-; I/O pins                                    ; 62                                                                  ;
-;                                             ;                                                                     ;
-; Total DSP Blocks                            ; 0                                                                   ;
-;                                             ;                                                                     ;
-; Maximum fan-out node                        ; g14_rotor:right_rotor|g14_counter_with_load:counter|temp_count[1]~6 ;
-; Maximum fan-out                             ; 217                                                                 ;
-; Total fan-out                               ; 27142                                                               ;
-; Average fan-out                             ; 5.08                                                                ;
-+---------------------------------------------+---------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                       ;
-+-----------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                          ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                        ; Library Name ;
-+-----------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------+--------------+
-; |enigma                                             ; 5194 (0)          ; 23 (0)       ; 0                 ; 0          ; 62   ; 0            ; |enigma                                                                    ; work         ;
-;    |g14_5_bit_comparator:knock_m_comparator|        ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_5_bit_comparator:knock_m_comparator                            ; work         ;
-;    |g14_5_bit_comparator:knock_r_comparator|        ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_5_bit_comparator:knock_r_comparator                            ; work         ;
-;    |g14_reflector:reflector|                        ; 5 (5)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_reflector:reflector                                            ; work         ;
-;    |g14_rotor:left_rotor|                           ; 1713 (0)          ; 5 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:left_rotor                                               ; work         ;
-;       |g14_26_5_encoder:forward_encoder_0|          ; 30 (30)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:left_rotor|g14_26_5_encoder:forward_encoder_0            ; work         ;
-;       |g14_26_5_encoder:forward_encoder_1|          ; 26 (26)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:left_rotor|g14_26_5_encoder:forward_encoder_1            ; work         ;
-;       |g14_26_5_encoder:inverse_encoder_0|          ; 32 (32)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:left_rotor|g14_26_5_encoder:inverse_encoder_0            ; work         ;
-;       |g14_26_5_encoder:inverse_encoder_1|          ; 28 (28)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:left_rotor|g14_26_5_encoder:inverse_encoder_1            ; work         ;
-;       |g14_5_26_decoder:forward_decoder_0|          ; 18 (18)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:left_rotor|g14_5_26_decoder:forward_decoder_0            ; work         ;
-;       |g14_5_26_decoder:forward_decoder_1|          ; 8 (8)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:left_rotor|g14_5_26_decoder:forward_decoder_1            ; work         ;
-;       |g14_5_26_decoder:inverse_decoder_0|          ; 8 (8)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:left_rotor|g14_5_26_decoder:inverse_decoder_0            ; work         ;
-;       |g14_5_26_decoder:inverse_decoder_1|          ; 8 (8)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:left_rotor|g14_5_26_decoder:inverse_decoder_1            ; work         ;
-;       |g14_barrel_shifter:forward_barrel_shifter_0| ; 185 (185)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:left_rotor|g14_barrel_shifter:forward_barrel_shifter_0   ; work         ;
-;       |g14_barrel_shifter:forward_barrel_shifter_1| ; 180 (180)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:left_rotor|g14_barrel_shifter:forward_barrel_shifter_1   ; work         ;
-;       |g14_barrel_shifter:forward_barrel_shifter_2| ; 188 (188)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:left_rotor|g14_barrel_shifter:forward_barrel_shifter_2   ; work         ;
-;       |g14_barrel_shifter:forward_barrel_shifter_3| ; 180 (180)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:left_rotor|g14_barrel_shifter:forward_barrel_shifter_3   ; work         ;
-;       |g14_barrel_shifter:inverse_barrel_shifter_0| ; 194 (194)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:left_rotor|g14_barrel_shifter:inverse_barrel_shifter_0   ; work         ;
-;       |g14_barrel_shifter:inverse_barrel_shifter_1| ; 180 (180)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:left_rotor|g14_barrel_shifter:inverse_barrel_shifter_1   ; work         ;
-;       |g14_barrel_shifter:inverse_barrel_shifter_2| ; 193 (193)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:left_rotor|g14_barrel_shifter:inverse_barrel_shifter_2   ; work         ;
-;       |g14_barrel_shifter:inverse_barrel_shifter_3| ; 181 (181)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:left_rotor|g14_barrel_shifter:inverse_barrel_shifter_3   ; work         ;
-;       |g14_counter_with_load:counter|               ; 16 (16)           ; 5 (5)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:left_rotor|g14_counter_with_load:counter                 ; work         ;
-;       |g14_permutation:forward_permuter|            ; 31 (31)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:left_rotor|g14_permutation:forward_permuter              ; work         ;
-;       |g14_permutation:inverse_permuter|            ; 27 (27)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:left_rotor|g14_permutation:inverse_permuter              ; work         ;
-;    |g14_rotor:middle_rotor|                         ; 1714 (0)          ; 5 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:middle_rotor                                             ; work         ;
-;       |g14_26_5_encoder:forward_encoder_0|          ; 30 (30)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:middle_rotor|g14_26_5_encoder:forward_encoder_0          ; work         ;
-;       |g14_26_5_encoder:forward_encoder_1|          ; 28 (28)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:middle_rotor|g14_26_5_encoder:forward_encoder_1          ; work         ;
-;       |g14_26_5_encoder:inverse_encoder_0|          ; 33 (33)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:middle_rotor|g14_26_5_encoder:inverse_encoder_0          ; work         ;
-;       |g14_26_5_encoder:inverse_encoder_1|          ; 29 (29)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:middle_rotor|g14_26_5_encoder:inverse_encoder_1          ; work         ;
-;       |g14_5_26_decoder:forward_decoder_0|          ; 16 (16)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:middle_rotor|g14_5_26_decoder:forward_decoder_0          ; work         ;
-;       |g14_5_26_decoder:forward_decoder_1|          ; 8 (8)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:middle_rotor|g14_5_26_decoder:forward_decoder_1          ; work         ;
-;       |g14_5_26_decoder:inverse_decoder_0|          ; 16 (16)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:middle_rotor|g14_5_26_decoder:inverse_decoder_0          ; work         ;
-;       |g14_5_26_decoder:inverse_decoder_1|          ; 8 (8)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:middle_rotor|g14_5_26_decoder:inverse_decoder_1          ; work         ;
-;       |g14_barrel_shifter:forward_barrel_shifter_0| ; 185 (185)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:middle_rotor|g14_barrel_shifter:forward_barrel_shifter_0 ; work         ;
-;       |g14_barrel_shifter:forward_barrel_shifter_1| ; 180 (180)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:middle_rotor|g14_barrel_shifter:forward_barrel_shifter_1 ; work         ;
-;       |g14_barrel_shifter:forward_barrel_shifter_2| ; 187 (187)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:middle_rotor|g14_barrel_shifter:forward_barrel_shifter_2 ; work         ;
-;       |g14_barrel_shifter:forward_barrel_shifter_3| ; 182 (182)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:middle_rotor|g14_barrel_shifter:forward_barrel_shifter_3 ; work         ;
-;       |g14_barrel_shifter:inverse_barrel_shifter_0| ; 185 (185)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:middle_rotor|g14_barrel_shifter:inverse_barrel_shifter_0 ; work         ;
-;       |g14_barrel_shifter:inverse_barrel_shifter_1| ; 180 (180)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:middle_rotor|g14_barrel_shifter:inverse_barrel_shifter_1 ; work         ;
-;       |g14_barrel_shifter:inverse_barrel_shifter_2| ; 194 (194)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:middle_rotor|g14_barrel_shifter:inverse_barrel_shifter_2 ; work         ;
-;       |g14_barrel_shifter:inverse_barrel_shifter_3| ; 180 (180)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:middle_rotor|g14_barrel_shifter:inverse_barrel_shifter_3 ; work         ;
-;       |g14_counter_with_load:counter|               ; 15 (15)           ; 5 (5)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:middle_rotor|g14_counter_with_load:counter               ; work         ;
-;       |g14_permutation:forward_permuter|            ; 31 (31)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:middle_rotor|g14_permutation:forward_permuter            ; work         ;
-;       |g14_permutation:inverse_permuter|            ; 27 (27)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:middle_rotor|g14_permutation:inverse_permuter            ; work         ;
-;    |g14_rotor:right_rotor|                          ; 1732 (0)          ; 5 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:right_rotor                                              ; work         ;
-;       |g14_26_5_encoder:forward_encoder_0|          ; 30 (30)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:right_rotor|g14_26_5_encoder:forward_encoder_0           ; work         ;
-;       |g14_26_5_encoder:forward_encoder_1|          ; 28 (28)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:right_rotor|g14_26_5_encoder:forward_encoder_1           ; work         ;
-;       |g14_26_5_encoder:inverse_encoder_0|          ; 33 (33)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:right_rotor|g14_26_5_encoder:inverse_encoder_0           ; work         ;
-;       |g14_26_5_encoder:inverse_encoder_1|          ; 35 (35)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:right_rotor|g14_26_5_encoder:inverse_encoder_1           ; work         ;
-;       |g14_5_26_decoder:forward_decoder_0|          ; 9 (9)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:right_rotor|g14_5_26_decoder:forward_decoder_0           ; work         ;
-;       |g14_5_26_decoder:forward_decoder_1|          ; 8 (8)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:right_rotor|g14_5_26_decoder:forward_decoder_1           ; work         ;
-;       |g14_5_26_decoder:inverse_decoder_0|          ; 15 (15)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:right_rotor|g14_5_26_decoder:inverse_decoder_0           ; work         ;
-;       |g14_5_26_decoder:inverse_decoder_1|          ; 8 (8)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:right_rotor|g14_5_26_decoder:inverse_decoder_1           ; work         ;
-;       |g14_barrel_shifter:forward_barrel_shifter_0| ; 195 (195)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:right_rotor|g14_barrel_shifter:forward_barrel_shifter_0  ; work         ;
-;       |g14_barrel_shifter:forward_barrel_shifter_1| ; 180 (180)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:right_rotor|g14_barrel_shifter:forward_barrel_shifter_1  ; work         ;
-;       |g14_barrel_shifter:forward_barrel_shifter_2| ; 187 (187)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:right_rotor|g14_barrel_shifter:forward_barrel_shifter_2  ; work         ;
-;       |g14_barrel_shifter:forward_barrel_shifter_3| ; 180 (180)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:right_rotor|g14_barrel_shifter:forward_barrel_shifter_3  ; work         ;
-;       |g14_barrel_shifter:inverse_barrel_shifter_0| ; 195 (195)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:right_rotor|g14_barrel_shifter:inverse_barrel_shifter_0  ; work         ;
-;       |g14_barrel_shifter:inverse_barrel_shifter_1| ; 180 (180)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:right_rotor|g14_barrel_shifter:inverse_barrel_shifter_1  ; work         ;
-;       |g14_barrel_shifter:inverse_barrel_shifter_2| ; 194 (194)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:right_rotor|g14_barrel_shifter:inverse_barrel_shifter_2  ; work         ;
-;       |g14_barrel_shifter:inverse_barrel_shifter_3| ; 182 (182)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:right_rotor|g14_barrel_shifter:inverse_barrel_shifter_3  ; work         ;
-;       |g14_counter_with_load:counter|               ; 15 (15)           ; 5 (5)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:right_rotor|g14_counter_with_load:counter                ; work         ;
-;       |g14_permutation:forward_permuter|            ; 31 (31)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:right_rotor|g14_permutation:forward_permuter             ; work         ;
-;       |g14_permutation:inverse_permuter|            ; 27 (27)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor:right_rotor|g14_permutation:inverse_permuter             ; work         ;
-;    |g14_rotor_stepper_fsm:rotor_stepper|            ; 10 (10)           ; 8 (8)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_rotor_stepper_fsm:rotor_stepper                                ; work         ;
-;    |g14_stecker:forward_stecker|                    ; 5 (5)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_stecker:forward_stecker                                        ; work         ;
-;    |g14_stecker:reverse_stecker|                    ; 13 (13)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |enigma|g14_stecker:reverse_stecker                                        ; work         ;
-+-----------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-Encoding Type:  One-Hot
 +--------------------------------------------------------------------------------------------------+
-; State Machine - |enigma|g14_rotor_stepper_fsm:rotor_stepper|state                                ;
-+----------+----------+----------+----------+----------+----------+----------+----------+----------+
-; Name     ; state.s7 ; state.s6 ; state.s5 ; state.s4 ; state.s3 ; state.s2 ; state.s1 ; state.s0 ;
-+----------+----------+----------+----------+----------+----------+----------+----------+----------+
-; state.s0 ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ;
-; state.s1 ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 1        ;
-; state.s2 ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 1        ;
-; state.s3 ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 1        ;
-; state.s4 ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 1        ;
-; state.s5 ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s6 ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-; state.s7 ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-+----------+----------+----------+----------+----------+----------+----------+----------+----------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 23    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 15    ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 15    ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------+
-; 4:1                ; 208 bits  ; 416 LEs       ; 416 LEs              ; 0 LEs                  ; No         ; |enigma|g14_rotor:right_rotor|g14_barrel_shifter:inverse_barrel_shifter_0|Mux18  ;
-; 4:1                ; 208 bits  ; 416 LEs       ; 416 LEs              ; 0 LEs                  ; No         ; |enigma|g14_rotor:right_rotor|g14_barrel_shifter:forward_barrel_shifter_2|Mux0   ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |enigma|g14_rotor:right_rotor|g14_permutation:inverse_permuter|Mux45             ;
-; 4:1                ; 208 bits  ; 416 LEs       ; 416 LEs              ; 0 LEs                  ; No         ; |enigma|g14_rotor:middle_rotor|g14_barrel_shifter:forward_barrel_shifter_3|Mux0  ;
-; 4:1                ; 208 bits  ; 416 LEs       ; 416 LEs              ; 0 LEs                  ; No         ; |enigma|g14_rotor:middle_rotor|g14_barrel_shifter:forward_barrel_shifter_1|Mux9  ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |enigma|g14_rotor:middle_rotor|g14_permutation:inverse_permuter|Mux46            ;
-; 4:1                ; 208 bits  ; 416 LEs       ; 416 LEs              ; 0 LEs                  ; No         ; |enigma|g14_rotor:left_rotor|g14_barrel_shifter:inverse_barrel_shifter_0|Mux1    ;
-; 4:1                ; 208 bits  ; 416 LEs       ; 416 LEs              ; 0 LEs                  ; No         ; |enigma|g14_rotor:left_rotor|g14_barrel_shifter:forward_barrel_shifter_2|Mux0    ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |enigma|g14_rotor:left_rotor|g14_permutation:forward_permuter|Mux40              ;
-; 12:1               ; 48 bits   ; 384 LEs       ; 288 LEs              ; 96 LEs                 ; No         ; |enigma|g14_rotor:right_rotor|g14_barrel_shifter:inverse_barrel_shifter_3|Mux15  ;
-; 12:1               ; 52 bits   ; 416 LEs       ; 312 LEs              ; 104 LEs                ; No         ; |enigma|g14_rotor:right_rotor|g14_barrel_shifter:forward_barrel_shifter_0|Mux24  ;
-; 12:1               ; 52 bits   ; 416 LEs       ; 312 LEs              ; 104 LEs                ; No         ; |enigma|g14_rotor:right_rotor|g14_barrel_shifter:inverse_barrel_shifter_2|Mux9   ;
-; 12:1               ; 48 bits   ; 384 LEs       ; 288 LEs              ; 96 LEs                 ; No         ; |enigma|g14_rotor:right_rotor|g14_barrel_shifter:forward_barrel_shifter_1|Mux6   ;
-; 12:1               ; 48 bits   ; 384 LEs       ; 288 LEs              ; 96 LEs                 ; No         ; |enigma|g14_rotor:middle_rotor|g14_barrel_shifter:forward_barrel_shifter_3|Mux17 ;
-; 12:1               ; 52 bits   ; 416 LEs       ; 312 LEs              ; 104 LEs                ; No         ; |enigma|g14_rotor:middle_rotor|g14_barrel_shifter:inverse_barrel_shifter_0|Mux13 ;
-; 12:1               ; 52 bits   ; 416 LEs       ; 312 LEs              ; 104 LEs                ; No         ; |enigma|g14_rotor:middle_rotor|g14_barrel_shifter:inverse_barrel_shifter_2|Mux18 ;
-; 12:1               ; 48 bits   ; 384 LEs       ; 288 LEs              ; 96 LEs                 ; No         ; |enigma|g14_rotor:middle_rotor|g14_barrel_shifter:forward_barrel_shifter_1|Mux8  ;
-; 12:1               ; 48 bits   ; 384 LEs       ; 288 LEs              ; 96 LEs                 ; No         ; |enigma|g14_rotor:left_rotor|g14_barrel_shifter:inverse_barrel_shifter_3|Mux1    ;
-; 12:1               ; 52 bits   ; 416 LEs       ; 312 LEs              ; 104 LEs                ; No         ; |enigma|g14_rotor:left_rotor|g14_barrel_shifter:forward_barrel_shifter_0|Mux19   ;
-; 12:1               ; 52 bits   ; 416 LEs       ; 312 LEs              ; 104 LEs                ; No         ; |enigma|g14_rotor:left_rotor|g14_barrel_shifter:forward_barrel_shifter_2|Mux0    ;
-; 12:1               ; 48 bits   ; 384 LEs       ; 288 LEs              ; 96 LEs                 ; No         ; |enigma|g14_rotor:left_rotor|g14_barrel_shifter:forward_barrel_shifter_1|Mux0    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "g14_rotor:left_rotor"                                                                      ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                             ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; knock_count ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "g14_rotor:middle_rotor"                                               ;
++------------+---------+------------------+--------------------------------------------------------+
+; Port       ; Type    ; Severity         ; Details                                                ;
++------------+---------+------------------+--------------------------------------------------------+
+; directions ; Unknown ; Critical Warning ; Named port was not declared by the instantiated entity ;
++------------+---------+------------------+--------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------+
@@ -383,6 +206,24 @@ Encoding Type:  One-Hot
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 ; error ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "g14_rotor:right_rotor|g14_barrel_shifter:inverse_barrel_shifter_3" ;
++-----------+-------+----------+----------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                        ;
++-----------+-------+----------+----------------------------------------------------------------+
+; direction ; Input ; Info     ; Stuck at VCC                                                   ;
++-----------+-------+----------+----------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "g14_rotor:right_rotor|g14_barrel_shifter:inverse_barrel_shifter_2" ;
++-----------+-------+----------+----------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                        ;
++-----------+-------+----------+----------------------------------------------------------------+
+; direction ; Input ; Info     ; Stuck at GND                                                   ;
++-----------+-------+----------+----------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------+
@@ -412,6 +253,24 @@ Encoding Type:  One-Hot
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 
 
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "g14_rotor:right_rotor|g14_barrel_shifter:inverse_barrel_shifter_1" ;
++-----------+-------+----------+----------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                        ;
++-----------+-------+----------+----------------------------------------------------------------+
+; direction ; Input ; Info     ; Stuck at GND                                                   ;
++-----------+-------+----------+----------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "g14_rotor:right_rotor|g14_barrel_shifter:inverse_barrel_shifter_0" ;
++-----------+-------+----------+----------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                        ;
++-----------+-------+----------+----------------------------------------------------------------+
+; direction ; Input ; Info     ; Stuck at VCC                                                   ;
++-----------+-------+----------+----------------------------------------------------------------+
+
+
 +----------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "g14_rotor:right_rotor|g14_5_26_decoder:inverse_decoder_0"                           ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -428,6 +287,24 @@ Encoding Type:  One-Hot
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 ; error ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "g14_rotor:right_rotor|g14_barrel_shifter:forward_barrel_shifter_3" ;
++-----------+-------+----------+----------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                        ;
++-----------+-------+----------+----------------------------------------------------------------+
+; direction ; Input ; Info     ; Stuck at GND                                                   ;
++-----------+-------+----------+----------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "g14_rotor:right_rotor|g14_barrel_shifter:forward_barrel_shifter_2" ;
++-----------+-------+----------+----------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                        ;
++-----------+-------+----------+----------------------------------------------------------------+
+; direction ; Input ; Info     ; Stuck at VCC                                                   ;
++-----------+-------+----------+----------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------+
@@ -457,6 +334,24 @@ Encoding Type:  One-Hot
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 
 
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "g14_rotor:right_rotor|g14_barrel_shifter:forward_barrel_shifter_1" ;
++-----------+-------+----------+----------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                        ;
++-----------+-------+----------+----------------------------------------------------------------+
+; direction ; Input ; Info     ; Stuck at VCC                                                   ;
++-----------+-------+----------+----------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "g14_rotor:right_rotor|g14_barrel_shifter:forward_barrel_shifter_0" ;
++-----------+-------+----------+----------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                        ;
++-----------+-------+----------+----------------------------------------------------------------+
+; direction ; Input ; Info     ; Stuck at GND                                                   ;
++-----------+-------+----------+----------------------------------------------------------------+
+
+
 +----------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "g14_rotor:right_rotor|g14_5_26_decoder:forward_decoder_0"                           ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -473,6 +368,15 @@ Encoding Type:  One-Hot
 +-------+-------+----------+------------------------------------------------------+
 ; reset ; Input ; Info     ; Stuck at GND                                         ;
 +-------+-------+----------+------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "g14_rotor:right_rotor"                                                ;
++------------+---------+------------------+--------------------------------------------------------+
+; Port       ; Type    ; Severity         ; Details                                                ;
++------------+---------+------------------+--------------------------------------------------------+
+; directions ; Unknown ; Critical Warning ; Named port was not declared by the instantiated entity ;
++------------+---------+------------------+--------------------------------------------------------+
 
 
 +---------------------------------------------------------------------+
@@ -496,47 +400,13 @@ Encoding Type:  One-Hot
 +-------------+-------+----------+------------------------------------+
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_ff             ; 23                          ;
-;     ENA CLR           ; 15                          ;
-;     plain             ; 8                           ;
-; arriav_lcell_comb     ; 5194                        ;
-;     extend            ; 114                         ;
-;         7 data inputs ; 114                         ;
-;     normal            ; 5080                        ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 103                         ;
-;         3 data inputs ; 841                         ;
-;         4 data inputs ; 346                         ;
-;         5 data inputs ; 647                         ;
-;         6 data inputs ; 3142                        ;
-; boundary_port         ; 62                          ;
-;                       ;                             ;
-; Max LUT depth         ; 155.00                      ;
-; Average LUT depth     ; 152.78                      ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:32     ;
-+----------------+--------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
-    Info: Processing started: Wed Apr 06 21:31:31 2016
+    Info: Processing started: Thu Apr 07 01:40:47 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off enigma -c enigma
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file enigma.vhd
@@ -576,67 +446,48 @@ Info (12127): Elaborating entity "enigma" for the top level hierarchy
 Info (12128): Elaborating entity "g14_rotor_stepper_fsm" for hierarchy "g14_rotor_stepper_fsm:rotor_stepper" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/enigma.vhd Line: 116
 Info (12128): Elaborating entity "g14_5_bit_comparator" for hierarchy "g14_5_bit_comparator:knock_r_comparator" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/enigma.vhd Line: 130
 Info (12128): Elaborating entity "g14_stecker" for hierarchy "g14_stecker:forward_stecker" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/enigma.vhd Line: 146
-Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(48): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 48
-Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(49): signal "T" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 49
-Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(50): signal "F" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 50
-Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(51): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 51
+Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(48): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(49): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 49
+Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(50): signal "E" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 50
+Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(51): signal "F" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 51
 Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(52): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 52
-Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(53): signal "I" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 53
-Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(54): signal "G" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 54
-Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(55): signal "L" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 55
-Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(56): signal "E" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 56
-Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(57): signal "R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 57
-Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(58): signal "Z" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 58
+Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(53): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 53
+Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(54): signal "H" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 54
+Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(55): signal "G" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 55
+Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(56): signal "K" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 56
+Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(57): signal "L" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 57
+Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(58): signal "I" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 58
 Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(59): signal "J" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 59
-Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(60): signal "K" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 60
-Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(61): signal "P" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 61
-Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(62): signal "N" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 62
-Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(63): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 63
-Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(64): signal "X" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 64
-Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(65): signal "O" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 65
-Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(66): signal "U" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 66
-Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(67): signal "S" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 67
-Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(68): signal "Q" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 68
-Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(69): signal "V" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 69
+Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(60): signal "N" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 60
+Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(61): signal "M" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 61
+Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(62): signal "P" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 62
+Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(63): signal "O" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 63
+Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(64): signal "S" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 64
+Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(65): signal "T" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 65
+Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(66): signal "Q" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 66
+Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(67): signal "R" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 67
+Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(68): signal "V" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 68
+Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(69): signal "U" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 69
 Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(70): signal "Y" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 70
-Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(71): signal "H" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 71
+Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(71): signal "Z" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 71
 Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(72): signal "W" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 72
-Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(73): signal "M" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 73
+Warning (10492): VHDL Process Statement warning at g14_stecker.vhd(73): signal "X" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_stecker.vhd Line: 73
 Info (12128): Elaborating entity "g14_rotor" for hierarchy "g14_rotor:right_rotor" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/enigma.vhd Line: 158
-Info (12128): Elaborating entity "g14_counter_with_load" for hierarchy "g14_rotor:right_rotor|g14_counter_with_load:counter" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_rotor.vhd Line: 101
+Info (12128): Elaborating entity "g14_counter_with_load" for hierarchy "g14_rotor:right_rotor|g14_counter_with_load:counter" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_rotor.vhd Line: 97
 Warning (10492): VHDL Process Statement warning at g14_counter_with_load.vhd(33): signal "load_value" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_counter_with_load.vhd Line: 33
-Info (12128): Elaborating entity "g14_5_26_decoder" for hierarchy "g14_rotor:right_rotor|g14_5_26_decoder:forward_decoder_0" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_rotor.vhd Line: 105
-Info (12128): Elaborating entity "g14_barrel_shifter" for hierarchy "g14_rotor:right_rotor|g14_barrel_shifter:forward_barrel_shifter_0" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_rotor.vhd Line: 108
-Info (12128): Elaborating entity "g14_26_5_encoder" for hierarchy "g14_rotor:right_rotor|g14_26_5_encoder:forward_encoder_0" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_rotor.vhd Line: 116
-Info (12128): Elaborating entity "g14_permutation" for hierarchy "g14_rotor:right_rotor|g14_permutation:forward_permuter" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_rotor.vhd Line: 119
+Info (12128): Elaborating entity "g14_5_26_decoder" for hierarchy "g14_rotor:right_rotor|g14_5_26_decoder:forward_decoder_0" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_rotor.vhd Line: 101
+Info (12128): Elaborating entity "g14_barrel_shifter" for hierarchy "g14_rotor:right_rotor|g14_barrel_shifter:forward_barrel_shifter_0" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_rotor.vhd Line: 104
+Info (12128): Elaborating entity "g14_26_5_encoder" for hierarchy "g14_rotor:right_rotor|g14_26_5_encoder:forward_encoder_0" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_rotor.vhd Line: 112
+Info (12128): Elaborating entity "g14_permutation" for hierarchy "g14_rotor:right_rotor|g14_permutation:forward_permuter" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_rotor.vhd Line: 115
 Info (12128): Elaborating entity "g14_reflector" for hierarchy "g14_reflector:reflector" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/enigma.vhd Line: 205
-Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "g14_rotor:right_rotor|g14_counter_with_load:counter|temp_count[0]" is converted into an equivalent circuit using register "g14_rotor:right_rotor|g14_counter_with_load:counter|temp_count[0]~_emulated" and latch "g14_rotor:right_rotor|g14_counter_with_load:counter|temp_count[0]~1" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_counter_with_load.vhd Line: 29
-    Warning (13310): Register "g14_rotor:right_rotor|g14_counter_with_load:counter|temp_count[1]" is converted into an equivalent circuit using register "g14_rotor:right_rotor|g14_counter_with_load:counter|temp_count[1]~_emulated" and latch "g14_rotor:right_rotor|g14_counter_with_load:counter|temp_count[1]~5" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_counter_with_load.vhd Line: 29
-    Warning (13310): Register "g14_rotor:right_rotor|g14_counter_with_load:counter|temp_count[2]" is converted into an equivalent circuit using register "g14_rotor:right_rotor|g14_counter_with_load:counter|temp_count[2]~_emulated" and latch "g14_rotor:right_rotor|g14_counter_with_load:counter|temp_count[2]~9" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_counter_with_load.vhd Line: 29
-    Warning (13310): Register "g14_rotor:right_rotor|g14_counter_with_load:counter|temp_count[3]" is converted into an equivalent circuit using register "g14_rotor:right_rotor|g14_counter_with_load:counter|temp_count[3]~_emulated" and latch "g14_rotor:right_rotor|g14_counter_with_load:counter|temp_count[3]~13" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_counter_with_load.vhd Line: 29
-    Warning (13310): Register "g14_rotor:right_rotor|g14_counter_with_load:counter|temp_count[4]" is converted into an equivalent circuit using register "g14_rotor:right_rotor|g14_counter_with_load:counter|temp_count[4]~_emulated" and latch "g14_rotor:right_rotor|g14_counter_with_load:counter|temp_count[4]~17" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_counter_with_load.vhd Line: 29
-    Warning (13310): Register "g14_rotor:middle_rotor|g14_counter_with_load:counter|temp_count[0]" is converted into an equivalent circuit using register "g14_rotor:middle_rotor|g14_counter_with_load:counter|temp_count[0]~_emulated" and latch "g14_rotor:middle_rotor|g14_counter_with_load:counter|temp_count[0]~1" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_counter_with_load.vhd Line: 29
-    Warning (13310): Register "g14_rotor:middle_rotor|g14_counter_with_load:counter|temp_count[1]" is converted into an equivalent circuit using register "g14_rotor:middle_rotor|g14_counter_with_load:counter|temp_count[1]~_emulated" and latch "g14_rotor:middle_rotor|g14_counter_with_load:counter|temp_count[1]~5" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_counter_with_load.vhd Line: 29
-    Warning (13310): Register "g14_rotor:middle_rotor|g14_counter_with_load:counter|temp_count[2]" is converted into an equivalent circuit using register "g14_rotor:middle_rotor|g14_counter_with_load:counter|temp_count[2]~_emulated" and latch "g14_rotor:middle_rotor|g14_counter_with_load:counter|temp_count[2]~9" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_counter_with_load.vhd Line: 29
-    Warning (13310): Register "g14_rotor:middle_rotor|g14_counter_with_load:counter|temp_count[3]" is converted into an equivalent circuit using register "g14_rotor:middle_rotor|g14_counter_with_load:counter|temp_count[3]~_emulated" and latch "g14_rotor:middle_rotor|g14_counter_with_load:counter|temp_count[3]~13" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_counter_with_load.vhd Line: 29
-    Warning (13310): Register "g14_rotor:middle_rotor|g14_counter_with_load:counter|temp_count[4]" is converted into an equivalent circuit using register "g14_rotor:middle_rotor|g14_counter_with_load:counter|temp_count[4]~_emulated" and latch "g14_rotor:middle_rotor|g14_counter_with_load:counter|temp_count[4]~17" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_counter_with_load.vhd Line: 29
-    Warning (13310): Register "g14_rotor:left_rotor|g14_counter_with_load:counter|temp_count[0]" is converted into an equivalent circuit using register "g14_rotor:left_rotor|g14_counter_with_load:counter|temp_count[0]~_emulated" and latch "g14_rotor:left_rotor|g14_counter_with_load:counter|temp_count[0]~1" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_counter_with_load.vhd Line: 29
-    Warning (13310): Register "g14_rotor:left_rotor|g14_counter_with_load:counter|temp_count[1]" is converted into an equivalent circuit using register "g14_rotor:left_rotor|g14_counter_with_load:counter|temp_count[1]~_emulated" and latch "g14_rotor:left_rotor|g14_counter_with_load:counter|temp_count[1]~5" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_counter_with_load.vhd Line: 29
-    Warning (13310): Register "g14_rotor:left_rotor|g14_counter_with_load:counter|temp_count[2]" is converted into an equivalent circuit using register "g14_rotor:left_rotor|g14_counter_with_load:counter|temp_count[2]~_emulated" and latch "g14_rotor:left_rotor|g14_counter_with_load:counter|temp_count[2]~9" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_counter_with_load.vhd Line: 29
-    Warning (13310): Register "g14_rotor:left_rotor|g14_counter_with_load:counter|temp_count[3]" is converted into an equivalent circuit using register "g14_rotor:left_rotor|g14_counter_with_load:counter|temp_count[3]~_emulated" and latch "g14_rotor:left_rotor|g14_counter_with_load:counter|temp_count[3]~13" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_counter_with_load.vhd Line: 29
-    Warning (13310): Register "g14_rotor:left_rotor|g14_counter_with_load:counter|temp_count[4]" is converted into an equivalent circuit using register "g14_rotor:left_rotor|g14_counter_with_load:counter|temp_count[4]~_emulated" and latch "g14_rotor:left_rotor|g14_counter_with_load:counter|temp_count[4]~17" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/g14_counter_with_load.vhd Line: 29
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 5256 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 57 input pins
-    Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 5194 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 43 warnings
-    Info: Peak virtual memory: 930 megabytes
-    Info: Processing ended: Wed Apr 06 21:32:20 2016
-    Info: Elapsed time: 00:00:49
-    Info: Total CPU time (on all processors): 00:01:06
+Error (12002): Port "directions" does not exist in macrofunction "left_rotor" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/enigma.vhd Line: 190
+Error (12002): Port "directions" does not exist in macrofunction "middle_rotor" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/enigma.vhd Line: 174
+Error (12002): Port "directions" does not exist in macrofunction "right_rotor" File: C:/Users/user/Documents/GitHub/ecse-323/lab5/g14_enigma_machine/enigma.vhd Line: 158
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 28 warnings
+    Error: Peak virtual memory: 910 megabytes
+    Error: Processing ended: Thu Apr 07 01:41:01 2016
+    Error: Elapsed time: 00:00:14
+    Error: Total CPU time (on all processors): 00:00:32
 
 

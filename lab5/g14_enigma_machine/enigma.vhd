@@ -10,20 +10,17 @@ entity enigma is
     clock : in std_logic;
     keypress : in std_logic;
     reset : in std_logic; -- Resets to the day settings
-    rotor_type_r : in std_logic_vector(1 downto 0);
-	 rotor_type_m : in std_logic_vector(1 downto 0);
-	 rotor_type_l : in std_logic_vector(1 downto 0);
-	 reflector_type : in std_logic;
-	 rotor_ini_pos_r : in std_logic_vector(4 downto 0);
-	 rotor_ini_pos_m : in std_logic_vector(4 downto 0);
-	 rotor_ini_pos_l : in std_logic_vector(4 downto 0);
-	 ring_setting_r : in std_logic_vector(4 downto 0);
-	 ring_setting_m : in std_logic_vector(4 downto 0);
-	 ring_setting_l : in std_logic_vector(4 downto 0);
-	 directions_r : in std_logic_vector(3 downto 0);
-	 directions_m : in std_logic_vector(3 downto 0);
-	 directions_l : in std_logic_vector(3 downto 0);
-	 input_code : in std_logic_vector(4 downto 0);
+    otor_type_r : in std_logic_vector(1 downto 0);
+	rotor_type_m : in std_logic_vector(1 downto 0);
+	rotor_type_l : in std_logic_vector(1 downto 0);
+	reflector_type : in std_logic;
+	rotor_ini_pos_r : in std_logic_vector(4 downto 0);
+    rotor_ini_pos_m : in std_logic_vector(4 downto 0);
+    rotor_ini_pos_l : in std_logic_vector(4 downto 0);
+    ring_setting_r : in std_logic_vector(4 downto 0);
+    ring_setting_m : in std_logic_vector(4 downto 0);
+    ring_setting_l : in std_logic_vector(4 downto 0);
+    input_code : in std_logic_vector(4 downto 0);
     output_code : out std_logic_vector(4 downto 0)
   );
 end enigma ;
@@ -64,7 +61,6 @@ architecture arch of enigma is
             clock : in std_logic;
             input_code_forward : in std_logic_vector(4 downto 0);
             input_code_reverse : in std_logic_vector(4 downto 0);
-            directions : in std_logic_vector(3 downto 0);
             ring_setting : in std_logic_vector(4 downto 0);
             data : in std_logic_vector(4 downto 0);
             load : in std_logic;
@@ -108,7 +104,7 @@ begin
     forward_input_l <= forward_out_m;
     reverse_input_m <= reverse_out_l;
     reverse_input_r <= reverse_out_m;
-	 
+
 	 notch_r <= "10000"; -- Q
 	 notch_m <= "01000"; -- I
 
@@ -159,7 +155,6 @@ begin
         clock => clock,
         input_code_forward => forward_input_r,
         input_code_reverse => reverse_input_r,
-        directions => directions_r,
         ring_setting => ring_setting_r,
         data => rotor_ini_pos_r,
         load => load,
@@ -175,7 +170,6 @@ begin
         clock => clock,
         input_code_forward => forward_input_m,
         input_code_reverse => reverse_input_m,
-        directions => directions_m,
         ring_setting => ring_setting_m,
         data => rotor_ini_pos_m,
         load => load,
@@ -191,7 +185,6 @@ begin
         clock => clock,
         input_code_forward => forward_input_l,
         input_code_reverse => reverse_input_l,
-        directions => directions_l,
         ring_setting => ring_setting_l,
         data => rotor_ini_pos_l,
         load => load,

@@ -1,42 +1,39 @@
 -- Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
--- Your use of Altera Corporation's design tools, logic functions 
--- and other software and tools, and its AMPP partner logic 
--- functions, and any output files from any of the foregoing 
--- (including device programming or simulation files), and any 
--- associated documentation or information are expressly subject 
--- to the terms and conditions of the Altera Program License 
+-- Your use of Altera Corporation's design tools, logic functions
+-- and other software and tools, and its AMPP partner logic
+-- functions, and any output files from any of the foregoing
+-- (including device programming or simulation files), and any
+-- associated documentation or information are expressly subject
+-- to the terms and conditions of the Altera Program License
 -- Subscription Agreement, the Altera Quartus Prime License Agreement,
--- the Altera MegaCore Function License Agreement, or other 
--- applicable license agreement, including, without limitation, 
--- that your use is for the sole purpose of programming logic 
--- devices manufactured by Altera and sold by Altera or its 
--- authorized distributors.  Please refer to the applicable 
+-- the Altera MegaCore Function License Agreement, or other
+-- applicable license agreement, including, without limitation,
+-- that your use is for the sole purpose of programming logic
+-- devices manufactured by Altera and sold by Altera or its
+-- authorized distributors.  Please refer to the applicable
 -- agreement for further details.
 
 -- ***************************************************************************
--- This file contains a Vhdl test bench template that is freely editable to   
--- suit user's needs .Comments are provided in each section to help the user  
--- fill out necessary details.                                                
+-- This file contains a Vhdl test bench template that is freely editable to
+-- suit user's needs .Comments are provided in each section to help the user
+-- fill out necessary details.
 -- ***************************************************************************
 -- Generated on "04/06/2016 21:37:47"
-                                                            
--- Vhdl Test Bench template for design  :  enigma
--- 
--- Simulation tool : ModelSim-Altera (VHDL)
--- 
 
-LIBRARY ieee;                                               
-USE ieee.std_logic_1164.all;                                
+-- Vhdl Test Bench template for design  :  enigma
+--
+-- Simulation tool : ModelSim-Altera (VHDL)
+--
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
 
 ENTITY enigma_vhd_tst IS
 END enigma_vhd_tst;
 ARCHITECTURE enigma_arch OF enigma_vhd_tst IS
--- constants                                                 
--- signals                                                   
+-- constants
+-- signals
 SIGNAL clock : STD_LOGIC;
-SIGNAL directions_l : STD_LOGIC_VECTOR(3 DOWNTO 0);
-SIGNAL directions_m : STD_LOGIC_VECTOR(3 DOWNTO 0);
-SIGNAL directions_r : STD_LOGIC_VECTOR(3 DOWNTO 0);
 SIGNAL input_code : STD_LOGIC_VECTOR(4 DOWNTO 0);
 SIGNAL keypress : STD_LOGIC;
 SIGNAL output_code : STD_LOGIC_VECTOR(4 DOWNTO 0);
@@ -54,9 +51,6 @@ SIGNAL rotor_type_r : STD_LOGIC_VECTOR(1 DOWNTO 0);
 COMPONENT enigma
 	PORT (
 	clock : IN STD_LOGIC;
-	directions_l : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-	directions_m : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-	directions_r : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 	input_code : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
 	keypress : IN STD_LOGIC;
 	output_code : OUT STD_LOGIC_VECTOR(4 DOWNTO 0);
@@ -78,9 +72,6 @@ BEGIN
 	PORT MAP (
 -- list connections between master ports and signals
 	clock => clock,
-	directions_l => directions_l,
-	directions_m => directions_m,
-	directions_r => directions_r,
 	input_code => input_code,
 	keypress => keypress,
 	output_code => output_code,
@@ -96,18 +87,18 @@ BEGIN
 	rotor_type_m => rotor_type_m,
 	rotor_type_r => rotor_type_r
 	);
-init : PROCESS                                               
--- variable declarations                                     
-BEGIN                                                        
-        -- code that executes only once                      
-WAIT;                                                       
-END PROCESS init;                                           
-always : PROCESS                                              
--- optional sensitivity list                                  
--- (        )                                                 
--- variable declarations                                      
-BEGIN                                                         
-        -- code executes for every event on sensitivity list  
-WAIT;                                                        
-END PROCESS always;                                          
+init : PROCESS
+-- variable declarations
+BEGIN
+        -- code that executes only once
+WAIT;
+END PROCESS init;
+always : PROCESS
+-- optional sensitivity list
+-- (        )
+-- variable declarations
+BEGIN
+        -- code executes for every event on sensitivity list
+WAIT;
+END PROCESS always;
 END enigma_arch;

@@ -27,7 +27,7 @@
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
-
+use ieee.numeric_std.all;
 ENTITY g14_rotor_vhd_tst IS
 END g14_rotor_vhd_tst;
 ARCHITECTURE g14_rotor_arch OF g14_rotor_vhd_tst IS
@@ -35,7 +35,6 @@ ARCHITECTURE g14_rotor_arch OF g14_rotor_vhd_tst IS
 -- signals
 SIGNAL clock : STD_LOGIC;
 SIGNAL data : STD_LOGIC_VECTOR(4 DOWNTO 0);
-SIGNAL directions : STD_LOGIC_VECTOR(3 DOWNTO 0);
 SIGNAL enable : STD_LOGIC;
 SIGNAL input_code_forward : STD_LOGIC_VECTOR(4 DOWNTO 0);
 SIGNAL input_code_reverse : STD_LOGIC_VECTOR(4 DOWNTO 0);
@@ -45,13 +44,12 @@ SIGNAL output_code_forward : STD_LOGIC_VECTOR(4 DOWNTO 0);
 SIGNAL output_code_reverse : STD_LOGIC_VECTOR(4 DOWNTO 0);
 SIGNAL ring_setting : STD_LOGIC_VECTOR(4 DOWNTO 0);
 SIGNAL rotor_type : STD_LOGIC_VECTOR(1 DOWNTO 0);
-signal refl : STD_LOGIC_VECTOR(4 downto 0);
+signal val : std_logic_vector(4 downto 0);
 
 COMPONENT g14_rotor
 	PORT (
 	clock : IN STD_LOGIC;
 	data : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
-	directions : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 	enable : IN STD_LOGIC;
 	input_code_forward : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
 	input_code_reverse : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
@@ -64,16 +62,11 @@ COMPONENT g14_rotor
 	);
 END COMPONENT;
 BEGIN
-	refl <= output_code_forward;
-	input_code_reverse <= refl;
-
-
-	i1 : g14_rotor
+		i1 : g14_rotor
 	PORT MAP (
 -- list connections between master ports and signals
 	clock => clock,
 	data => data,
-	directions => directions,
 	enable => enable,
 	input_code_forward => input_code_forward,
 	input_code_reverse => input_code_reverse,
@@ -95,24 +88,26 @@ always : PROCESS
 -- (        )
 -- variable declarations
 BEGIN
-	data <= "00010";
-	directions <= "0101";
+	data <= "00000";
 	enable <= '0';
-	input_code_forward <= "01001";
 	load <= '0';
 	ring_setting <= "00000";
-	for i in 0 to 100 loop
-		clock <='0';
-		wait for 1 ps;
-		clock<='1';
-		wait for 1 ps;
+
+
+	input_code_forward <= "00000";
+	input_code_reverse <= "00000";
+
+	for k in 0 to 3 loop
+		clock <= '1'; wait for 5 ps; clock <= '0'; wait for 5 ps;
 	end loop;
-	input_code_forward <= "00010";
-	for i in 0 to 100 loop
-		clock <='0';
-		wait for 1 ps;
-		clock<='1';
-		wait for 1 ps;
+	for i in 1 to 25 loop
+		val <= std_logic_vector(to_unsigned(i, 5));
+		input_code_forward <= val;
+		input_code_reverse <= val;
+
+		for j in 0 to 3 loop
+			clock <= '1'; wait for 5 ps; clock <= '0'; wait for 5 ps;
+		end loop;
 	end loop;
 
         -- code executes for every event on sensitivity list
