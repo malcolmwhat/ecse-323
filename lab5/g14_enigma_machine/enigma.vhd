@@ -11,10 +11,10 @@ entity enigma is
     keypress : in std_logic;
     reset : in std_logic; -- Resets to the day settings
     rotor_type_r : in std_logic_vector(1 downto 0);
-	rotor_type_m : in std_logic_vector(1 downto 0);
-	rotor_type_l : in std_logic_vector(1 downto 0);
-	reflector_type : in std_logic;
-	rotor_ini_pos_r : in std_logic_vector(4 downto 0);
+	 rotor_type_m : in std_logic_vector(1 downto 0);
+	 rotor_type_l : in std_logic_vector(1 downto 0);
+	 reflector_type : in std_logic;
+	 rotor_ini_pos_r : in std_logic_vector(4 downto 0);
     rotor_ini_pos_m : in std_logic_vector(4 downto 0);
     rotor_ini_pos_l : in std_logic_vector(4 downto 0);
     ring_setting_r : in std_logic_vector(4 downto 0);
