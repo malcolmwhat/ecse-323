@@ -31,36 +31,24 @@ entity g14_5_26_decoder is
 end g14_5_26_decoder;
 
 architecture decoder of g14_5_26_decoder is 
+	signal temp : unsigned (4 downto 0);
+	signal x : integer range 0 to 31;
+	
 	begin
+		temp <= unsigned(input);
+		x <= to_integer(temp);
+		
 		-- Error Logic
  		ERR <= INPUT(4) and INPUT(3) and (INPUT(2) or INPUT(1));
 		
 		-- Evaluate our actual output under non-error causing conditions
-		OUTPUT(0) <= not INPUT(0) and not INPUT(1) and not INPUT(2) and not INPUT(3) and not INPUT(4);
-		OUTPUT(1) <= not INPUT(0) and not INPUT(1) and not INPUT(2) and not INPUT(3) and INPUT(4);
-		OUTPUT(2) <= not INPUT(0) and not INPUT(1) and not INPUT(2) and INPUT(3) and not INPUT(4);
-		OUTPUT(3) <= not INPUT(0) and not INPUT(1) and not INPUT(2) and INPUT(3) and INPUT(4);
-		OUTPUT(4) <= not INPUT(0) and not INPUT(1) and INPUT(2) and not INPUT(3) and not INPUT(4);
-		OUTPUT(5) <= not INPUT(0) and not INPUT(1) and INPUT(2) and not INPUT(3) and INPUT(4);
-		OUTPUT(6) <= not INPUT(0) and not INPUT(1) and INPUT(2) and INPUT(3) and not INPUT(4);
-		OUTPUT(7) <= not INPUT(0) and not INPUT(1) and INPUT(2) and INPUT(3) and INPUT(4);
-		OUTPUT(8) <= not INPUT(0) and INPUT(1) and not INPUT(2) and not INPUT(3) and not INPUT(4);
-		OUTPUT(9) <= not INPUT(0) and INPUT(1) and not INPUT(2) and not INPUT(3) and INPUT(4);
-		OUTPUT(10) <= not INPUT(0)and INPUT(1) and not INPUT(2) and INPUT(3) and not INPUT(4);
-		OUTPUT(11) <= not INPUT(0)and INPUT(1) and not INPUT(2) and INPUT(3) and INPUT(4);
-		OUTPUT(12) <= not INPUT(0)and INPUT(1) and INPUT(2) and not INPUT(3) and not INPUT(4);
-		OUTPUT(13) <= not INPUT(0)and INPUT(1) and INPUT(2) and not INPUT(3) and INPUT(4);
-		OUTPUT(14) <= not INPUT(0)and INPUT(1) and INPUT(2) and INPUT(3) and not INPUT(4);
-		OUTPUT(15) <= not INPUT(0)and INPUT(1) and INPUT(2) and INPUT(3) and INPUT(4);
-		OUTPUT(16) <=  INPUT(0) and not INPUT(1) and not INPUT(2) and not INPUT(3) and not INPUT(4);
-		OUTPUT(17) <=  INPUT(0) and not INPUT(1) and not INPUT(2) and not INPUT(3) and INPUT(4);
-		OUTPUT(18) <=  INPUT(0) and not INPUT(1) and not INPUT(2) and INPUT(3) and not INPUT(4);
-		OUTPUT(19) <=  INPUT(0) and not INPUT(1) and not INPUT(2) and INPUT(3) and INPUT(4);
-		OUTPUT(20) <=  INPUT(0) and not INPUT(1) and INPUT(2) and not INPUT(3) and not INPUT(4);
-		OUTPUT(21) <=  INPUT(0) and not INPUT(1) and INPUT(2) and not INPUT(3) and INPUT(4);
-		OUTPUT(22) <=  INPUT(0) and not INPUT(1) and INPUT(2) and INPUT(3) and not INPUT(4);
-		OUTPUT(23) <=  INPUT(0) and not INPUT(1) and INPUT(2) and INPUT(3) and INPUT(4);
-		OUTPUT(24) <=  INPUT(0) and INPUT(1)and not INPUT(2) and not INPUT(3) and not INPUT(4);
-		OUTPUT(25) <=  INPUT(0) and INPUT(1)and not INPUT(2) and not INPUT(3) and INPUT(4);
-
+		process(x)
+		begin
+			OUTPUT <= (others => '0');
+			for i in 0 to 25 loop
+				if (x = i) then
+					OUTPUT(i) <= '1';
+				end if;
+			end loop;
+		end process;
 end decoder;

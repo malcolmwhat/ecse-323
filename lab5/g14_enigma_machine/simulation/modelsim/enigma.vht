@@ -91,18 +91,18 @@ init : PROCESS
 -- variable declarations
 BEGIN
 	reflector_type <= '0';
-	ring_setting_l <= "00000";
-	ring_setting_m <= "00000";
-	ring_setting_r <= "00000";
-	rotor_ini_pos_l <= "00000";
-	rotor_ini_pos_m <= "00000";
-	rotor_ini_pos_r <= "00000";
+	ring_setting_l <= "00011";
+	ring_setting_m <= "00010";
+	ring_setting_r <= "00001";
+	rotor_ini_pos_l <= "00011";
+	rotor_ini_pos_m <= "00010";
+	rotor_ini_pos_r <= "00001";
 	rotor_type_l <= "00";
 	rotor_type_m <= "00";
 	rotor_type_r <= "00";
 
 
-	input_code <= "00001";
+	input_code <= "10110"; -- 22
 	keypress <= '1';
 	reset <= '1';
     for i in 0 to 3 loop
@@ -120,6 +120,184 @@ BEGIN
     for i in 0 to 3 loop
     	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
     end loop ;
+	 input_code <= "11000"; -- 24
+	 keypress <= '0';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+    keypress <= '1';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+	 input_code <= "01011"; -- 11
+	 keypress <= '0';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+    keypress <= '1';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+	 keypress <= '0';
+	 input_code <= "10101"; -- 21
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+    keypress <= '1';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+	 
+	 input_code <= "00000";
+	 keypress <= '1';
+	reset <= '1';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ; -- identifier
+    reset <= '0';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ; -- identifier
+    keypress <= '0';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+    keypress <= '1';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+	 keypress <= '0';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+    keypress <= '1';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+	 keypress <= '0';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+    keypress <= '1';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+	 keypress <= '0';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+    keypress <= '1';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+	 
+	 
+	 -- Try new initial settings and ROTOR configurations.
+	 
+	 reflector_type <= '1';
+	ring_setting_l <= "00111";
+	ring_setting_m <= "01010";
+	ring_setting_r <= "00101";
+	rotor_ini_pos_l <= "00101";
+	rotor_ini_pos_m <= "10010";
+	rotor_ini_pos_r <= "01001";
+	rotor_type_l <= "10";
+	rotor_type_m <= "01";
+	rotor_type_r <= "11";
+
+
+	input_code <= "00000"; 
+	keypress <= '1';
+	reset <= '1';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ; -- identifier
+    reset <= '0';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ; -- identifier
+    keypress <= '0';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+    keypress <= '1';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+	 keypress <= '0';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+    keypress <= '1';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+	 keypress <= '0';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+    keypress <= '1';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+	 keypress <= '0';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+    keypress <= '1';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+	 
+	 input_code <= "01110"; -- 14
+	 keypress <= '1';
+	reset <= '1';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ; -- identifier
+    reset <= '0';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ; -- identifier
+    keypress <= '0';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+    keypress <= '1';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+	 input_code <= "01100"; -- 12
+	 keypress <= '0';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+    keypress <= '1';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+	 keypress <= '0';
+    input_code <= "10011"; -- 19
+	 for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+    keypress <= '1';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+	 keypress <= '0';
+	 input_code <= "11000"; -- 24
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+    keypress <= '1';
+    for i in 0 to 3 loop
+    	clock <= '0'; WAIT for 5 ps;clock <= '1'; WAIT for 5 ps;
+    end loop ;
+	 
+	 
+	 -- Try new initial settings and ROTOR configurations.
+	 
 WAIT;
 END PROCESS init;
 always : PROCESS

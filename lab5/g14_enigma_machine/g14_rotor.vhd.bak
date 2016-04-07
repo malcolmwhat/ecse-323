@@ -121,11 +121,11 @@ begin
 
 	forward_barrel_shifter_2 : g14_barrel_shifter
 		port map (letter_in => forward_permuted_decoded, shift => ring_setting,
-					 direction => '0', letter_out => forward_shifted_thrice);
+					 direction => '1', letter_out => forward_shifted_thrice);
 
 	forward_barrel_shifter_3 : g14_barrel_shifter
 		port map (letter_in => forward_shifted_thrice, shift => current_count,
-					 direction => '1', letter_out => forward_shifted_frice);
+					 direction => '0', letter_out => forward_shifted_frice);
 
 	forward_encoder_1 : g14_26_5_encoder
 		port map (letter => forward_shifted_frice, index => output_code_forward);
@@ -137,11 +137,11 @@ begin
 
 	inverse_barrel_shifter_0 : g14_barrel_shifter
 		port map (letter_in => input_decoded_inverse, shift => current_count,
-					 direction => '0', letter_out => inverse_shifted_once);
+					 direction => '1', letter_out => inverse_shifted_once);
 
 	inverse_barrel_shifter_1 : g14_barrel_shifter
 		port map (letter_in => inverse_shifted_once, shift => ring_setting,
-					 direction => '1', letter_out => inverse_shifted_twice);
+					 direction => '0', letter_out => inverse_shifted_twice);
 
 	inverse_encoder_0 : g14_26_5_encoder
 		port map (letter => inverse_shifted_twice, index => inverse_to_permutation);
