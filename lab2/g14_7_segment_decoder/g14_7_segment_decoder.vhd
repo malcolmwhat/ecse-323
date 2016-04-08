@@ -14,14 +14,14 @@ use ieee.std_logic_1164.all;
 entity g14_7_segment_decoder is
 	port(code : in std_logic_vector(4 downto 0);
 	     segments : out std_logic_vector(6 downto 0);
-		  num : in std_logic_vector(1 downto 0);
+		  num : in std_logic_vector(1 downto 0)
 		  );
 end g14_7_segment_decoder;
 
 architecture behaviour of g14_7_segment_decoder is 
 	
 	begin
-	process (code, segments, num)
+	process (code, num)
 	begin
 		case num is 
 			when "00" => 

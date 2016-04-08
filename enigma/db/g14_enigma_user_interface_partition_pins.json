@@ -2,7 +2,192 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "setup_switch_led[1]",
+					"strict" : false
+				},
+				{
+					"name" : "setup_switch_led[4]",
+					"strict" : false
+				},
+				{
+					"name" : "setup_switch_led[6]",
+					"strict" : false
+				},
+				{
+					"name" : "setup_type_leds[0]",
+					"strict" : false
+				},
+				{
+					"name" : "setup_type_leds[1]",
+					"strict" : false
+				},
+				{
+					"name" : "setup_type_leds[2]",
+					"strict" : false
+				},
+				{
+					"name" : "setup_type_leds[3]",
+					"strict" : false
+				},
+				{
+					"name" : "setup_type_leds[4]",
+					"strict" : false
+				},
+				{
+					"name" : "setup_type_leds[5]",
+					"strict" : false
+				},
+				{
+					"name" : "setup_type_leds[6]",
+					"strict" : false
+				},
+				{
+					"name" : "setup_type_leds[7]",
+					"strict" : false
+				},
+				{
+					"name" : "setup_type_leds[11]",
+					"strict" : false
+				},
+				{
+					"name" : "setup_type_leds[12]",
+					"strict" : false
+				},
+				{
+					"name" : "setup_side_led[0]",
+					"strict" : false
+				},
+				{
+					"name" : "setup_side_led[1]",
+					"strict" : false
+				},
+				{
+					"name" : "setup_side_led[2]",
+					"strict" : false
+				},
+				{
+					"name" : "setup_side_led[3]",
+					"strict" : false
+				},
+				{
+					"name" : "setup_side_led[4]",
+					"strict" : false
+				},
+				{
+					"name" : "setup_side_led[5]",
+					"strict" : false
+				},
+				{
+					"name" : "value_led_1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "value_led_1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "value_led_1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "value_led_1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "value_led_1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "value_led_1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "value_led_1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "value_led_0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "value_led_0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "value_led_0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "value_led_0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "value_led_0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "value_led_0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "value_led_0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "setup_switch",
+					"strict" : false
+				},
+				{
+					"name" : "setup_type[0]",
+					"strict" : false
+				},
+				{
+					"name" : "setup_type[1]",
+					"strict" : false
+				},
+				{
+					"name" : "setup_side[1]",
+					"strict" : false
+				},
+				{
+					"name" : "setup_side[0]",
+					"strict" : false
+				},
+				{
+					"name" : "input_code[1]",
+					"strict" : false
+				},
+				{
+					"name" : "input_code[0]",
+					"strict" : false
+				},
+				{
+					"name" : "input_code[2]",
+					"strict" : false
+				},
+				{
+					"name" : "input_code[4]",
+					"strict" : false
+				},
+				{
+					"name" : "input_code[3]",
+					"strict" : false
+				},
+				{
+					"name" : "value_key",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "initialize_key",
+					"strict" : false
+				}
+			]
 		}
 	]
 }
