@@ -1,5 +1,5 @@
 EDA Netlist Writer report for g14_enigma_user_interface
-Thu Apr 07 20:31:55 2016
+Tue Apr 12 17:48:27 2016
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Apr 07 20:31:55 2016 ;
+; EDA Netlist Writer Status ; Successful - Tue Apr 12 17:48:27 2016 ;
 ; Revision Name             ; g14_enigma_user_interface             ;
 ; Top-level Entity Name     ; g14_enigma_user_interface             ;
 ; Family                    ; Cyclone V                             ;
@@ -82,14 +82,14 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
-    Info: Processing started: Thu Apr 07 20:31:50 2016
+    Info: Processing started: Tue Apr 12 17:48:19 2016
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off g14_enigma_user_interface -c g14_enigma_user_interface
 Warning (10905): Generated the EDA functional simulation files although EDA timing simulation option is chosen.
 Info (204019): Generated file g14_enigma_user_interface.vho in folder "C:/Users/user/Documents/GitHub/ecse-323/enigma/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 845 megabytes
-    Info: Processing ended: Thu Apr 07 20:31:55 2016
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 844 megabytes
+    Info: Processing ended: Tue Apr 12 17:48:27 2016
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:08
 
 

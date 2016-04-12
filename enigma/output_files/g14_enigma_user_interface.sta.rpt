@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for g14_enigma_user_interface
-Thu Apr 07 20:31:43 2016
+Tue Apr 12 17:48:06 2016
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -102,12 +102,12 @@ agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.50        ;
+; Average used               ; 1.44        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  50.0%      ;
+;     Processor 2            ;  43.8%      ;
 +----------------------------+-------------+
 
 
@@ -876,7 +876,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
-    Info: Processing started: Thu Apr 07 20:31:25 2016
+    Info: Processing started: Tue Apr 12 17:47:28 2016
 Info: Command: quartus_sta g14_enigma_user_interface -c g14_enigma_user_interface
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1018,9 +1018,9 @@ Info (332146): Worst-case minimum pulse width slack is -0.088
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 1217 megabytes
-    Info: Processing ended: Thu Apr 07 20:31:43 2016
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:25
+    Info: Peak virtual memory: 1218 megabytes
+    Info: Processing ended: Tue Apr 12 17:48:06 2016
+    Info: Elapsed time: 00:00:38
+    Info: Total CPU time (on all processors): 00:00:50
 
 

@@ -1,5 +1,6 @@
 -- 5 bit comparator
 -- Authors: Malcolm Watt, Joanna Halpern
+-- Date: 4/12/2016
 
 library ieee;
 use ieee.std_logic_1164.all;

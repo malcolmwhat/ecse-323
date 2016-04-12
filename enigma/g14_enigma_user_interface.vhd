@@ -1,6 +1,8 @@
--- Concept will use a multiplexing methodology, with defaults in the case of faulty input. 
 -- Enigma machine user interface
+-- Concept will use a multiplexing methodology with defaults.
+
 -- Author: Malcolm Watt
+-- Date: 4/12/2016
 
 library ieee;
 use ieee.std_logic_1164.all;

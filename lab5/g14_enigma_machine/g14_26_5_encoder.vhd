@@ -8,6 +8,7 @@
 -- Authors: Malcolm Watt (260585950); malcolm.watt@mail.mcgill.ca
 -- 			Joanna Halpern (260410826); joanna.halpern@mail.mcgill.ca
 -- entity name: g14_26_5_encoder
+-- Date: 4/12/2016
 
 library ieee; -- allows use of the std_logic_vector type
 use ieee.std_logic_1164.all;

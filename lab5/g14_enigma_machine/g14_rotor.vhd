@@ -1,5 +1,6 @@
 -- Entire two way rotor mechanism
 -- Author: Malcolm Watt 260585950
+-- Date: 4/12/2016
 
 library ieee;
 use ieee.std_logic_1164.all;
