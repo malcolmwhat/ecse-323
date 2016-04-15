@@ -1,4 +1,4 @@
-# ecse-323
+# Enigma -- ECSE-323
 Our labs and project for the Digital System Design class at McGill University. 
 
 The laboratories consisted of building components to eventually integrate into our final project. The final project was to develop, simulate and test a digital version of the [Enigma Machine](https://en.wikipedia.org/wiki/Enigma_machine). 
